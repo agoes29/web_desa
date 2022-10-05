@@ -18,7 +18,7 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/admin', function () {
-    return view('adminlte');
+    return view('admin_template');
 });
 Auth::routes();
 
