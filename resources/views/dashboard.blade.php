@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +17,12 @@
   <script src="resources/js/app.js" defer></script>
     <!-- Styles -->
    <link href="resources/css/app.css" rel="stylesheet">
+   <!-- Scripts -->
+   <script src="{{ asset('js/app.js') }}" defer></script>
+   
+   <!-- Styles -->
+   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
