@@ -26,5 +26,8 @@ class HomeController extends Controller
         return view('dashboard');
     }
 
-
-}
+    public function index2()
+    {
+        return view('homeViewHtml.homepage');
+    }
+}   

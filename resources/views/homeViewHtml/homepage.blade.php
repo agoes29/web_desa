@@ -13,11 +13,11 @@
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}"
     />
     <link
       rel="stylesheet"
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}"
     />
   </head>
   <body>
@@ -236,8 +236,8 @@
         </div>
       </div>
     </footer>
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{asset('assets/js/jquery-3.6.0.min.js')}}"></script>
+    <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
     <script type="text/javascript">
       $(window).scroll(function () {
