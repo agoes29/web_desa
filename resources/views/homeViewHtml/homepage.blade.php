@@ -14,6 +14,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/animate.css/animate.min.css') }}" />
 </head>
 
 <body>
@@ -64,7 +65,7 @@
 
     <section id="hero">
         <!-- Carousel wrapper -->
-        <div id="carouselVideoExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselVideoExample"  data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <!-- Indicators -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselVideoExample" data-bs-slide-to="0" class="active"
@@ -101,11 +102,11 @@
                     <video class="img-fluid" autoplay loop muted>
                         <source src="https://mdbcdn.b-cdn.net/img/video/forest.mp4" type="video/mp4" />
                     </video>
-                    <div class="carousel-container d-none d-md-block">
+                    <div class="carousel-container d-md-block">
                         <div class="container">
                             <div class="card bg-dark w-50 w-md-100 mx-auto px-2 py-3 rad-10">
-                                <h2>Second slide label</h2>
-                                <p>
+                                <h2 class="animate__animated animate__fadeInDown">Second slide label</h2>
+                                <p class="animate__animated animate__fadeInUp">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 </p>
                             </div>
@@ -118,11 +119,11 @@
                     <video class="img-fluid" autoplay loop muted>
                         <source src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4" type="video/mp4" />
                     </video>
-                    <div class="carousel-container d-none d-md-block">
+                    <div class="carousel-container d-md-block">
                         <div class="container">
                             <div class="card bg-dark w-50 w-md-100 mx-auto px-2 py-3 rad-10">
-                                <h2>Third slide label</h2>
-                                <p>
+                                <h2 class="animate__animated animate__fadeInDown">Third slide label</h2>
+                                <p class="animate__animated animate__fadeInUp">
                                     Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                                 </p>
                             </div>
@@ -151,7 +152,7 @@
             <div class="container">
                 <div class="row">
                     <div class=" col-lg-5 col-md-6 order-1 order-md-2">
-                        <div class="gambar-about">
+                        <div class=" card gambar-about">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15784.072586875232!2d115.13022005800802!3d-8.497615863724253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23b2bf99c0b95%3A0xc30e643bffae455e!2sBuahan%2C%20Kec.%20Tabanan%2C%20Kabupaten%20Tabanan%2C%20Bali!5e0!3m2!1sid!2sid!4v1664631528155!5m2!1sid!2sid"
                                 width="500" height="350" style="border: 0" allowfullscreen="" loading="lazy"
