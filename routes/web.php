@@ -13,12 +13,12 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard');
-});
+// Route::get('/', function () {
+    // return view('dashboard');
+// });
 
 // Auth::routes();
 
-Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+Route::get('admin', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
-Route::get('home2', [App\Http\Controllers\HomeController::class, 'index2'])->name('homepage');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index2'])->name('homepage');
