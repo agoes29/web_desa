@@ -13,6 +13,8 @@
       rel="stylesheet"
       href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}"
     />
+
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     
     <title>Login Bootstrap</title>
 </head>
