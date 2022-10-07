@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,4 +22,6 @@ Route::get('/', function () {
 
 Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
-Route::get('home2', [App\Http\Controllers\HomeController::class, 'index2'])->name('homepage');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index2'])->name('homepage');
+
+Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login');
