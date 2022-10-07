@@ -157,7 +157,7 @@ nav {
 }
 
 /*----------------------------------------------------------------
-# Parallax Image 
+# Parallax Image
  ----------------------------------------------------------------*/
 .bgimg {
   background-image: url("/assets/images/photo2.jpg");
@@ -416,7 +416,7 @@ nav {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 #header .navbar {
   padding: 50px;
@@ -543,7 +543,7 @@ nav {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #556270;
@@ -565,4 +565,23 @@ nav {
   /* .navbar ul {
     display: none;
   } */
+}
+ /*-------------------------------------------
+    #Login Template
+ ------------------------------------------- */
+
+ .divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
 }
