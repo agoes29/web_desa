@@ -82,11 +82,17 @@
                     <video class="img-fluid" autoplay loop muted>
                         <source src="https://mdbcdn.b-cdn.net/img/video/Tropical.mp4" type="video/mp4" />
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>
-                            Nulla vitae elit libero, a pharetra augue mollis interdum.
-                        </p>
+                    <div class="carousel-container d-md-block">
+                        <div class="container">
+                            <div class="card bg-dark w-50 w-md-100 mx-auto px-2 py-3 rad-10">
+                                <h2 class="animate__animated animate__fadeInDown">First slide label</h2>
+                                <p class="animate__animated animate__fadeInUp">
+                                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                                </p>
+                                <a href="#about"
+                                    class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -95,11 +101,15 @@
                     <video class="img-fluid" autoplay loop muted>
                         <source src="https://mdbcdn.b-cdn.net/img/video/forest.mp4" type="video/mp4" />
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>
+                    <div class="carousel-container d-none d-md-block">
+                        <div class="container">
+                            <div class="card bg-dark w-50 w-md-100 mx-auto px-2 py-3 rad-10">
+                                <h2>Second slide label</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -108,11 +118,15 @@
                     <video class="img-fluid" autoplay loop muted>
                         <source src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4" type="video/mp4" />
                     </video>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
+                    <div class="carousel-container d-none d-md-block">
+                        <div class="container">
+                            <div class="card bg-dark w-50 w-md-100 mx-auto px-2 py-3 rad-10">
+                                <h2>Third slide label</h2>
+                                <p>
+                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
