@@ -61,10 +61,10 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Beranda</a>
+                  <a class="nav-link" href="/">Beranda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Tentang Kami</a>
+                  <a class="nav-link" href="#profil">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Gallery</a>
@@ -87,7 +87,9 @@
         class="carousel slide carousel-fade"
         data-bs-ride="carousel"
       >
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+        <ol class="carousel-indicators" id="hero-carousel-indicators">
+        <div id="profil"></div>
+        </ol>
         <div class="carousel-inner" role="listbox">
           <!-- ---- Slide 1 ---- -->
           <div
@@ -98,7 +100,7 @@
               <div class="container">
                 <h1 class="fw-bold" style="color: aliceblue">Selamat Datang</h1>
                 <p class="fs-4">di Website Desa Buahan</p>
-                <button class="fs-5">Lihat Selengkapnya</button>
+                <a href="#profil"><button class="fs-5">Lihat Selengkapnya</button></a>
               </div>
             </div>
           </div>
@@ -106,13 +108,12 @@
             class="carousel-item"
             style="background-image: url(assets/images/photo.jpg)"
           >
+          
             <div class="carousel-container">
               <div class="container">
-                <h1 class="fw-bold" style="color: aliceblue">
-                  Kunjungi Desa Penglipuran
-                </h1>
-                <p class="fs-4">Nikmati liburanmu bersama keluarga</p>
-                <button class="fs-5">Lihat Selengkapnya</button>
+              <h1 class="fw-bold" style="color: aliceblue">Selamat Datang</h1>
+                <p class="fs-4">di Website Desa Buahan</p>
+                <a href="#profil"><button class="fs-5">Lihat Selengkapnya</button></a>
               </div>
             </div>
           </div>
@@ -122,11 +123,9 @@
           >
             <div class="carousel-container">
               <div class="container">
-                <h1 class="fw-bold" style="color: aliceblue">
-                  Kunjungi Desa Penglipuran
-                </h1>
-                <p class="fs-4">Nikmati liburanmu bersama keluarga</p>
-                <button class="fs-5">Lihat Selengkapnya</button>
+                <h1 class="fw-bold" style="color: aliceblue">Selamat Datang</h1>
+                <p class="fs-4">di Website Desa Buahan</p>
+                <a href="#profil"><button class="fs-5">Lihat Selengkapnya</button></a>
               </div>
             </div>
           </div>
@@ -135,7 +134,7 @@
     </section>
     <section id="about" class="about">
       <div class="about-wrap container-fluid py-5" id="about">
-        <div class="container">
+        <div class="container" >
           <div class="row">
             <div class=" col-lg-5 col-md-6 order-1 order-md-2">
               <div class="gambar-about">
