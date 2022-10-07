@@ -85,7 +85,7 @@
                     </video>
                     <div class="carousel-container d-md-block">
                         <div class="container">
-                            <div class="card bg-dark w-50 w-md-100 mx-auto px-2 py-3 rad-10">
+                            <div class="card w-50 w-md-100 mx-auto px-2 py-3 rad-10">
                                 <h2 class="animate__animated animate__fadeInDown">First slide label</h2>
                                 <p class="animate__animated animate__fadeInUp">
                                     Nulla vitae elit libero, a pharetra augue mollis interdum.
@@ -104,7 +104,7 @@
                     </video>
                     <div class="carousel-container d-md-block">
                         <div class="container">
-                            <div class="card bg-dark w-50 w-md-100 mx-auto px-2 py-3 rad-10">
+                            <div class="card w-50 w-md-100 mx-auto px-2 py-3 rad-10">
                                 <h2 class="animate__animated animate__fadeInDown">Second slide label</h2>
                                 <p class="animate__animated animate__fadeInUp">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -121,7 +121,7 @@
                     </video>
                     <div class="carousel-container d-md-block">
                         <div class="container">
-                            <div class="card bg-dark w-50 w-md-100 mx-auto px-2 py-3 rad-10">
+                            <div class="card w-50 w-md-100 mx-auto px-2 py-3 rad-10">
                                 <h2 class="animate__animated animate__fadeInDown">Third slide label</h2>
                                 <p class="animate__animated animate__fadeInUp">
                                     Praesent commodo cursus magna, vel scelerisque nisl consectetur.
