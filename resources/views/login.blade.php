@@ -14,7 +14,7 @@
       href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}"
     />
     
-    <title>Login</title>
+    <title>Login Bootstrap</title>
 </head>
 <body>
 <main class="form-signin">
