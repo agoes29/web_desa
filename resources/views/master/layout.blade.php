@@ -60,6 +60,16 @@
 <!-- ChartJS -->
 <script src="{{asset('assets/vendor/chart.js/Chart.min.js')}}"></script>
 
+<script type="text/javascript">
+   $( ".brand-link" ).click(function() {
+    if (  $( ".brand-text .right" ).css( "transform" ) == 'none' ){
+        $(".brand-text .right").css("transform","rotate(-90deg)");
+    } else {
+        $(".brand-text .right").css("transform","" );
+    }
+})
+</script>
+
 <!-- AdminLTE for demo purposes -->
 {{-- <script src="{{asset('dist/js/demo.js')}}"></script> --}}
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->

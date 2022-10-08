@@ -10,7 +10,7 @@
                         class="brand-image img-circle elevation-3" style="opacity: .8">
                     <span class="brand-text font-weight-light">Admin <i class="right fas fa-angle-left"></i></span>
                 </a>
-              <div id="flush-collapseOne" class="py-5 mt-4 accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div id="flush-collapseOne" class="pt-5 mt-4 accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                     <a class="dropdown-item" href="http://127.0.0.1:8000/admin">Halaman Admin</a>
                     <a class="dropdown-item" href="http://127.0.0.1:8000/logout"
@@ -36,7 +36,7 @@
                     <li class="nav-item">
                         <a href="/admin" class="nav-link active">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>Dashboard</p>
+                            <p>Dashboard  <i class="right fas fa-angle-left"></i></p>
                         </a>
                     </li>
                     <li class="nav-item">
