@@ -26,13 +26,13 @@
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
     @include('master.navbar')
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper mt-0">
+  <div class="content-wrapper mt-5">
     <div class="content-header">
         <div class="container-fluid">
             <h1 class="m-0">Dashboard Admin</h1>
         </div>
     </div>
-    <section class="content m-1">
+    <section class="content">
         @yield('content')
 
     </section>
