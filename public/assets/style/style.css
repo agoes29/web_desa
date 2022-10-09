@@ -586,7 +586,7 @@ border: 1px solid rgba(255, 255, 255, 0.171);
     margin-right: auto;
     margin-left: auto;
 }
-.container img{
+.container .imagelogobawah{
   width:150px;
    height:150px;
 }

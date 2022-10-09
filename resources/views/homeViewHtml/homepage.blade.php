@@ -248,7 +248,7 @@
         <footer class="row row-cols-12 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
             <div class="col-md-9">
                 <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                    <img class="imageLogo" src="assets/images/Asset 2.png" alt="">
+                    <img class="imagelogobawah" src="assets/images/Asset 2.png" alt="">
                 </a>
                 <h1 class="fw-bold">Desa Buahan</h1>
                 <h5>Jl. Buahan, Buahan, Kec. Tabanan, Kabupaten Tabanan</h5>
