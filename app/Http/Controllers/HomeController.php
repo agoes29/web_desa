@@ -28,11 +28,21 @@ class HomeController extends Controller
 
     public function index2()
     {
-        return view('homeViewHtml.homepage');
+        return view('client.homepage');
     }
 
     public function index3()
     {
         return view('check');
     }
-}   
+    public function client()
+    {
+        return view('client.page.home', [
+            'home' => true
+        ]);
+    }
+    public function umkm()
+    {
+        return view('client.page.umkm');
+    }
+}

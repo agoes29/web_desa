@@ -22,7 +22,10 @@ Route::get('/', function () {
 
 Route::get('admin', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index2'])->name('homepage');
+// Route::get('/', [App\Http\Controllers\HomeController::class, 'index2'])->name('homepage');
+
+Route::get('/', [App\Http\Controllers\HomeController::class, 'client'])->name('main');
+Route::get('/umkm', [App\Http\Controllers\HomeController::class, 'umkm'])->name('umkm');
 
 Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login');
 
