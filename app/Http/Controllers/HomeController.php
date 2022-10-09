@@ -30,4 +30,9 @@ class HomeController extends Controller
     {
         return view('homeViewHtml.homepage');
     }
+
+    public function index3()
+    {
+        return view('check');
+    }
 }   

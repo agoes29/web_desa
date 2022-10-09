@@ -25,3 +25,5 @@ Route::get('admin', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index2'])->name('homepage');
 
 Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login');
+
+Route::get('/tabel', [App\Http\Controllers\HomeController::class, 'index3'])->name('check');
