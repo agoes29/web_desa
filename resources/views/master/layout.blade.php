@@ -8,60 +8,71 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="{{asset('assets/vendor/fontawesome-free/css/all.min.css')}}">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="{{asset('assets/vendor/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="{{asset('dist/css/adminlte.min.css')}}">
   <!-- Scripts -->
-  <script src="resources/js/app.js" defer></script>
+  {{-- <script src="resources/js/app.js" defer></script> --}}
     <!-- Styles -->
-   <link href="resources/css/app.css" rel="stylesheet">
+   {{-- <link href="{{asset('assets/css/app.css')}}" rel="stylesheet"> --}}
    <!-- Scripts -->
-   <script src="{{ asset('js/app.js') }}" defer></script>
-   
+
    <!-- Styles -->
-   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+   <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
 
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
     @include('master.navbar')
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper mt-0">
+  <div class="content-wrapper mt-5">
     <div class="content-header">
         <div class="container-fluid">
             <h1 class="m-0">Dashboard Admin</h1>
         </div>
     </div>
-    <section class="content m-1">
+    <section class="content">
         @yield('content')
-        
+
     </section>
 
   </div>
   @include('master.footer')
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="{{asset('assets/js/jquery-3.6.0.min.js')}}"></script>
 <!-- Bootstrap -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- overlayScrollbars -->
-<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="{{asset('assets/vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.js"></script>
+<script src="{{asset('dist/js/adminlte.js')}}"></script>
 
 <!-- PAGE PLUGINS -->
+{{-- <script src="{{ asset('assets/js/app.js') }}" defer></script> --}}
+
 <!-- jQuery Mapael -->
-<script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
-<script src="plugins/raphael/raphael.min.js"></script>
-<script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
-<script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+<script src="{{asset('assets/vendor/jquery-mousewheel/jquery.mousewheel.js')}}"></script>
+<script src="{{asset('assets/vendor/raphael/raphael.min.js')}}"></script>
+<script src="{{asset('assets/vendor/jquery-mapael/jquery.mapael.min.js')}}"></script>
+<script src="{{asset('assets/vendor/jquery-mapael/maps/usa_states.min.js')}}"></script>
 <!-- ChartJS -->
-<script src="plugins/chart.js/Chart.min.js"></script>
+<script src="{{asset('assets/vendor/chart.js/Chart.min.js')}}"></script>
+
+<script type="text/javascript">
+   $( ".brand-link" ).click(function() {
+    if (  $( ".brand-text .right" ).css( "transform" ) == 'none' ){
+        $(".brand-text .right").css("transform","rotate(-90deg)");
+    } else {
+        $(".brand-text .right").css("transform","" );
+    }
+})
+</script>
 
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+{{-- <script src="{{asset('dist/js/demo.js')}}"></script> --}}
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard2.js"></script>
+{{-- <script src="{{asset('dist/js/pages/dashboard2.js')}}"></script> --}}
 </body>
 </html>
