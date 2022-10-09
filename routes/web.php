@@ -18,7 +18,8 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
-// Auth::routes();
+
+Auth::routes();
 
 Route::get('admin', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
@@ -28,5 +29,6 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'client'])->name('m
 Route::get('/umkm', [App\Http\Controllers\HomeController::class, 'umkm'])->name('umkm');
 
 Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login');
+Route::get('/register', [App\Http\Controllers\LoginController::class, 'register'])->name('register');
 
 Route::get('/tabel', [App\Http\Controllers\HomeController::class, 'index3'])->name('check');
