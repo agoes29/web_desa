@@ -21,13 +21,60 @@
     <title>Login</title>
 </head>
 <body>
+
+    <!-- =============Header============== -->
+    <header id="header" class="fixed-top d-flex align-items-center header-scrolled bg-success">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="imageLogo" src="assets/images/Asset 2.png" alt="" />
+                <h4>Desa Buahan</h4>
+            </a>
+            <button class="navbar-toggler navbar-color" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        Desa Buahan
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#profil">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontak Kami</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- ========== hero section=============== -->
+
 <main class="form-signin">
     <section class="vh-100">
         <div class="container-fluid h-custom">
           <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-md-9 col-lg-6 col-xl-5">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                class="img-fluid" alt="Sample image">
+            <div class="col-md-9 col-lg-7 col-xl-4">
+              <img src="assets/images/Asset 2.png"
+                class="img-fluid" id="logo-login" alt="Sample image">
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
             
@@ -75,7 +122,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-success">
                                     {{ __('Login') }}
                                 </button>
 
@@ -125,54 +172,32 @@
             </div>
           </div>
         </div>
-        <div
-          class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
-          <!-- Copyright -->
-          <div class="text-white mb-3 mb-md-0">
-            Copyright © 2020. All rights reserved.
-          </div>
-          <!-- Copyright -->
-
-          <!-- Right -->
-          <div>
-            <a href="#!" class="text-white me-4">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#!" class="text-white me-4">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#!" class="text-white me-4">
-              <i class="fab fa-google"></i>
-            </a>
-            <a href="#!" class="text-white">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-          <!-- Right -->
-        </div>
       </section>
-  {{-- <form>
-    <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
-
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
-  </form> --}}
 </main>
+<div class="footer fixed-bottom d-flex footer-wrap container-fluid text-white p-1 text-start bg-success">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center py-2 my-2">
+                <p class="m-0">@copyright  <a href="https://www.buahandesaku.com/"> Buahan Desaku</a> | INSTIKI</p>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                        <!-- link instagram -->
+                        <li class="ms-3"><a class="text-muted" href="#"></a>
+                            <img class="social-media" src="assets/images/instagram.svg" alt="">
+                        </li>
+                        <!-- link youtube -->
+                        <li class="ms-3"><a class="text-muted" href="#"></a>
+                            <img class="social-media" src="assets/images/youtube.svg" alt="">
+                        </li>
+                        <!-- link facebook -->
+                        <li class="ms-3"><a class="text-muted" href="#"></a>
+                            <img class="social-media" src="assets/images/facebook.svg" alt="">
+                        </li>
+                        <!-- link tiktok -->
+                        <li class="ms-3"><a class="text-muted" href="#"></a>
+                            <img class="social-media" src="assets/images/tiktok.svg" alt="">
+                        </li>
+                </ul>
+            </div>
+        </div>
 <!-- JavaScript -->
     <script src="{{asset('assets/js/jquery-3.6.0.min.js')}}"></script>
     <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>

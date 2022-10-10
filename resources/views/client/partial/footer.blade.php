@@ -19,7 +19,7 @@
             </div>
         </footer>
     </div>
-        <div class="footer footer-wrap container-fluid text-white p-3 text-start">
+        <div class="footer footer-wrap container-fluid text-white p-1 text-start">
             <div class="container d-flex flex-wrap justify-content-between align-items-center py-2 my-2">
                 <p class="m-0">@copyright. <a href="https://www.buahandesaku.com/"> Buahan Desaku</a></p>
                 <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
@@ -41,6 +41,5 @@
                         </li>
                 </ul>
             </div>
-
         </div>
     </footer>
