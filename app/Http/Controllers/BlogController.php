@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Models\Blog; //masalahhhhhhhhhhhhhhhhhhhhhh   Model Not Found
+use Illuminate\Support\Facades\DB; /* <--- UDAH BERES MASALAHNYA CUMA KURANG INI */
+// use app\Models\Blog; //masalahhhhhhhhhhhhhhhhhhhhhh   Model Not Found
 
 
 class BlogController extends Controller
@@ -15,7 +16,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        
+
     }
 
     /**
@@ -86,7 +87,7 @@ class BlogController extends Controller
 
     public function blogview()
     {
-        $blog = Blog::all();
-        return view('dashboard.pages.blog',compact('blog'));
+        $blog = DB::select('select * from blog');
+        return view('dashboard.pages.blog',['blog' => $blog]);
     }
 }
