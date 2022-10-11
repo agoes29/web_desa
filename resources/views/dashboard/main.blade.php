@@ -11,6 +11,7 @@
     </div>
     <section class="content">
         @yield('table')
+        @yield('blog')
 
     </section>
 

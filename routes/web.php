@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,3 +30,4 @@ Route::get('register', [App\Http\Controllers\AuthController::class, 'register'])
 /* Dashboard Route */
 Route::get('admin', [App\Http\Controllers\Administrator\DashboardController::class, 'index'])->name('dashboard');
 Route::get('tabel', [App\Http\Controllers\Administrator\DashboardController::class, 'table'])->name('check');
+Route::get('blog', [App\Http\Controllers\BlogController::class, 'blogview'])->name('Blog');
