@@ -24,21 +24,7 @@
 
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
-    @include('master.navbar')
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper mt-5">
-    <div class="content-header">
-        <div class="container-fluid">
-            <h1 class="m-0">Dashboard Admin</h1>
-        </div>
-    </div>
-    <section class="content">
-        @yield('content')
-
-    </section>
-
-  </div>
-  @include('master.footer')
+    @yield('main')
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
 <script src="{{asset('assets/js/jquery-3.6.0.min.js')}}"></script>

@@ -1,5 +1,5 @@
-@extends('master.layout')
-@section('content')
+@extends('dashboard.main')
+@section('table')
 <div class="card">
 <div class="card-header">
 <h3 class="card-title">Test Table</h3>
