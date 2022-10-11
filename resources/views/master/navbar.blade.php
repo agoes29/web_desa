@@ -13,13 +13,9 @@
               <div id="flush-collapseOne" class="pt-5 mt-4 accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                     <a class="dropdown-item" href="http://127.0.0.1:8000/admin">Halaman Admin</a>
-                    <a class="dropdown-item" href="http://127.0.0.1:8000/logout"
-                        onclick="event.preventDefault();
-                      document.getElementById('logout-form').submit();">
-                        Logout
-                    </a>
-                    <form id="logout-form" action="http://127.0.0.1:8000/logout" method="POST" class="d-none">
-                        <input type="hidden" name="_token" value="Tbm96BWCpQYfxGGxZiIQ71zbbFynkYzkAHNmyyYh">
+                    <form id="logout-form" action="{{url('/logout')}}" method="POST">
+                        @csrf
+                        <button class="dropdown-item" href="" type="submit">Pesu</button>
                     </form>
                 </div>
               </div>
