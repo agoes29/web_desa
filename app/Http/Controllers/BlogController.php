@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB; /* <--- UDAH BERES MASALAHNYA CUMA KURANG INI */
-// use app\Models\Blog; //masalahhhhhhhhhhhhhhhhhhhhhh   Model Not Found
+use Illuminate\Support\Facades\DB; /* <--- UDAH BERES MASALAHNYA CUMA KURANG INI - WOKEY MAKASI*/   
+// use app\Models\Blog;
 
 
 class BlogController extends Controller
