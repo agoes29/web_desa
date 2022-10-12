@@ -209,6 +209,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        'Uuid' => Webpatser\Uuid\Uuid::class,
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 

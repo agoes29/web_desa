@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,19 +16,24 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard');
-});
 
-// Auth::routes();
+Auth::routes();
 
-Route::get('admin', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
-
-// Route::get('/', [App\Http\Controllers\HomeController::class, 'index2'])->name('homepage');
-
+/* Home Route */
 Route::get('/', [App\Http\Controllers\HomeController::class, 'client'])->name('main');
-Route::get('/umkm', [App\Http\Controllers\HomeController::class, 'umkm'])->name('umkm');
+Route::get('umkm', [App\Http\Controllers\HomeController::class, 'umkm'])->name('umkm');
 
-Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('login');
+/* Auth Route */
+Route::get('login', [App\Http\Controllers\AuthController::class, 'login'])->name('login');
+Route::get('register', [App\Http\Controllers\AuthController::class, 'register'])->name('register');
 
-Route::get('/tabel', [App\Http\Controllers\HomeController::class, 'index3'])->name('check');
+/* Dashboard Route */
+Route::get('admin', [App\Http\Controllers\Administrator\DashboardController::class, 'index'])->name('dashboard');
+Route::get('tabel', [App\Http\Controllers\Administrator\DashboardController::class, 'table'])->name('check');
+//Blog Route
+Route::get('blog', [App\Http\Controllers\BlogController::class, 'blogview'])->name('Blog');
+Route::get('bloginput', [App\Http\Controllers\BlogController::class, 'bloginput'])->name('BlogInput');
+Route::get('blogupdate', [App\Http\Controllers\BlogController::class, 'blogupdate'])->name('BlogUpdate');
+Route::resource('blog', App\Http\Controllers\BlogController::class);
+
+

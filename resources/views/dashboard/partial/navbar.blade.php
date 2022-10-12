@@ -1,5 +1,5 @@
 <div class="wrapper">
-    @include('master.appbar.topbar')
+    @include('dashboard.partial.appbar.topbar')
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
@@ -13,13 +13,9 @@
               <div id="flush-collapseOne" class="pt-5 mt-4 accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                     <a class="dropdown-item" href="http://127.0.0.1:8000/admin">Halaman Admin</a>
-                    <a class="dropdown-item" href="http://127.0.0.1:8000/logout"
-                        onclick="event.preventDefault();
-                      document.getElementById('logout-form').submit();">
-                        Logout
-                    </a>
-                    <form id="logout-form" action="http://127.0.0.1:8000/logout" method="POST" class="d-none">
-                        <input type="hidden" name="_token" value="Tbm96BWCpQYfxGGxZiIQ71zbbFynkYzkAHNmyyYh">
+                    <form id="logout-form" action="{{url('/logout')}}" method="POST">
+                        @csrf
+                        <button class="dropdown-item" href="" type="submit">Log Out</button>
                     </form>
                 </div>
               </div>
@@ -40,11 +36,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/tabel" class="nav-link">
-                            <i class="nav-icon fas fa-th"></i>
+                        <a href="/blog" class="nav-link">
+                            <i class="nav-icon fas fa-newspaper"></i>
                             <p>
-                                Test Tabel
-                                <span class="right badge badge-danger">New</span>
+                                Blogs
                             </p>
                         </a>
                     </li>
