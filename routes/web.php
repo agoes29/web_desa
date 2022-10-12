@@ -30,4 +30,9 @@ Route::get('register', [App\Http\Controllers\AuthController::class, 'register'])
 /* Dashboard Route */
 Route::get('admin', [App\Http\Controllers\Administrator\DashboardController::class, 'index'])->name('dashboard');
 Route::get('tabel', [App\Http\Controllers\Administrator\DashboardController::class, 'table'])->name('check');
+//Blog Route
 Route::get('blog', [App\Http\Controllers\BlogController::class, 'blogview'])->name('Blog');
+Route::get('bloginput', [App\Http\Controllers\BlogController::class, 'bloginput'])->name('BlogInput');
+Route::resource('blog', App\Http\Controllers\BlogController::class);
+
+

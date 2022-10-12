@@ -16,7 +16,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-
+        $blog = DB::select('select * from blog');
+        return view('dashboard.pages.blog',['blog' => $blog]);
     }
 
     /**
@@ -37,7 +38,17 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' => 'required',
+            'image' => 'required',
+            'conten' => 'required'
+        ]);
+        
+        DB::table('blog')->insert([
+            'title' => $request->title,
+            'image' => $request->image,
+            'conten' => $request->conten
+        ]);
     }
 
     /**
@@ -82,12 +93,27 @@ class BlogController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $bl = DB::table('blog')->where('id', $id);
+        $bl -> delete();
+
+        if ($bl) {
+            return redirect()->back()->with([
+                'success' => 'Data Berhasil Dihapus'
+            ]);
+        }else{
+            return redirect()->back()->with([
+                'error' => 'Terjadi Kesalahan'
+            ]);
+        }
     }
 
     public function blogview()
     {
         $blog = DB::select('select * from blog');
         return view('dashboard.pages.blog',['blog' => $blog]);
+    }
+    public function bloginput()
+    {
+        return view('dashboard.pages.bloginput');
     }
 }
