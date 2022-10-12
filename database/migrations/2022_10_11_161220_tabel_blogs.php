@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('blog', function (Blueprint $table) {
+        Schema::create('blogs', function (Blueprint $table) {
             $table->id();
             $table->string('title',1550);
             $table->string('image',255);
-            $table->string('conten',2550);
+            $table->string('content',2550);
             $table->timestamps();
         });
     }

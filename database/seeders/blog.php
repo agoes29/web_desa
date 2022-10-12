@@ -15,9 +15,9 @@ class blog extends Seeder
      */
     public function run()
     {
-        DB::table('blog')->insert([
+        DB::table('blogs')->insert([
             'title' => "Admin Ganteng",
-            "conten" => "admin@email.com",
+            "content" => "admin@email.com",
             "image" => "-"
         ]);
     }
