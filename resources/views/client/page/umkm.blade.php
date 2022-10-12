@@ -15,7 +15,9 @@
                                 <div class="about-content">
                                 @csrf
                                 @forelse ($blog as $bl)
-                                    <p>{{ $bl->conten }}</p>
+                                    <p>
+                                    {!!Str::limit(strip_tags($bl->conten),2000)!!}
+                                    </p>
                                 @empty
                                     <tr>
                                         <td colspan="3">Tidak Ada Data</td>
