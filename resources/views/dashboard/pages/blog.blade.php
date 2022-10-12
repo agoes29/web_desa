@@ -30,7 +30,7 @@
                         <td style="word-break:break-all;">{{ $bl->title }}</td>
                         <td style="word-break:break-all;">{{ $bl->content }}</td>
                         <td style="word-break:break-all;">
-                        <img src="{{ Storage::url($bl->image) }}" alt="">
+                        <img src="{{ Storage::url($bl->image) }}" alt="" class="img-fluid w-50">
                         </td>
                         <td>
                             <form action="{{ route('blog.show', $bl->id) }}" method="GET">
