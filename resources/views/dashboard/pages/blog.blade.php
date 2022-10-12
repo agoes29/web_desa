@@ -12,12 +12,13 @@
         </div>  
     </div>
         @csrf
-        <table id="example2" class="table table-bordered table-hover dataTable dtr-inline" aria-describedby="example2_info">
+        <table id="example2" class="table table-bordered table-hover dataTable dtr-inline table-responsive-md" aria-describedby="example2_info">
                 <thead>
                     <tr>
                         <th rowspan="1" colspan="1">ID</th>
                         <th rowspan="1" colspan="1">Title</th>
                         <th rowspan="1" colspan="1">Conten</th>
+                        <th rowspan="1" colspan="1">Image</th>
                         <th rowspan="1" colspan="1">Update</th>
                         <th rowspan="1" colspan="1">Delete</th>
                     </tr>
@@ -26,9 +27,15 @@
                 @forelse ($blog as $bl)
                     <tr>
                         <td>{{ $bl->id }}</td>
-                        <td>{{ $bl->title }}</td>
-                        <td>{{ $bl->conten }}</td>
-                        <td><a href="">Update</a></td>
+                        <td style="word-break:break-all;">{{ $bl->title }}</td>
+                        <td style="word-break:break-all;">{{ $bl->conten }}</td>
+                        <td style="word-break:break-all;">{{ $bl->image }}</td>
+                        <td>
+                            <form action="{{ route('blog.show', $bl->id) }}" method="GET">
+                                @csrf
+                                <button type="submit" class="btn btn-sm btn-success">UPDATE</button>
+                            </form>
+                        </td>
                         <td>
                             <form onsubmit="return confirm('Yakin menghapus data ini ?');" action="{{ route('blog.destroy', $bl->id) }}" method="POST">
                                 @method('DELETE')
@@ -48,6 +55,7 @@
                     <th rowspan="1" colspan="1">ID</th>
                     <th rowspan="1" colspan="1">Title</th>
                     <th rowspan="1" colspan="1">Conten(s)</th>
+                    <th rowspan="1" colspan="1">Image</th>
                     <th rowspan="1" colspan="1">Update</th>
                     <th rowspan="1" colspan="1">Delete</th>
                 </tr>

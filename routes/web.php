@@ -33,6 +33,7 @@ Route::get('tabel', [App\Http\Controllers\Administrator\DashboardController::cla
 //Blog Route
 Route::get('blog', [App\Http\Controllers\BlogController::class, 'blogview'])->name('Blog');
 Route::get('bloginput', [App\Http\Controllers\BlogController::class, 'bloginput'])->name('BlogInput');
+Route::get('blogupdate', [App\Http\Controllers\BlogController::class, 'blogupdate'])->name('BlogUpdate');
 Route::resource('blog', App\Http\Controllers\BlogController::class);
 
 

@@ -44,11 +44,14 @@ class BlogController extends Controller
             'conten' => 'required'
         ]);
         
-        DB::table('blog')->insert([
+        $bl = DB::table('blog')->insert([
             'title' => $request->title,
             'image' => $request->image,
             'conten' => $request->conten
         ]);
+
+        $blog = DB::select('select * from blog');
+        return view('dashboard.pages.blog',['blog' => $blog]);
     }
 
     /**
@@ -59,7 +62,8 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-        //
+        $blog = DB::table('blog')->where('id', $id)->first();
+        return view('dashboard.pages.blogupdate',['blog' => $blog]);
     }
 
     /**
@@ -82,7 +86,23 @@ class BlogController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // $this->validate($request, [
+        //     'title' => 'required',
+        //     'image' => 'required',
+        //     'conten' => 'required'
+        // ]);
+        
+        $bl = DB::table('blog')
+        ->where('id', $id)
+        ->update(
+            ['title' => $request->title,
+            'image' => $request->image,
+            'conten' => $request->conten]
+        );
+
+        $blog = DB::select('select * from blog');
+        return view('dashboard.pages.blog',['blog' => $blog]);
+
     }
 
     /**
