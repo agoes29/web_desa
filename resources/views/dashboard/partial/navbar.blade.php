@@ -1,5 +1,5 @@
 <div class="wrapper">
-    @include('master.appbar.topbar')
+    @include('dashboard.partial.appbar.topbar')
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
@@ -15,7 +15,7 @@
                     <a class="dropdown-item" href="http://127.0.0.1:8000/admin">Halaman Admin</a>
                     <form id="logout-form" action="{{url('/logout')}}" method="POST">
                         @csrf
-                        <button class="dropdown-item" href="" type="submit">Pesu</button>
+                        <button class="dropdown-item" href="" type="submit">Log Out</button>
                     </form>
                 </div>
               </div>

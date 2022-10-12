@@ -2,19 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
     public function client()
     {
         return view('client.page.home', [
-            'home' => true
+            'home' => true,
         ]);
     }
+
     public function umkm()
     {
-        return view('client.page.umkm');
+        $blog = DB::select('select * from blog');
+
+        return view('client.page.umkm', ['blog' => $blog]);
     }
 }

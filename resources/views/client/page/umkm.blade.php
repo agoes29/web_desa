@@ -13,9 +13,16 @@
                             </div>
                             <div class="col-lg-7 col-md-6">
                                 <div class="about-content">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, voluptates eaque,
-                                        tenetur, illo reiciendis repellendus hic nisi harum iste doloremque possimus
-                                        mollitia sed doloribus veritatis placeat ea perferendis unde?</p>
+                                @csrf
+                                @forelse ($blog as $bl)
+                                    <p>
+                                    {!!Str::limit(strip_tags($bl->conten),2000)!!}
+                                    </p>
+                                @empty
+                                    <tr>
+                                        <td colspan="3">Tidak Ada Data</td>
+                                    </tr>
+                                @endforelse
                                 </div>
                             </div>
                         </div>
