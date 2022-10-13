@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB; /* <--- UDAH BERES MASALAHNYA CUMA KURANG INI - WOKEY MAKASI*/   
-// use app\Models\Blog;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+use App\Models\Blog;
 
 
 class BlogController extends Controller
@@ -16,8 +17,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blog = DB::select('select * from blog');
-        return view('dashboard.pages.blog',['blog' => $blog]);
+        $blog = Blog::paginate(4);
+        return view('dashboard.pages.blog', ['blog' => $blog]);
     }
 
     /**
@@ -38,20 +39,23 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'title' => 'required',
-            'image' => 'required',
-            'conten' => 'required'
-        ]);
-        
-        $bl = DB::table('blog')->insert([
-            'title' => $request->title,
-            'image' => $request->image,
-            'conten' => $request->conten
-        ]);
+        $validatedData = $request->validate([
+            'image' => 'required|image',
 
-        $blog = DB::select('select * from blog');
-        return view('dashboard.pages.blog',['blog' => $blog]);
+        ]);
+        $file = $request->file('image');
+        $name = $file->getClientOriginalName();
+
+        $path = $file->storeAs('public/images', $name);
+
+        $image = $path;
+
+        $blog = new Blog();
+        $blog->title = $request->title;
+        $blog->content = $request->content;
+        $blog->image = $image;
+        $blog->save();
+        return redirect('/blog');
     }
 
     /**
@@ -62,8 +66,8 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-        $blog = DB::table('blog')->where('id', $id)->first();
-        return view('dashboard.pages.blogupdate',['blog' => $blog]);
+        $blog = Blog::find($id)->first();
+        return view('dashboard.pages.blogupdate', ['blog' => $blog]);
     }
 
     /**
@@ -86,23 +90,23 @@ class BlogController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // $this->validate($request, [
-        //     'title' => 'required',
-        //     'image' => 'required',
-        //     'conten' => 'required'
-        // ]);
-        
-        $bl = DB::table('blog')
-        ->where('id', $id)
-        ->update(
-            ['title' => $request->title,
-            'image' => $request->image,
-            'conten' => $request->conten]
-        );
+        $validatedData = $request->validate([
+            'image' => 'required|image',
 
-        $blog = DB::select('select * from blog');
-        return view('dashboard.pages.blog',['blog' => $blog]);
+        ]);
+        $file = $request->file('image');
+        $name = $file->getClientOriginalName();
 
+        $path = $file->storeAs('public/images', $name);
+
+        $image = $path;
+
+        $blog = Blog::find($id);
+        $blog->title = $request->title;
+        $blog->content = $request->content;
+        $blog->image = $image;
+        $blog->save();
+        return redirect('/blog');
     }
 
     /**
@@ -113,24 +117,19 @@ class BlogController extends Controller
      */
     public function destroy($id)
     {
-        $bl = DB::table('blog')->where('id', $id);
-        $bl -> delete();
+        $data = Blog::find($id);
+        Storage::delete($data->image);
+        $data->delete();
 
-        if ($bl) {
+        if ($data) {
             return redirect()->back()->with([
                 'success' => 'Data Berhasil Dihapus'
             ]);
-        }else{
+        } else {
             return redirect()->back()->with([
                 'error' => 'Terjadi Kesalahan'
             ]);
         }
-    }
-
-    public function blogview()
-    {
-        $blog = DB::select('select * from blog');
-        return view('dashboard.pages.blog',['blog' => $blog]);
     }
     public function bloginput()
     {
