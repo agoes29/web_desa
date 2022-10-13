@@ -30,6 +30,14 @@
             <input type="text" class="form-control" id="cp" name="cp" placeholder="Kontak" required  value="{{ $umkm->cp }}">
         </div>
         <div class="mb-3">
+            <label for="sm" class="form-label">Social Media UMKM</label>
+            <input type="text" class="form-control" id="sm" name="sm" placeholder="Social Media" required  value="{{ $umkm->sm }}">
+        </div>
+        <div class="mb-3">
+            <label for="link" class="form-label">Link Social Media</label>
+            <input type="text" class="form-control" id="link" name="link" placeholder="Kontak" required  value="{{ $umkm->link }}">
+        </div>
+        <div class="mb-3">
             <label for="image" class="form-label">Link Image</label>
             <input type="file" class="form-control" id="image" name="image" placeholder="Link Image" required value="{{ $umkm->image }}">
             <p><label for="image" class="form-label"><small>Preview</small></label><br><img

@@ -44,6 +44,7 @@ class UmkmController extends Controller
     {
         $validatedData = $request->validate([
             'image' => 'required|image',
+            'cp' => 'required|numeric',
 
         ]);
         $file = $request->file('image');
@@ -57,6 +58,8 @@ class UmkmController extends Controller
         $umkm->title = $request->title;
         $umkm->content = $request->content;
         $umkm->cp= $request->cp;
+        $umkm->sm= $request->sm;
+        $umkm->link= $request->link;
         $umkm->image = $image;
         $umkm->save();
         return redirect('/umkm');
@@ -96,6 +99,7 @@ class UmkmController extends Controller
     {
         $validatedData = $request->validate([
             'image' => 'required|image',
+            'cp' => 'required|numeric',
         ]);
         $file = $request->file('image');
         $name = $file->getClientOriginalName();
@@ -109,6 +113,8 @@ class UmkmController extends Controller
         $umkm->title = $request->title;
         $umkm->content = $request->content;
         $umkm->cp = $request->cp;
+        $umkm->sm= $request->sm;
+        $umkm->link= $request->link;
         $umkm->image = $image;
         $umkm->save();
         return redirect('/umkm');

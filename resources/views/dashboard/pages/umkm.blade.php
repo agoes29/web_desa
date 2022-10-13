@@ -20,6 +20,8 @@
                     <th rowspan="1" colspan="1">Title</th>
                     <th rowspan="1" colspan="1">Conten</th>
                     <th rowspan="1" colspan="1">Contact</th>
+                    <th rowspan="1" colspan="1">Social Media</th>
+                    <th rowspan="1" colspan="1">Link</th>
                     <th rowspan="1" colspan="1">Image</th>
                     <th rowspan="1" colspan="1">Update</th>
                     <th rowspan="1" colspan="1">Delete</th>
@@ -32,6 +34,8 @@
                         <td style="word-break:break-all;">{{ $um->title }}</td>
                         <td style="word-break:break-all;">{!! $um->content !!}</td>
                         <td style="word-break:break-all;">{{ $um->cp}}</td>
+                        <td style="word-break:break-all;">{{ $um->sm}}</td>
+                        <td style="word-break:break-all;">{{ $um->link}}</td>
                         <td style="word-break:break-all;">
                             <img src="{{ Storage::url($um->image) }}" alt="" class="img-fluid" style="width: 50px">
                         </td>

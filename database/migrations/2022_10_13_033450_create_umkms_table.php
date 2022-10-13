@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string("title",255);
             $table->string("content",2550);
             $table->string("cp",255);
+            $table->string("sm",255);
+            $table->string("link",255);
             $table->string('image',255);
             $table->timestamps();
         });
