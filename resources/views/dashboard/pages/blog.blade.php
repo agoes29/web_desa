@@ -1,5 +1,6 @@
 @extends('dashboard.main')
 @section('blog')
+    @include('dashboard.pages.bloginput')
     <div class="card px-2">
         <div class="card-header">
             <div class="row">
@@ -7,7 +8,8 @@
                     <h5>DATA BLOG</h5>
                 </div>
                 <div class="col-md-6 d-flex flex-row-reverse">
-                    <a href="/bloginput"><button class="btn btn-primary">Tambah Blog Baru</button></a>
+                    {{-- <a href="/bloginput"><button class="btn btn-primary">Tambah Blog Baru</button></a> --}}
+                    <button data-bs-toggle="modal" data-bs-target="#contohModal" class="btn btn-primary">Tambah Blog</button>
                 </div>
             </div>
         </div>
@@ -37,7 +39,7 @@
                             <img src="{{ Storage::url($bl->image) }}" alt="" class="img-fluid" style="width: 50px">
                         </td>
                         <td>
-                            <a href="{{ route('blog.update', $bl->id) }}">
+                            <a  class="btn btn-primary" href="{{ route('blog.update', $bl->id) }}">
                                 UPDATE
                             </a>
                         </td>

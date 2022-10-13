@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css') }}">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+    <!--Bootstrap 5-->
+    <link rel="stylesheet" href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
     <!-- Scripts -->
@@ -20,7 +22,7 @@
     <!-- Styles -->
     {{-- <link href="{{asset('assets/css/app.css')}}" rel="stylesheet"> --}}
     <!-- Scripts summernote-->
-    <link rel="stylesheet" href="{{asset('assets/vendor/summernote/summernote.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/summernote/summernote.min.css') }}">
     <!-- Styles -->
     <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
 
@@ -32,9 +34,7 @@
     <!-- jQuery -->
     <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
     <!-- Bootstrap -->
-    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <!-- CKEditor -->
-    <script src="{{ asset('assets/vendor/ckeditor/ckeditor.js') }}"></script>
+    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
     <!-- overlayScrollbars -->
     <script src="{{ asset('assets/vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
     <!-- AdminLTE App -->
@@ -59,9 +59,10 @@
                 $(".brand-text .right").css("transform", "");
             }
         });
-        $(document).ready(function() {
-            $('.ckeditor').ckeditor();
-        });
+        $('#image').change(function(e) {
+            var fileName = e.target.files[0].name
+            $('custom-file-label').html(fileName);
+        })
         $(document).ready(function(e) {
 
 
@@ -81,28 +82,23 @@
         });
     </script>
 
-    <!-- AdminLTE for demo purposes -->
-    {{-- <script src="{{asset('dist/js/demo.js')}}"></script> --}}
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    {{-- <script src="{{asset('dist/js/pages/dashboard2.js')}}"></script> --}}
     <script src="{{ asset('assets/vendor/summernote/summernote.min.js') }}"></script>
     <script>
-      $(function () {
-      // Summernote
-      $('#summernote').summernote({
-        toolbar: [
-            ['style', ['style']],
-            ['font', ['bold', 'underline', 'clear']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['table', ['table']],
-            ['view', ['codeview']]
-          ],
-        focus: true,
-        disableResizeEditor: false
-      });
-    })
-      
+        $(function() {
+            // Summernote
+            $('#summernote').summernote({
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'underline', 'clear']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['table', ['table']],
+                    ['view', ['codeview']]
+                ],
+                focus: true,
+                disableResizeEditor: false
+            });
+        })
     </script>
 </body>
 
