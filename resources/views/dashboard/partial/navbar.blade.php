@@ -44,10 +44,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/blog" class="nav-link">
+                        <a href="/umkm" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                             <p>
-                                Blog
+                                UMKM
                             </p>
                         </a>
                     </li>

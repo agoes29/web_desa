@@ -2,7 +2,7 @@
 @section('blog')
 <div class="card">
     <div class="card-header">
-        Penambahan Blog Baru
+        Update Data Blog
     </div>
     <div class="card-body px-5">
         <form action="{{ route('blog.update',$blog->id) }}" method="POST" enctype="multipart/form-data">

@@ -21,7 +21,7 @@ Auth::routes();
 
 /* Home Route */
 Route::get('/', [App\Http\Controllers\HomeController::class, 'client'])->name('main');
-Route::get('umkm', [App\Http\Controllers\HomeController::class, 'umkm'])->name('umkm');
+Route::get('/client/umkm', [App\Http\Controllers\HomeController::class, 'umkm'])->name('umkm');
 
 /* Auth Route */
 Route::get('login', [App\Http\Controllers\AuthController::class, 'login'])->name('login');
@@ -31,9 +31,13 @@ Route::get('register', [App\Http\Controllers\AuthController::class, 'register'])
 Route::get('admin', [App\Http\Controllers\Administrator\DashboardController::class, 'index'])->name('dashboard');
 Route::get('tabel', [App\Http\Controllers\Administrator\DashboardController::class, 'table'])->name('check');
 //Blog Route
-Route::get('blog', [App\Http\Controllers\BlogController::class, 'blogview'])->name('Blog');
+// Route::get('blog', [App\Http\Controllers\BlogController::class, 'blogview'])->name('Blog');
 Route::get('bloginput', [App\Http\Controllers\BlogController::class, 'bloginput'])->name('BlogInput');
-Route::get('blogupdate', [App\Http\Controllers\BlogController::class, 'blogupdate'])->name('BlogUpdate');
+// Route::get('blogupdate', [App\Http\Controllers\BlogController::class, 'blogupdate'])->name('BlogUpdate');
 Route::resource('blog', App\Http\Controllers\BlogController::class);
+
+//Umkm Route
+Route::get('umkminput', [App\Http\Controllers\UmkmController::class, 'umkminput'])->name('UmkmInput');
+Route::resource('umkm', App\Http\Controllers\UmkmController::class);
 
 
