@@ -15,50 +15,6 @@
 
 <body>
 
-    <!-- =============Header============== -->
-    <header id="header" class="fixed-top d-flex align-items-center header-scrolled bg-success">
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img class="imageLogo" src="assets/images/Asset 2.png" alt="" />
-                    <h4>Desa Buahan</h4>
-                </a>
-                <button class="navbar-toggler navbar-color" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="bi bi-list"></i>
-                    <!-- <span class="navbar-toggler-icon"></span> -->
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                            Desa Buahan
-                        </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/">Beranda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#profil">Tentang Kami</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Kontak Kami</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
     <!-- ========== hero section=============== -->
 
     <main class="form-signin">
@@ -185,24 +141,24 @@
         </section>
 
     </main>
-    <div class="footer fixed-bottom d-flex footer-wrap container-fluid text-white p-1 text-start bg-success">
+    <div class="footer fixed-bottom d-flex footer-wrap container-fluid text-white text-start bg-success">
         <div class="container d-flex flex-wrap justify-content-between align-items-center py-2 my-2">
-            <p class="m-0">@copyright <a href="https://www.buahandesaku.com/"> Buahan Desaku</a> | INSTIKI</p>
+            <p class="m-0">@copyright <a href="https://www.buahandesaku.com/" class="colorlink"> Buahan Desaku</a> | INSTIKI</p>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <!-- link instagram -->
                 <li class="ms-3"><a class="text-muted" href="#"></a>
-                    <img class="social-media" src="assets/images/instagram.svg" alt="">
+                    <img class="social-media colorlink" src="assets/images/instagram.svg" alt="">
                 </li>
                 <!-- link youtube -->
-                <li class="ms-3"><a class="text-muted" href="#"></a>
-                    <img class="social-media" src="assets/images/youtube.svg" alt="">
+                <li class="ms-3"><a class="text-muted colorlink" href="#"></a>
+                    <img class="social-media colorlink" src="assets/images/youtube.svg" alt="">
                 </li>
                 <!-- link facebook -->
-                <li class="ms-3"><a class="text-muted" href="#"></a>
+                <li class="ms-3"><a class="text-muted colorlink" href="#"></a>
                     <img class="social-media" src="assets/images/facebook.svg" alt="">
                 </li>
                 <!-- link tiktok -->
-                <li class="ms-3"><a class="text-muted" href="#"></a>
+                <li class="ms-3"><a class="text-muted colorlink" href="#"></a>
                     <img class="social-media" src="assets/images/tiktok.svg" alt="">
                 </li>
             </ul>

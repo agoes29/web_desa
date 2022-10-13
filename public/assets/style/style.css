@@ -657,3 +657,9 @@ height: calc(100% - 73px);
 height: 100%;
 }
 }
+.colorlink{
+  color:white;
+}
+.colorlink:hover{
+  color:#52b69a;
+}

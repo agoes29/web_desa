@@ -36,11 +36,18 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/tabel" class="nav-link">
+                        <a href="/blog" class="nav-link">
                             <i class="nav-icon fas fa-th"></i>
                             <p>
-                                Test Tabel
-                                <span class="right badge badge-danger">New</span>
+                                Blog
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/blog" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                            <p>
+                                Blog
                             </p>
                         </a>
                     </li>
