@@ -32,15 +32,14 @@
                         @endphp --}}
                         <td>{{ $bl->id }}</td>
                         <td style="word-break:break-all;">{{ $bl->title }}</td>
-                        <td style="word-break:break-all;">{{ $bl->content }}</td>
+                        <td style="word-break:break-all;">{!! $bl->content !!}</td>
                         <td style="word-break:break-all;">
                             <img src="{{ Storage::url($bl->image) }}" alt="" class="img-fluid" style="width: 50px">
                         </td>
                         <td>
-                            <form action="{{ route('blog.show', $bl->id) }}" method="GET">
-                                @csrf
-                                <button type="submit" class="btn btn-sm btn-success">UPDATE</button>
-                            </form>
+                            <a href="{{ route('blog.update', $bl->id) }}">
+                                UPDATE
+                            </a>
                         </td>
                         <td>
                             <form onsubmit="return confirm('Yakin menghapus data ini ?');"

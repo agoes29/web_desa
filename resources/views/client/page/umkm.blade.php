@@ -15,9 +15,8 @@
                                 <div class="about-content">
                                 @csrf
                                 @forelse ($blog as $bl)
-                                    <p>
-                                    {!!Str::limit(strip_tags($bl->conten),2000)!!}
-                                    </p>
+                                {!! $bl->content !!}
+                                <img src="{{ Storage::url($bl->image) }}" alt="" class="img-fluid">
                                 @empty
                                     <tr>
                                         <td colspan="3">Tidak Ada Data</td>

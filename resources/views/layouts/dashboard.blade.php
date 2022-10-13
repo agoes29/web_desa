@@ -19,8 +19,8 @@
     {{-- <script src="resources/js/app.js" defer></script> --}}
     <!-- Styles -->
     {{-- <link href="{{asset('assets/css/app.css')}}" rel="stylesheet"> --}}
-    <!-- Scripts -->
-
+    <!-- Scripts summernote-->
+    <link rel="stylesheet" href="{{asset('assets/vendor/summernote/summernote.min.css')}}">
     <!-- Styles -->
     <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
 
@@ -85,6 +85,25 @@
     {{-- <script src="{{asset('dist/js/demo.js')}}"></script> --}}
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     {{-- <script src="{{asset('dist/js/pages/dashboard2.js')}}"></script> --}}
+    <script src="{{ asset('assets/vendor/summernote/summernote.min.js') }}"></script>
+    <script>
+      $(function () {
+      // Summernote
+      $('#summernote').summernote({
+        toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['view', ['codeview']]
+          ],
+        focus: true,
+        disableResizeEditor: false
+      });
+    })
+      
+    </script>
 </body>
 
 </html>

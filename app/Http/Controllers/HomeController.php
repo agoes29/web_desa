@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB; 
+use Illuminate\Support\Facades\DB;
+use App\Models\Blog; 
 
 class HomeController extends Controller
 {
@@ -15,7 +16,7 @@ class HomeController extends Controller
     }
     public function umkm()
     {
-        $blog = DB::select('select * from blog');
+        $blog = Blog::all();
         return view('client.page.umkm', ['blog' => $blog]);
     }
 }
