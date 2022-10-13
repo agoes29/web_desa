@@ -601,6 +601,30 @@ border: 1px solid rgba(255, 255, 255, 0.171);
   width: 15px;
 }
 
+/* color pallate */
+.wputih{
+  color: white;
+}
+.whitam{
+  color: black;
+}
+.wmerah{
+  color: red;
+}
+.whijau{
+  color: green;
+}
+.wbiru{
+  color: blue;
+}
+.wungu{
+  color: purple;
+}
+
+.link-hover:hover{
+  color: #ffffff;
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
