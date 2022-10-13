@@ -34,8 +34,10 @@
                         <td style="word-break:break-all;">{{ $um->title }}</td>
                         <td style="word-break:break-all;">{!! $um->content !!}</td>
                         <td style="word-break:break-all;">{{ $um->cp}}</td>
-                        <td style="word-break:break-all;">{{ $um->sm}}</td>
-                        <td style="word-break:break-all;">{{ $um->link}}</td>
+                        <td style="word-break:break-all;">
+                           <a href="{{ $um->link}}">{{ $um->sm}}</a>
+                        </td>
+                        {{-- <td style="word-break:break-all;">{{ $um->link}}</td> --}}
                         <td style="word-break:break-all;">
                             <img src="{{ Storage::url($um->image) }}" alt="" class="img-fluid" style="width: 50px">
                         </td>
