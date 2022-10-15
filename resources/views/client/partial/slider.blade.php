@@ -16,7 +16,7 @@
             <!-- Single item -->
             <div class="carousel-item active">
                 <video class="img-fluid" autoplay loop muted>
-                    <source src="https://mdbcdn.b-cdn.net/img/video/Tropical.mp4" type="video/mp4" />
+                    <source src="assets/vid/1.mp4" type="video/mp4" />
                 </video>
                 <div class="carousel-container d-md-block">
                     <div class="container">
@@ -35,7 +35,7 @@
             <!-- Single item -->
             <div class="carousel-item">
                 <video class="img-fluid" autoplay loop muted>
-                    <source src="https://mdbcdn.b-cdn.net/img/video/forest.mp4" type="video/mp4" />
+                    <source src="assets/vid/2.mp4" type="video/mp4" />
                 </video>
                 <div class="carousel-container d-md-block">
                     <div class="container">
@@ -52,7 +52,7 @@
             <!-- Single item -->
             <div class="carousel-item">
                 <video class="img-fluid" autoplay loop muted>
-                    <source src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4" type="video/mp4" />
+                    <source src="assets/vid/3.mp4" type="video/mp4" />
                 </video>
                 <div class="carousel-container d-md-block">
                     <div class="container">
