@@ -80,6 +80,15 @@
             });
 
         });
+        $(document).ready(function() {
+            $(".btn-success").click(function(){
+                var html = $(".clone").html();
+                $(".increment").after(html);
+            });
+            $(".card").on("click","btn-danger", function(){
+                $(this).parents(".control-group").remove();
+            });
+        });
     </script>
 
     <script src="{{ asset('assets/vendor/summernote/summernote.min.js') }}"></script>

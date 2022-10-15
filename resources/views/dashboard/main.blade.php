@@ -13,6 +13,7 @@
         @yield('table')
         @yield('blog')
         @yield('umkm')
+        @yield('gallery')
 
     </section>
 

@@ -6,11 +6,11 @@
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
                 <a href="#" class="brand-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+                    <img src="{{asset('dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo"
                         class="brand-image img-circle elevation-3" style="opacity: .8">
                     <span class="brand-text font-weight-light">Admin <i class="right fas fa-angle-left"></i></span>
                 </a>
-              <div id="flush-collapseOne" class="pt-5 mt-4 accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div id="flush-collapseOne" class="pt-5 mt-4 accordion-collapse collapse bg-dark" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                     <a class="dropdown-item" href="http://127.0.0.1:8000/admin">Halaman Admin</a>
                     <form id="logout-form" action="{{url('/logout')}}" method="POST">
@@ -37,7 +37,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="/blog" class="nav-link">
-                            <i class="nav-icon fas fa-th"></i>
+                            <i class="nav-icon fas fa-bold fa-newspaper"></i>
                             <p>
                                 Blog
                             </p>
@@ -45,9 +45,17 @@
                     </li>
                     <li class="nav-item">
                         <a href="/umkm" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                        <i class="nav-icon fas fa-building"></i>
                             <p>
                                 UMKM
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/gallery" class="nav-link">
+                        <i class="nav-icon fas fa-image"></i>
+                            <p>
+                                Gallery
                             </p>
                         </a>
                     </li>

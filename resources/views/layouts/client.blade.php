@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="assets/images/Asset 2.png">
+    <link rel="icon" href="{{asset('assets/images/Asset 2.png')}}">
 
     <title>Desa Buahan</title>
 
-    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="{{asset('assets/style/style.css')}}" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" />

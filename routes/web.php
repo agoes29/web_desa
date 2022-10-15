@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\GalleryController;
+use App\Models\Gallery;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,5 +42,10 @@ Route::resource('blog', App\Http\Controllers\BlogController::class);
 //Umkm Route
 Route::get('umkminput', [App\Http\Controllers\UmkmController::class, 'umkminput'])->name('UmkmInput');
 Route::resource('umkm', App\Http\Controllers\UmkmController::class);
+
+// Gallery
+Route::get('gallery', [App\Http\Controllers\GalleryController::class, 'index']);
+Route::resource('gallery', App\Http\Controllers\GalleryController::class);
+Route::post('gallery_upload', [App\Http\Controllers\GalleryController::class, 'store']);
 
 
