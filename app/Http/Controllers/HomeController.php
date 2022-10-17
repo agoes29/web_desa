@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Blog;
+use App\Models\Umkm;
 
 class HomeController extends Controller
 {
@@ -17,6 +18,11 @@ class HomeController extends Controller
     public function umkm()
     {
         $blog = Blog::all();
-        return view('client.page.umkmview', ['blog' => $blog]);
+        return view('client.page.umkm', ['blog' => $blog], );
+    }
+    public function blog()
+    {
+        $blog = Blog::all();
+        return view('client.page.blog', ['blog' => $blog]);
     }
 }

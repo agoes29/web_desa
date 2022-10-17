@@ -21,7 +21,6 @@
                     <th rowspan="1" colspan="1">Conten</th>
                     <th rowspan="1" colspan="1">Contact</th>
                     <th rowspan="1" colspan="1">Social Media</th>
-                    <th rowspan="1" colspan="1">Link</th>
                     <th rowspan="1" colspan="1">Image</th>
                     <th rowspan="1" colspan="1">Update</th>
                     <th rowspan="1" colspan="1">Delete</th>
@@ -42,7 +41,7 @@
                             <img src="{{ Storage::url($um->image) }}" alt="" class="img-fluid" style="width: 50px">
                         </td>
                         <td>
-                            <a href="{{ route('umkm.update', $um->id) }}">
+                            <a class="btn btn-sm btn-primary" href="{{ route('umkm.update', $um->id) }}">
                                 UPDATE
                             </a>
                         </td>

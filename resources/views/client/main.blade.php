@@ -11,6 +11,9 @@
 {{--HomePage--}}
 @yield('home')
 
+{{--BlogPage--}}
+@yield('blog')
+
 {{--UMKMPage--}}
 @yield('umkm')
 

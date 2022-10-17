@@ -39,7 +39,7 @@
                             <img src="{{ Storage::url($bl->image) }}" alt="" class="img-fluid" style="width: 50px">
                         </td>
                         <td>
-                            <a  class="btn btn-primary" href="{{ route('blog.update', $bl->id) }}">
+                            <a  class="btn btn-sm btn-primary" href="{{ route('blog.update', $bl->id) }}">
                                 UPDATE
                             </a>
                         </td>

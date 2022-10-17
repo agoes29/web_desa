@@ -6,8 +6,7 @@
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
                 <a href="#" class="brand-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
-                        class="brand-image img-circle elevation-3" style="opacity: .8">
+                    <img class="brand-image img-circle elevation-3" src="assets/images/Asset 2.png" alt="" />
                     <span class="brand-text font-weight-light">Admin <i class="right fas fa-angle-left"></i></span>
                 </a>
               <div id="flush-collapseOne" class="pt-5 mt-4 accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
