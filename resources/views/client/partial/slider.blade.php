@@ -1,6 +1,7 @@
+
 <section id="hero">
     <!-- Carousel wrapper -->
-    <div id="carouselVideoExample"  data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselVideoExample"  data-bs-interval="10000" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <!-- Indicators -->
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselVideoExample" data-bs-slide-to="0" class="active"
@@ -12,11 +13,14 @@
         </div>
 
         <!-- Inner -->
+
         <div class="carousel-inner">
             <!-- Single item -->
             <div class="carousel-item active">
+                <!-- INI CONTOH CAROUSEL VIDEO DARI YOUTUBE -->
+                <iframe width="1366" height="768" src="https://www.youtube.com/embed/DdEd3YxU4Qk?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                 <video class="img-fluid" autoplay loop muted>
-                    <source src="assets/vid/1.mp4" type="video/mp4" />
+                    {{-- <source src="assets/vid/1.mp4" type="video/mp4" /> --}}
                 </video>
                 <div class="carousel-container d-md-block">
                     <div class="container">
