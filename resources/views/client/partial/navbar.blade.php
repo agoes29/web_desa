@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img class="imageLogo" src="assets/images/Asset 2.png" alt="" />
+                <img class="imageLogo" src="{{asset('assets/images/Asset 2.png')}}" alt="" />
                 <h4>Desa Buahan</h4>
             </a>
             <button class="navbar-toggler navbar-color" type="button" data-bs-toggle="offcanvas"

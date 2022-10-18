@@ -9,7 +9,7 @@
 
     <title>Desa Buahan</title>
 
-    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="{{asset('assets/style/style.css')}}" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" />

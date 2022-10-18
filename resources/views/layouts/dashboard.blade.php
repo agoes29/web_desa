@@ -93,8 +93,10 @@
                     ['color', ['color']],
                     ['para', ['ul', 'ol', 'paragraph']],
                     ['table', ['table']],
-                    ['view', ['codeview']]
+                    ['view', ['codeview']],
+                    ['picture',['picture']]
                 ],
+                height:200,
                 focus: true,
                 disableResizeEditor: false
             });
