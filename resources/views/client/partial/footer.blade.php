@@ -1,6 +1,36 @@
 <footer>
-    <div class="container row-footer">
-        <footer class="row row-cols-12 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class=" row-footer">
+    <footer class="bg-dark p-5 text-light">
+    <div class="row">
+        <div class="col-sm-12 mb-3 col-md-4">
+            <strong style="font-size: 25px;">Desa Buahan 2022</strong>
+            <img class="my-3" src="{{ url('/images/img.jpg') }}" width="100%">
+            <p style="font-size: 13px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil fugiat itaque minima quae, a ea repudiandae dolor cumque dolorem earum maxime laboriosam expedita accusantium officiis. Voluptate officiis alias, sequi ratione fuga similique a iure explicabo ab cum! Ex, adipisci optio.</p>
+        </div>
+        <div class="col-sm-12 mb-3 col-md-4">
+            <strong style="font-size: 25px;">Service</strong>
+            <ul class="mt-4">
+                <li><a href="">Home</a></li>
+                <hr>
+                <li><a href="">About</a></li>
+                <hr>
+                <li><a href="">Service</a></li>
+                <hr>
+                <li><a href="">Galery</a></li>
+                <hr>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 mb-3 col-md-4 kanan">
+            <strong style="font-size: 25px;">About Us</strong>
+            <span><a class="d-block my-3" href=""><i class="fa-solid fa-map-pin"></i> Banjar Buahan, Tabanan, Kerambitan</a></span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequatur aliquid atque veniam repellat. Sequi unde magni, labore et nisi saepe tempora, ipsa odio neque quae nemo. Quibusdam, temporibus et.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea ad veritatis libero voluptas molestiae ut quam deserunt obcaecati possimus suscipit commodi pariatur nostrum mollitia placeat, laudantium hic reprehenderit ullam perspiciatis adipisci numquam. Laudantium, accusamus officia. Itaque eaque eius ut?</p>
+        </div>
+    </div>
+</footer>
+
+        <!-- <footer class="row row-cols-12 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
             <div class="col-md-9">
                 <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
                     <img class="imagelogobawah" src="assets/images/Asset 2.png" alt="">
@@ -17,7 +47,7 @@
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kontak Kami</a></li>
                     </ul><br>
             </div>
-        </footer>
+        </footer> -->
     </div>
         <div class="footer footer-wrap container-fluid text-white p-1 text-start">
             <div class="container d-flex flex-wrap justify-content-between align-items-center py-2 my-2">
