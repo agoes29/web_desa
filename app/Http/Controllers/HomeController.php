@@ -22,7 +22,9 @@ class HomeController extends Controller
     }
     public function blog()
     {
-        $blog = Blog::all();
-        return view('client.page.blog', ['blog' => $blog]);
+        $blog = Blog::all()->sortByDesc("id");
+        $hot = Blog::all()->sortByDesc("id")->skip(1)->take(2);
+        $first = Blog::all()->sortByDesc("id")->first();
+        return view('client.page.blog', ['blog' => $blog, 'hot' => $hot, 'first' => $first]);
     }
 }

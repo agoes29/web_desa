@@ -105,7 +105,7 @@ class BlogController extends Controller
         $image = $path;
 
         $blog = Blog::find($id);
-        
+
          $blog->title = $request->title;
          $blog->content = $request->content;
         $blog->image = $image;

@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-sm-12 mb-3 col-md-4">
             <strong style="font-size: 25px;">Desa Buahan 2022</strong>
-            <img class="my-3" src="{{ url('/images/img.jpg') }}" width="100%">
+            <img class="my-3" src="{{asset('assets/images/Asset 2.png')}}" width="70%">
             <p style="font-size: 13px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil fugiat itaque minima quae, a ea repudiandae dolor cumque dolorem earum maxime laboriosam expedita accusantium officiis. Voluptate officiis alias, sequi ratione fuga similique a iure explicabo ab cum! Ex, adipisci optio.</p>
         </div>
         <div class="col-sm-12 mb-3 col-md-4">
@@ -23,7 +23,7 @@
         </div>
         <div class="col-sm-12 mb-3 col-md-4 kanan">
             <strong style="font-size: 25px;">About Us</strong>
-            <span><a class="d-block my-3" href=""><i class="fa-solid fa-map-pin"></i> Banjar Buahan, Tabanan, Kerambitan</a></span>
+            <span><a class="d-block my-3" href=""><i class="fa-solid fa-map-pin"></i> Desa Buahan, Kec.Tabanan, Kab.Tabanan</a></span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequatur aliquid atque veniam repellat. Sequi unde magni, labore et nisi saepe tempora, ipsa odio neque quae nemo. Quibusdam, temporibus et.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea ad veritatis libero voluptas molestiae ut quam deserunt obcaecati possimus suscipit commodi pariatur nostrum mollitia placeat, laudantium hic reprehenderit ullam perspiciatis adipisci numquam. Laudantium, accusamus officia. Itaque eaque eius ut?</p>
         </div>
@@ -51,7 +51,7 @@
     </div>
         <div class="footer footer-wrap container-fluid text-white p-1 text-start">
             <div class="container d-flex flex-wrap justify-content-between align-items-center py-2 my-2">
-                <p class="m-0">@copyright. <a href="https://www.buahandesaku.com/" class="wputih link-hover"> Buahan Desaku</a>| INSTIKI</p>
+                <p class="m-0">@copyright. <a href="https://www.buahandesaku.com/" class="wputih link-hover"> Buahan Desaku</a> | INSTIKI</p>
                 <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                         <!-- link instagram -->
                         <li class="ms-3"><a class="text-muted" href="#"></a>

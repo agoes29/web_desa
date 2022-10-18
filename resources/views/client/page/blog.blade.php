@@ -1,105 +1,120 @@
 @extends('client.main')
 
 @section('blog')
-    <main>
-        <div>
-            <main id="main">
-                <section id="about" class="about">
-                    <div class="about-wrap container-fluid py-5" id="about">
-                        <div class="container">
-                            <div class="row">
-                                <div class=" col-lg-5 col-md-6 order-1 order-md-2">
-                                    <div class=" card gambar-about">
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15784.072586875232!2d115.13022005800802!3d-8.497615863724253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23b2bf99c0b95%3A0xc30e643bffae455e!2sBuahan%2C%20Kec.%20Tabanan%2C%20Kabupaten%20Tabanan%2C%20Bali!5e0!3m2!1sid!2sid!4v1664631528155!5m2!1sid!2sid"
-                                            width="500" height="350" style="border: 0" allowfullscreen="" loading="lazy"
-                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                    </div>
-                                    <!-- <img src="assets/images/photo.jpg" alt="" /> -->
-                                </div>
-                                <div class="text-about col-lg-7 col-md-6 order-2 order-md-1">
-                                    <div class="text-about">
-                                        <h1 class="fw-bold">Desa Buahan</h1>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                                            aspernatur ab, ullam totam fuga repellendus veniam possimus
-                                            voluptates rem fugiat dolorum optio ratione est repellat cum
-                                            inventore explicabo illo at.
-                                        </p>
-                                        <p>
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                            Asperiores nemo laboriosam ab quisquam quas, impedit quaerat
-                                            quod nesciunt. Obcaecati possimus aliquam omnis iure,
-                                            perferendis natus voluptate commodi nisi itaque similique.
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Tempore sint earum atque voluptate in doloremque repellendus?
-                                            Provident cupiditate modi, iusto atque odio excepturi ea,
-                                            rerum a laudantium vitae nam eos?
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="bgimg">
-                    <div class="caption">
-                        <span class="border">
-                            <h2>Ayo Kunjungi Sekarang</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, beatae.</p>
-                        </span>
-                    </div>
-                </div>
-                <section>
+<main>
 
-                    <div class="galeri-kecil-wrap container-fluid">
+    <section id="hero" >
+        <!-- Carousel wrapper -->
+        <div id="carouselVideoExample"  data-bs-interval="10000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselVideoExample" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselVideoExample" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselVideoExample" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Inner -->
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="{{ Storage::url($first->image) }}" alt="">
+                    <div class="carousel-container d-md-block align-bottom">
                         <div class="container">
-                            <div class="row">
-                                <div class="text-galeri-k col-lg-5 col-md-5 text-white p-5">
-                                    <h1>Nikmati Moment Anda Dengan Keluarga</h1>
-                                </div>
-                                <div class="col-lg-7 col-md-7 p-3">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-                                            <div class="gallery">
-                                                <img class="w-100 shadow-1-strong rounded mb-4" src="assets/images/gallery/1.jpg"
-                                                    alt="" />
-                                                <img class="w-100 shadow-1-strong rounded mb-4" src="assets/images/gallery/2.jpg"
-                                                    alt="" />
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 mb-4 mb-lg-0">
-                                            <div class="gallery">
-                                                <img class="w-100 shadow-1-strong rounded mb-4" src="assets/images/gallery/3.jpg"
-                                                    alt="" />
-                                                <img class="w-100 shadow-1-strong rounded mb-4" src="assets/images/gallery/4.jpg"
-                                                    alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="langgan-wrap container-fluid text-center py-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="langgan col-12">
-                                <div class="langgan-text col-12">
-                                    <h1 class="fw-bold">Berlanggan dengan Kami</h1>
-                                    <p class="mt-2 mb-4">
-                                        Dapatkan info dan berita terupdate dari kami
-                                    </p>
-                                    <input type="text" placeholder="Masukkan Email..." class="mb-4" />
-                                    <br />
-                                    <button>KIRIM</button>
-                                </div>
+                            <div class="card w-50 w-md-100 mx-auto px-2 py-3 mt-5 rad-10">
+                                <h4 class="animate__animated animate__fadeInDown wputih">{{ $first->title }}</h4>
+                                <a href="#about"
+                                    class="btn-get-started animate__animated animate__fadeInUp scrollto">More</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </main>
+
+                @foreach ($hot as $hot)
+                <div class="carousel-item">
+                    <img class="img-fluid" src="{{ Storage::url($hot->image) }}" alt="">
+                    <div class="carousel-container d-md-block">
+                        <div class="container">
+                            <div class="card w-50 w-md-100 mx-auto px-2 py-3 my-5 rad-10">
+                                <h4 class="animate__animated animate__fadeInDown wputih">{{ $hot->title }}</h4>
+                                <a href="#about"
+                                    class="btn-get-started animate__animated animate__fadeInUp scrollto">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            {{-- <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image:url({{url('assets/images/img.jpg')}})">
+                    <div class="carousel-container d-md-block">
+                        <div class="container">
+                            <div class="card w-50 w-md-100 mx-auto px-2 py-3 my-5 rad-10">
+                                <h4 class="animate__animated animate__fadeInDown wputih">Judul Blog 1</h4>
+                                <a href="#about"
+                                    class="btn-get-started animate__animated animate__fadeInUp scrollto">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image:url({{url('assets/images/img.jpg')}})">
+                    <div class="carousel-container d-md-block">
+                        <div class="container">
+                            <div class="card w-50 w-md-100 mx-auto px-2 py-3 my-5 rad-10">
+                                <h4 class="animate__animated animate__fadeInDown wputih">Judul Blog 2</h4>
+                                <a href="#about"
+                                    class="btn-get-started animate__animated animate__fadeInUp scrollto">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image:url({{url('assets/images/img.jpg')}})">
+                    <div class="carousel-container d-md-block">
+                        <div class="container">
+                            <div class="card w-50 w-md-100 mx-auto px-2 py-3 my-5 rad-10">
+                                <h4 class="animate__animated animate__fadeInDown wputih">Judul Blog 3</h4>
+                                <a href="#about"
+                                    class="btn-get-started animate__animated animate__fadeInUp scrollto">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
+
+            <!-- Inner -->
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideoExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselVideoExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </main>
+        <!-- Carousel wrapper -->
+    </section>
+        <div class="container my-3">
+            <div class="row align-items-center h-100">
+                @foreach ($blog as $bl)
+                <div class="col-sm-12 col-md-4 mb-3">
+                    <div class="card card-default">
+                     <div class="card-body">
+                        <img class="village-img img-fluid rounded" src="{{ Storage::url($bl->image) }}" width="100%">
+                        <h4 class="pt-2 pb-1">{{ $bl->title }}</h4>
+                        <div class="d-flex justify-content-between">
+                            <a href="" ><button class="btn btn-success">Read More</button></a>
+                            <span class="pt-2">{{date('d M Y', $bl->created_at->timestamp)}}</span>
+                        </div>
+                     </div>
+                    </div>
+                 </div>
+                @endforeach
+            </div>
+        </div>
+</main>
 @endsection
