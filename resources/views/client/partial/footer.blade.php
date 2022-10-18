@@ -6,7 +6,7 @@
                     <img class="imagelogobawah" src="assets/images/Asset 2.png" alt="">
                 </a>
                 <h1 class="fw-bold">Desa Buahan</h1>
-                <h5>Jl. Buahan, Buahan, Kec. Tabanan, Kabupaten Tabanan</h5>
+                <h5 id="animation"></h5>
             </div>
             <div class="col-4 col-md-3 text-start">
                 <h5>Section</h5>

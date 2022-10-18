@@ -601,6 +601,11 @@ border: 1px solid rgba(255, 255, 255, 0.171);
   width: 15px;
 }
 
+
+#animation{
+  position: absolute;
+}
+
 /* color pallate */
 .wputih{
   color: white;

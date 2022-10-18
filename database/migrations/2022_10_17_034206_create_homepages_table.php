@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('homepages', function (Blueprint $table) {
             $table->id();
+            $tabel->string("link",255);
             $table->timestamps();
         });
     }

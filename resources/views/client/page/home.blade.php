@@ -17,7 +17,7 @@
                         </div>
                         <div class="text-about col-lg-7 col-md-6 order-2 order-md-1">
                             <div class="text-about">
-                                <h1 class="fw-bold">Desa Buahan</h1>
+                                <h1 class="fw-bold"></h1>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
                                     aspernatur ab, ullam totam fuga repellendus veniam possimus
