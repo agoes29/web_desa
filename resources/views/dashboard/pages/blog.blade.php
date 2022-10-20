@@ -39,9 +39,14 @@
                             <img src="{{ Storage::url($bl->image) }}" alt="" class="img-fluid" style="width: 50px">
                         </td>
                         <td>
-                            <a  class="btn btn-sm btn-primary" href="{{ route('blog.update', $bl->id) }}">
+                            <a  class="edit btn btn-primary" href="{{ route('blog.update', $bl->id) }}">
                                 UPDATE
                             </a>
+                            <script type="text/javascript">
+                                $('a.edit').click(function() {
+                                    var id = $(this).attr()
+                                })
+                            </script>
                         </td>
                         <td>
                             <form onsubmit="return confirm('Yakin menghapus data ini ?');"

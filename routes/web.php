@@ -40,4 +40,6 @@ Route::resource('blog', App\Http\Controllers\BlogController::class);
 Route::get('umkminput', [App\Http\Controllers\UmkmController::class, 'umkminput'])->name('UmkmInput');
 Route::resource('umkm', App\Http\Controllers\UmkmController::class);
 
+Route::get('surat', [App\Http\Controllers\SuratController::class, 'index'])->name('Surat');
+
 

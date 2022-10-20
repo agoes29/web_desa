@@ -13,14 +13,8 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css') }}">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
-    <!--Bootstrap 5-->
-    <link rel="stylesheet" href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
-    <!-- Scripts -->
-    {{-- <script src="resources/js/app.js" defer></script> --}}
-    <!-- Styles -->
-    {{-- <link href="{{asset('assets/css/app.css')}}" rel="stylesheet"> --}}
     <!-- Scripts summernote-->
     <link rel="stylesheet" href="{{ asset('assets/vendor/summernote/summernote.min.css') }}">
     <!-- Styles -->
@@ -79,6 +73,17 @@
 
             });
 
+        });
+    </script>
+    <script>
+        $(function()
+        {
+            var keyword =  ;
+            $( "#cari" ).autocomplete(
+            {
+                source: keyword,
+                maxShowItems: 10,
+            });
         });
     </script>
 

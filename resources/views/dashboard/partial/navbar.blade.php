@@ -44,9 +44,17 @@
                     </li>
                     <li class="nav-item">
                         <a href="/umkm" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                        <i class="nav-icon fas fa-building"></i>
                             <p>
                                 UMKM
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/surat" class="nav-link">
+                        <i class="nav-icon fa fa-mail-bulk"></i>
+                            <p>
+                                Surat
                             </p>
                         </a>
                     </li>
