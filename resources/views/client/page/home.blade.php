@@ -3,6 +3,9 @@
 @section('home')
     <main id="main">
         <section id="about" class="about">
+            <div>
+                <hr>
+            </div>
             <div class="about-wrap container-fluid py-5" id="about">
                 <div class="container">
                     <div class="row">
@@ -17,22 +20,12 @@
                         </div>
                         <div class="text-about col-lg-7 col-md-6 order-2 order-md-1">
                             <div class="text-about">
-                                <h1 class="fw-bold"></h1>
+                                <h1 class="fw-bold"> Desa Buahan</h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                                    aspernatur ab, ullam totam fuga repellendus veniam possimus
-                                    voluptates rem fugiat dolorum optio ratione est repellat cum
-                                    inventore explicabo illo at.
+                                    Mengenai sejarah Desa Buahan tidak ada informasi yg menceritakan mulai adanya penduduk yg menghuni wilayah Desa Buahan secara pasti, karena tidak adanya peninggalan2 tertulis. Informasi sejarah yg ada berasal dari sesepuh Desa yg saat ini masih hidup. Informasi lain terkait dgn sejarah tentang Kebo Iwa.
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Asperiores nemo laboriosam ab quisquam quas, impedit quaerat
-                                    quod nesciunt. Obcaecati possimus aliquam omnis iure,
-                                    perferendis natus voluptate commodi nisi itaque similique.
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Tempore sint earum atque voluptate in doloremque repellendus?
-                                    Provident cupiditate modi, iusto atque odio excepturi ea,
-                                    rerum a laudantium vitae nam eos?
+                                    Di dalam Babad Arya Tabanan diceritakan bahwa setelah terjadi musibah gugurnya Ki Patih Kebo Iwa di Jawa karena tipu muslihat dari Patih Gajah Mada pada Kerajaan Majapahit maka Bali merupakan kekuasaan Jawa di bawah Kerajaan Majapahit. Para Arya Kenceng menjadi Senopati Bala Yudha di Kerajaan Majapahit diberi kekuasaan memerintah di Wilayah Tabanan, Sira Ratu Arya Waringin diberikan kekuasaan di Gelgel, Sira Arya Sentong diberikan kekuasaan di Pacung dan Sira Arya Tan Wikan diberikan di Wilayah Kaba-kaba.
                                 </p>
                             </div>
                         </div>
@@ -49,7 +42,9 @@
             </div>
         </div>
         <section>
-
+        <div id="galery">
+            <hr>
+        </div>
             <div class="galeri-kecil-wrap container-fluid">
                 <div class="container">
                     <div class="row">
@@ -91,7 +86,7 @@
                             </p>
                             <input type="text" placeholder="Masukkan Email..." class="mb-4" />
                             <br />
-                            <button>KIRIM</button>
+                            <button id="btn-kirim-bawah" >KIRIM</button>
                         </div>
                     </div>
                 </div>

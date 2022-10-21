@@ -23,16 +23,16 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Beranda</a>
+                            <a class="nav-link" href="#hero">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#profil">Tentang Kami</a>
+                            <a class="nav-link" href="#about">Tentang Kami</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" href="#galery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Kontak Kami</a>
+                            <a class="nav-link" href="#btn-kirim-bawah">Kontak Kami</a>
                         </li>
                     </ul>
                 </div>

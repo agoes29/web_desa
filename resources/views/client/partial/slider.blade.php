@@ -17,8 +17,8 @@
         <div class="carousel-inner">
             <!-- Single item -->
             <div class="carousel-item active">
-                <!-- INI CONTOH CAROUSEL VIDEO DARI YOUTUBE -->
-                <iframe width="1366" height="768" src="https://www.youtube.com/embed/DdEd3YxU4Qk?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                <!-- INI CONTOH CAROUSEL VIDEO DARI YOUTUBE-- oke kak-->
+                <iframe width="1366" height="768" srca="https://www.youtube.com/embed/DdEd3YxU4Qk?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                 <video class="img-fluid" autoplay loop muted>
                     {{-- <source src="assets/vid/1.mp4" type="video/mp4" /> --}}
                 </video>
