@@ -700,7 +700,7 @@ a.btn i {
 }
 .blog .card{
     height: 110%;
-    box-shadow: 5px 5px 1px #646464;
+    box-shadow: 5px 5px 6px #646464;
 }
 .blog .card .card-header{
     background-color: #fff;
