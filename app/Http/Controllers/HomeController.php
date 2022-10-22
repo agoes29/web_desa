@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Blog;
 use App\Models\Umkm;
+use Illuminate\Support\Str;
 
 class HomeController extends Controller
 {

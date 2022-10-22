@@ -118,7 +118,6 @@
             </div>
         </div>
         <!-- end Card blog -->
-        
 
         <!-- START COBA COBA -->
         <div class="blog" id="blog">
@@ -128,50 +127,35 @@
                     <h2>Latest Articles</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="blog-img">
-                                <img src="{{asset('assets/images/gallery/1.jpg')}}" alt="Blog">
-                            </div>
-                            <div class="blog-text">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
+                    @foreach ($blog as $bl)
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 box pt-0 wow fadeInUp" data-wow-delay="0.1s">
+                            <img src="{{ Storage::url($bl->image) }}" alt="Blog">
+                            <div class="blog-text card-header">
+                                <a href="#">
+                                    <h4 style="font-weight: bold; text-align: center;">{{ $bl->title }}</h4>
+                                </a>
+                                <div class="blog-meta card-block">
                                     <p><i class="far fa-user"></i>Admin</p>
                                     <p><i class="far fa-list-alt"></i>Web Design</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
+                                    <p><i class="far fa-calendar-alt"></i>{{date('d M Y', $bl->created_at->timestamp)}}</p>
                                     <p><i class="far fa-comments"></i>5</p>
                                 </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
-                                </p>
-                                <a class="btn btn-readmore" href="">Read More <i class="fa fa-angle-right"></i></a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="blog-img">
-                                <img src="{{asset('assets/images/gallery/1.jpg')}}" alt="Blog">
-                            </div>
-                            <div class="blog-text">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Apps Design</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>10</p>
+                            <div class="card-body">
+                                <div class="container">
+                                    {!! Str::limit($bl->content, 50) !!}
                                 </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
-                                </p>
-                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <div class="card-footer d-md">
+                                <button class="btn-block btn-readmore" href="">Read More</button>
                             </div>
                         </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>
         <!-- END COBA COBA -->
-
 </main>
 @endsection
