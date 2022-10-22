@@ -98,26 +98,6 @@
         </div>
         <!-- Carousel wrapper -->
     </section>
-    <!-- start Card blog -->
-        <div class="container my-3">
-            <div class="row align-items-center h-100">
-                @foreach ($blog as $bl)
-                <div class="col-sm-12 col-md-4 mb-3">
-                    <div class="card card-default">
-                     <div class="card-body">
-                        <img class="village-img img-fluid rounded" src="{{ Storage::url($bl->image) }}" width="100%">
-                        <h4 class="pt-2 pb-1">{{ $bl->title }}</h4>
-                        <div class="d-flex justify-content-between">
-                            <a href="" ><button class="btn btn-success">Read More</button></a>
-                            <span class="pt-2">{{date('d M Y', $bl->created_at->timestamp)}}</span>
-                        </div>
-                     </div>
-                    </div>
-                 </div>
-                @endforeach
-            </div>
-        </div>
-        <!-- end Card blog -->
 
         <!-- START COBA COBA -->
         <div class="blog" id="blog">
@@ -128,9 +108,9 @@
                 </div>
                 <div class="row">
                     @foreach ($blog as $bl)
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 box pt-0 wow fadeInUp" data-wow-delay="0.1s">
-                            <img src="{{ Storage::url($bl->image) }}" alt="Blog">
+                    <div class="col-md-4 mb-5 mt-3">
+                        <div class="card box pt-0 wow fadeInUp" data-wow-delay="0.1s">
+                            <img class="blog-img" src="{{ Storage::url($bl->image) }}" alt="Blog">
                             <div class="blog-text card-header">
                                 <a href="#">
                                     <h4 style="font-weight: bold; text-align: center;">{{ $bl->title }}</h4>
@@ -142,13 +122,13 @@
                                     <p><i class="far fa-comments"></i>5</p>
                                 </div>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body py-0">
                                 <div class="container">
                                     {!! Str::limit($bl->content, 50) !!}
                                 </div>
                             </div>
                             <div class="card-footer d-md">
-                                <button class="btn-block btn-readmore" href="">Read More</button>
+                                <button class="btn-block btn-readmore btn-lg" href="">Read More</button>
                             </div>
                         </div>
                     </div>

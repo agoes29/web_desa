@@ -615,25 +615,24 @@ border: 1px solid rgba(255, 255, 255, 0.171);
   padding: 45px 0 15px 0;
 }
 
-.blog .blog-item {
-  position: relative;
-  margin-bottom: 30px;
-  /* padding-bottom: 10px; */
-}
-
 .blog .blog-img {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-.blog .blog-img img {
+.blog .blog-img{
   width: 100%;
   transition: .5s;
+  border-radius: 5px;
+}
+.blog .card{
+    transition: .5s;
 }
 
-.blog .blog-item:hover img {
-  transform: scale(1.1);
+.blog .card:hover{
+  transform: scale(1.05);
+  transition: .5s;
 }
 
 .blog .blog-text {
@@ -660,18 +659,20 @@ border: 1px solid rgba(255, 255, 255, 0.171);
 
 .btn-readmore{
     color: #ffff;
+    width: 100%;
+    padding: 5px;
     background: #00CF94;
     box-shadow: inset 0 0 0 50px #00CF94;
     transition-duration: 0.5s;
     border-style:solid;
     border-color: #00CF94;
+    border-radius: 5px;
 }
 
 .btn-readmore:hover{
-    color: #00CF94;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #00CF94;
-    border: 1px solid #00cf94;
+    color: #00CF94;
+    box-shadow:  5px 5px 1px #00CF94;
 }
 
 a.btn i {
@@ -697,11 +698,22 @@ a.btn i {
 .blog .blog-meta p:last-child {
   margin: 0;
 }
+.blog .card{
+    height: 110%;
+    box-shadow: 5px 5px 1px #646464;
+}
 .blog .card .card-header{
     background-color: #fff;
     border-bottom: 0px;
+    padding-bottom: 3px;
+    padding-top: 15px;
+    min-height: 28%;
 }
 .blog .card .card-footer{
+    background-color: #fff;
+    border: 0px;
+}
+.blog .card .card-footer:hover{
     background-color: #fff;
     border: 0px;
 }
