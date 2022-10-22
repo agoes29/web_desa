@@ -12,9 +12,8 @@ class HomeController extends Controller
 {
     public function client()
     {
-        return view('client.page.home', [
-            'home' => true
-        ]);
+        $blog = Blog::all()->sortByDesc("id")->take(3);
+        return view('client.page.home', ['home' => true, 'blog' => $blog]);
     }
     public function umkm()
     {

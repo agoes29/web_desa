@@ -4,9 +4,8 @@
 <main>
 
     <section id="hero" >
-        <!-- Carousel wrapper -->
         <div id="carouselVideoExample"  data-bs-interval="10000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <!-- Indicators -->
+
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselVideoExample" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -16,7 +15,6 @@
                     aria-label="Slide 3"></button>
             </div>
 
-            <!-- Inner -->
                 <div class="carousel-item active">
                     <img class="img-fluid" src="{{ Storage::url($first->image) }}" alt="">
                     <div class="carousel-container d-md-block align-bottom">
@@ -44,47 +42,7 @@
                     </div>
                 </div>
                 @endforeach
-             <!-- <div class="carousel-inner">
-                <div class="carousel-item active" style="background-image:url({{url('assets/images/img.jpg')}})">
-                    <div class="carousel-container d-md-block">
-                        <div class="container">
-                            <div class="card w-50 w-md-100 mx-auto px-2 py-3 my-5 rad-10">
-                                <h4 class="animate__animated animate__fadeInDown wputih">Judul Blog 1</h4>
-                                <a href="#about"
-                                    class="btn-get-started animate__animated animate__fadeInUp scrollto">More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="carousel-item" style="background-image:url({{url('assets/images/img.jpg')}})">
-                    <div class="carousel-container d-md-block">
-                        <div class="container">
-                            <div class="card w-50 w-md-100 mx-auto px-2 py-3 my-5 rad-10">
-                                <h4 class="animate__animated animate__fadeInDown wputih">Judul Blog 2</h4>
-                                <a href="#about"
-                                    class="btn-get-started animate__animated animate__fadeInUp scrollto">More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item" style="background-image:url({{url('assets/images/img.jpg')}})">
-                    <div class="carousel-container d-md-block">
-                        <div class="container">
-                            <div class="card w-50 w-md-100 mx-auto px-2 py-3 my-5 rad-10">
-                                <h4 class="animate__animated animate__fadeInDown wputih">Judul Blog 3</h4>
-                                <a href="#about"
-                                    class="btn-get-started animate__animated animate__fadeInUp scrollto">More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- Inner -->
-
-            <!-- Controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideoExample"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -96,15 +54,14 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <!-- Carousel wrapper -->
     </section>
 
         <!-- START COBA COBA -->
         <div class="blog" id="blog">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>From Blog</p>
-                    <h2>Latest Articles</h2>
+                    <p>Blog Desa</p>
+                    <h2>Artikel Terbaru</h2>
                 </div>
                 <div class="row">
                     @foreach ($blog as $bl)
@@ -137,5 +94,6 @@
             </div>
         </div>
         <!-- END COBA COBA -->
+
 </main>
 @endsection
