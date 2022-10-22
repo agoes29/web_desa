@@ -13,13 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('homepage', function (Blueprint $table) {
+        Schema::create('umkms', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string("title",255);
+            $table->string("content",2550);
+            $table->string("cp",255);
+            $table->string("sm",255);
+            $table->string("link",255);
+            $table->string('image',255);
             $table->timestamps();
         });
     }
@@ -31,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('homepage');
+        Schema::dropIfExists('umkms');
     }
 };

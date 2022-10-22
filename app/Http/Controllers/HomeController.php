@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB; 
+use Illuminate\Support\Facades\DB;
+use App\Models\Blog;
+use App\Models\Umkm;
 
 class HomeController extends Controller
 {
@@ -15,7 +17,14 @@ class HomeController extends Controller
     }
     public function umkm()
     {
-        $blog = DB::select('select * from blog');
-        return view('client.page.umkm', ['blog' => $blog]);
+        $blog = Blog::all();
+        return view('client.page.umkm', ['blog' => $blog], );
+    }
+    public function blog()
+    {
+        $blog = Blog::all()->sortByDesc("id");
+        $hot = Blog::all()->sortByDesc("id")->skip(1)->take(2);
+        $first = Blog::all()->sortByDesc("id")->first();
+        return view('client.page.blog', ['blog' => $blog, 'hot' => $hot, 'first' => $first]);
     }
 }

@@ -9,7 +9,7 @@
 
     <title>Desa Buahan</title>
 
-    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="{{asset('assets/style/style.css')}}" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" />
@@ -22,6 +22,7 @@
 
     <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/typed-js/typed.js') }}"></script>
 
 
 
@@ -103,6 +104,23 @@
                 onscroll(document, headerScrolled)
             }
         })()
+    </script>
+    <script src="{{ url('js/front/typed.js') }}"></script>
+    <script>
+        var typed = new Typed('#animation', {
+          strings: [
+            "Jl. Buahan, Buahan, Kec. Tabanan, Kabupaten Tabanan",
+            "Website Kantor Desa Buahan"
+          ],
+          typeSpeed: 100,
+          backSpeed: 50,
+          loop: true
+        });
+    </script>
+    <script>
+      window.onload = function(){
+        document.getElementById("outoplay").play();
+      }
     </script>
 </body>
 

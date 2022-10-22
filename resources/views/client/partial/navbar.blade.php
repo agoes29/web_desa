@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img class="imageLogo" src="assets/images/Asset 2.png" alt="" />
+                <img class="imageLogo" src="{{asset('assets/images/Asset 2.png')}}" alt="" />
                 <h4>Desa Buahan</h4>
             </a>
             <button class="navbar-toggler navbar-color" type="button" data-bs-toggle="offcanvas"
@@ -23,16 +23,16 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Beranda</a>
+                            <a class="nav-link" href="#hero">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#profil">Tentang Kami</a>
+                            <a class="nav-link" href="#about">Tentang Kami</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" href="#galery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Kontak Kami</a>
+                            <a class="nav-link" href="#btn-kirim-bawah">Kontak Kami</a>
                         </li>
                     </ul>
                 </div>

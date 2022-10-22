@@ -2,7 +2,7 @@
 @section('blog')
 <div class="card">
     <div class="card-header">
-        Penambahan Blog Baru
+        Update Data Blog
     </div>
     <div class="card-body px-5">
         <form action="{{ route('blog.update',$blog->id) }}" method="POST" enctype="multipart/form-data">
@@ -23,7 +23,8 @@
         </div>
         <div class="mb-3">
             <label for="conten" class="form-label">Isi Konten Blog</label>
-            <textarea type="text" class="form-control" id="conten" name="content" placeholder="Isi Konten" required>{{ $blog->content }}</textarea>
+            <textarea type="text"  id="summernote" name="content" placeholder="Isi Konten" required>{{ $blog->content }}</textarea>
+            <!-- <div id="summernote"></div> -->
         </div>
         <div class="mb-3">
             <label for="image" class="form-label">Link Image</label>
@@ -32,7 +33,7 @@
                 src="{{Storage::url($blog->image)}}" alt="" class="img-fluid" style="width: 200px"></p>
         </div>
         <button type="submit" class="btn btn-md btn-primary px-4">Update Blog</button>
-        <a href="" class=" btn btn-md btn-secondary px-4">Batal</a>
+        <a href="/blog" class=" btn btn-md btn-secondary px-4">Batal</a>
         </form>
     </div>
 </div>

@@ -12,6 +12,8 @@
     <section class="content">
         @yield('table')
         @yield('blog')
+        @yield('umkm')
+        @yield('surat')
 
     </section>
 

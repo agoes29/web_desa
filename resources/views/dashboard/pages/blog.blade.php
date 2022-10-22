@@ -1,13 +1,15 @@
 @extends('dashboard.main')
 @section('blog')
+    @include('dashboard.pages.bloginput')
     <div class="card px-2">
         <div class="card-header">
             <div class="row">
                 <div class="col-md-6">
-                    DATA BLOG
+                    <h5>DATA BLOG</h5>
                 </div>
                 <div class="col-md-6 d-flex flex-row-reverse">
-                    <a href="/bloginput"><button class="btn btn-primary">Tambah Blog Baru</button></a>
+                    {{-- <a href="/bloginput"><button class="btn btn-primary">Tambah Blog Baru</button></a> --}}
+                    <button data-bs-toggle="modal" data-bs-target="#contohModal" class="btn btn-primary">Tambah Blog</button>
                 </div>
             </div>
         </div>
@@ -32,15 +34,19 @@
                         @endphp --}}
                         <td>{{ $bl->id }}</td>
                         <td style="word-break:break-all;">{{ $bl->title }}</td>
-                        <td style="word-break:break-all;">{{ $bl->content }}</td>
+                        <td style="word-break:break-all;">{!! $bl->content !!}</td>
                         <td style="word-break:break-all;">
                             <img src="{{ Storage::url($bl->image) }}" alt="" class="img-fluid" style="width: 50px">
                         </td>
                         <td>
-                            <form action="{{ route('blog.show', $bl->id) }}" method="GET">
-                                @csrf
-                                <button type="submit" class="btn btn-sm btn-success">UPDATE</button>
-                            </form>
+                            <a  class="edit btn btn-primary" href="{{ route('blog.update', $bl->id) }}">
+                                UPDATE
+                            </a>
+                            <script type="text/javascript">
+                                $('a.edit').click(function() {
+                                    var id = $(this).attr()
+                                })
+                            </script>
                         </td>
                         <td>
                             <form onsubmit="return confirm('Yakin menghapus data ini ?');"

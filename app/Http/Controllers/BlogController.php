@@ -10,6 +10,10 @@ use App\Models\Blog;
 
 class BlogController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -66,7 +70,7 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-        $blog = Blog::find($id)->first();
+        $blog = Blog::find($id);
         return view('dashboard.pages.blogupdate', ['blog' => $blog]);
     }
 
@@ -92,7 +96,6 @@ class BlogController extends Controller
     {
         $validatedData = $request->validate([
             'image' => 'required|image',
-
         ]);
         $file = $request->file('image');
         $name = $file->getClientOriginalName();
@@ -102,8 +105,9 @@ class BlogController extends Controller
         $image = $path;
 
         $blog = Blog::find($id);
-        $blog->title = $request->title;
-        $blog->content = $request->content;
+
+         $blog->title = $request->title;
+         $blog->content = $request->content;
         $blog->image = $image;
         $blog->save();
         return redirect('/blog');
