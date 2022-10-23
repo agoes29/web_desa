@@ -1,7 +1,11 @@
 @extends('client.main')
 
 @section('blog')
-<main>
+    <main>
+        <section id="carousel-blog">
+            <div class="content">
+                <div class="container">
+                    <h2 class="my-5 text-center">Carousel #4</h2>
 
     <section id="hero" >
         <!-- Carousel wrapper -->
@@ -98,80 +102,46 @@
         </div>
         <!-- Carousel wrapper -->
     </section>
-    <!-- start Card blog -->
-        <div class="container my-3">
-            <div class="row align-items-center h-100">
-                @foreach ($blog as $bl)
-                <div class="col-sm-12 col-md-4 mb-3">
-                    <div class="card card-default">
-                     <div class="card-body">
-                        <img class="village-img img-fluid rounded" src="{{ Storage::url($bl->image) }}" width="100%">
-                        <h4 class="pt-2 pb-1">{{ $bl->title }}</h4>
-                        <div class="d-flex justify-content-between">
-                            <a href="" ><button class="btn btn-success">Read More</button></a>
-                            <span class="pt-2">{{date('d M Y', $bl->created_at->timestamp)}}</span>
-                        </div>
-                     </div>
-                    </div>
-                 </div>
-                @endforeach
-            </div>
-        </div>
-        <!-- end Card blog -->
-        
 
-        <!-- Start Coba Coba -->
+        <!-- START COBA COBA -->
         <div class="blog" id="blog">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>From Blog</p>
-                    <h2>Latest Articles</h2>
+                    <p>Blog Desa</p>
+                    <h2>Artikel Terbaru</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="blog-img">
-                                <img src="img/blog-1.jpg" alt="Blog">
-                            </div>
-                            <div class="blog-text">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Web Design</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>5</p>
+                    @foreach ($blog as $bl)
+                        <div class="col-md-4 mb-5 mt-3">
+                            <div class="card box pt-0 wow fadeInUp" data-wow-delay="0.1s">
+                                <img class="blog-img" src="{{ Storage::url($bl->image) }}" alt="Blog">
+                                <div class="blog-text card-header">
+                                    <a href="#">
+                                        <h4 style="font-weight: bold; text-align: center;">{{ $bl->title }}</h4>
+                                    </a>
+                                    <div class="blog-meta card-block">
+                                        <p><i class="far fa-user"></i>Admin</p>
+                                        <p><i class="far fa-list-alt"></i>Web Design</p>
+                                        <p><i
+                                                class="far fa-calendar-alt"></i>{{ date('d M Y', $bl->created_at->timestamp) }}
+                                        </p>
+                                        <p><i class="far fa-comments"></i>5</p>
+                                    </div>
                                 </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
-                                </p>
-                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                                <div class="card-body py-0">
+                                    <div class="container">
+                                        {!! Str::limit($bl->content, 50) !!}
+                                    </div>
+                                </div>
+                                <div class="card-footer d-md">
+                                    <button class="btn-block btn-readmore btn-lg" href="">Read More</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="blog-img">
-                                <img src="img/blog-2.jpg" alt="Blog">
-                            </div>
-                            <div class="blog-text">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Apps Design</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>10</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
-                                </p>
-                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
-        <!-- end Coba COba -->
-
+        <!-- END COBA COBA -->
 </main>
 @endsection

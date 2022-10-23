@@ -21,7 +21,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blog = Blog::paginate(4);
+        $blog = Blog::paginate(5);
         return view('dashboard.pages.blog', ['blog' => $blog]);
     }
 

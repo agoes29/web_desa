@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/animate.css/animate.min.css') }}" />
+
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="{{ asset('assets/vendor/owlcarousel2/dist/assets/owl.carousel.min.css')}}"/>
+
 </head>
 
 <body>
@@ -22,11 +26,32 @@
 
     <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/owlcarousel2/dist/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/typed-js/typed.js') }}"></script>
 
 
 
     <script type="text/javascript">
+    $(function() {
+
+
+$('.slide-one-item').owlCarousel({
+    center: false,
+    autoplayHoverPause: true,
+    items: 1,
+    loop: true,
+    stagePadding: 0,
+    margin: 0,
+    smartSpeed: 1500,
+    autoplay: true,
+    pauseOnHover: false,
+    dots: true,
+    nav: true,
+    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
+});
+
+
+})
         $(window).scroll(function() {
             if ($(this).scrollTop() > 1) {
                 $("#beranda").addClass("sticky_header")

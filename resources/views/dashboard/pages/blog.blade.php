@@ -34,7 +34,7 @@
                         @endphp --}}
                         <td>{{ $bl->id }}</td>
                         <td style="word-break:break-all;">{{ $bl->title }}</td>
-                        <td style="word-break:break-all;">{!! $bl->content !!}</td>
+                        <td style="word-break:break-all;">{!! Str::limit($bl->content, 100) !!}</td>
                         <td style="word-break:break-all;">
                             <img src="{{ Storage::url($bl->image) }}" alt="" class="img-fluid" style="width: 50px">
                         </td>
