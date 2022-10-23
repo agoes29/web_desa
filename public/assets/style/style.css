@@ -710,7 +710,7 @@ a.btn i {
   margin: 0;
 }
 .blog .card{
-    height: 110%;
+    height: 100%;
     box-shadow: 5px 5px 6px #646464;
 }
 .blog .card .card-header{
@@ -718,7 +718,12 @@ a.btn i {
     border-bottom: 0px;
     padding-bottom: 3px;
     padding-top: 15px;
+    min-height: 20%;
+    max-height: 20%;
+}
+.blog .card .card-body{
     min-height: 10%;
+    max-height: 20%;
 }
 .blog .card .card-footer{
     background-color: #fff;

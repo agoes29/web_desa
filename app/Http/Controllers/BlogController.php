@@ -49,7 +49,7 @@ class BlogController extends Controller
         ]);
         $file = $request->file('image');
         $name = $file->getClientOriginalName();
-
+        $name = str_replace(' ', '_', $name);
         $path = $file->storeAs('public/images', $name);
 
         $image = $path;
@@ -99,7 +99,7 @@ class BlogController extends Controller
         ]);
         $file = $request->file('image');
         $name = $file->getClientOriginalName();
-
+        $name = str_replace(' ', '_', $name);
         $path = $file->storeAs('public/images', $name);
 
         $image = $path;
