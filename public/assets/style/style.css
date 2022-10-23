@@ -1,3 +1,5 @@
+@import url(carousel/carousel.css);
+
 /* Global */
 * {
   font-family: Tw Cen MT;
@@ -245,6 +247,13 @@ nav {
 --------------------------------------------------------------*/
 
 
+#carousel-blog {
+    width: 100%;
+    height: 100vh;
+    background-color: #007554;
+    overflow: hidden;
+    position: relative;
+}
 
 #hero {
   width: 100%;
