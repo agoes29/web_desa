@@ -14,6 +14,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendor/fontawesome-free/css/all.css')}}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/animate.css/animate.min.css') }}" />
 
     <!--Owl Carousel-->
