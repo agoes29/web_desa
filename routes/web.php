@@ -41,5 +41,6 @@ Route::get('umkminput', [App\Http\Controllers\UmkmController::class, 'umkminput'
 Route::resource('umkm', App\Http\Controllers\UmkmController::class);
 
 Route::get('surat', [App\Http\Controllers\SuratController::class, 'index'])->name('Surat');
+Route::get('download',[App\Http\Controllers\Surat::class, 'surat']);
 
 
