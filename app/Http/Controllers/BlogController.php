@@ -71,7 +71,7 @@ class BlogController extends Controller
     public function show($id)
     {
         $blog = Blog::find($id);
-        return view('dashboard.pages.blogupdate', ['blog' => $blog]);
+        return view('client.page.blogshow', ['blog' => $blog]);
     }
 
     /**
@@ -82,7 +82,8 @@ class BlogController extends Controller
      */
     public function edit($id)
     {
-        //
+        $blog = Blog::find($id);
+        return view('dashboard.pages.blogupdate', ['blog' => $blog]);
     }
 
     /**

@@ -49,7 +49,7 @@ class UmkmController extends Controller
         ]);
         $file = $request->file('image');
         $name = $file->getClientOriginalName();
-
+        $name = str_replace(' ', '_', $name);
         $path = $file->storeAs('public/images', $name);
 
         $image = $path;
@@ -103,7 +103,7 @@ class UmkmController extends Controller
         ]);
         $file = $request->file('image');
         $name = $file->getClientOriginalName();
-
+        $name = str_replace(' ', '_', $name);
         $path = $file->storeAs('public/images', $name);
 
         $image = $path;

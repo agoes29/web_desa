@@ -2,6 +2,41 @@
 
 @section('umkm')
     <main id="main">
+        <div class="team" id="team">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
+                    <p>My Team</p>
+                    <h2>Expert Team Members</h2>
+                </div>
+                <div class="row">
+                    @foreach ($umkm as $umkm)
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s" style="visibility: visible; animation-delay: 0s; animation-name: fadeInUp;">
+                        <hr class="m-0" style="border-bottom: 1px solid; border-top:0px;">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{{ Storage::url($umkm->image) }}" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>{{ $umkm->title }}</h2>
+                                <p>
+                                    {!! Str::limit($umkm->content, 50) !!}
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href="{{ $umkm->link }}"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+
+
+{{--  --}}
     <div class="benner">
         <div class="container">
             <div class="row align-items-center h-100">
@@ -91,32 +126,5 @@
         </div>
       </div>
     </div>
-        <!-- <section id="umkm">
-            <div class="container mt-5" style="background-color: #ff0000">
-                <div class="card border-0 rad-25 shadow-none">
-                    <div class="card-body mx-md-3 my-md-3">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-6">
-                                <div class="about-img"><img src="{{ asset('assets/client/img/features-2.png') }}"
-                                        alt="" class="img-fluid px-md-0 py-md-0 px-3 py-5"></div>
-                            </div>
-                            <div class="col-lg-7 col-md-6">
-                                <div class="about-content">
-                                @csrf
-                                @forelse ($blog as $bl)
-                                {!! $bl->content !!}
-                                <img src="{{ Storage::url($bl->image) }}" alt="" class="img-fluid">
-                                @empty
-                                    <tr>
-                                        <td colspan="3">Tidak Ada Data</td>
-                                    </tr>
-                                @endforelse
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
     </main>
 @endsection

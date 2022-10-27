@@ -17,8 +17,8 @@ class HomeController extends Controller
     }
     public function umkm()
     {
-        $blog = Blog::all();
-        return view('client.page.umkm', ['blog' => $blog], );
+        $umkm = Umkm::all();
+        return view('client.page.umkm', ['umkm' => $umkm] );
     }
     public function blog()
     {

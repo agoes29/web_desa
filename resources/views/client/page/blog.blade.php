@@ -25,12 +25,13 @@
                                 <div class="text">
                                     <h2><b>{{$hot->title}}</b></h2>
                                     <blockquote>
-                                        &ldquo;
                                         {!! Str::limit($hot->content, 100) !!}
-                                        &ldquo;
-                                        <div class="author"><p><i
+                                        <a href="">Selengkapnya >></a>
+                                        <div class="author">
+                                            <p><i
                                             class="fa fa-calendar-alt p-3"></i>{{ date('d M Y', $hot->created_at->timestamp) }}
-                                    </p></div>
+                                            </p>
+                                        </div>
                                     </blockquote>
                                 </div>
                             </div> <!-- .item -->
@@ -70,7 +71,9 @@
                                     </div>
                                 </div>
                                 <div class="card-footer d-md">
-                                    <button class="btn-block btn-readmore btn-lg" href="">Read More</button>
+                                    <a href="{{ route('blog.update', $bls->id) }}">
+                                        <button class="btn-block btn-readmore btn-lg">Read More</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

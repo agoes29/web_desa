@@ -26,7 +26,7 @@
         </div>
         <div class="col-sm-12 mb-3 col-md-4 kanan">
             <strong style="font-size: 25px;">About Us</strong>
-            <span><a class="d-block my-3" href=""><i class="fa-solid fa-map-pin"></i> Desa Buahan, Kec.Tabanan, Kab.Tabanan</a></span>
+            <span><a class="d-block my-3" href="">Desa Buahan, Kec.Tabanan, Kab.Tabanan</a></span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequatur aliquid atque veniam repellat. Sequi unde magni, labore et nisi saepe tempora, ipsa odio neque quae nemo. Quibusdam, temporibus et.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea ad veritatis libero voluptas molestiae ut quam deserunt obcaecati possimus suscipit commodi pariatur nostrum mollitia placeat, laudantium hic reprehenderit ullam perspiciatis adipisci numquam. Laudantium, accusamus officia. Itaque eaque eius ut?</p>
         </div>
