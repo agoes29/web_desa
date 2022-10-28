@@ -1,12 +1,9 @@
 <footer>
-    <!-- <div id="kontak">
-        <hr>
-    </div> -->
     <div class=" row-footer">
     <footer class="bg-dark p-5 text-light">
     <div class="row">
         <div class="col-sm-12 mb-3 col-md-4">
-            <strong style="font-size: 25px;">Desa Buahan 2022</strong>
+            <strong style="font-size: 25px;" id="kontak">Desa Buahan 2022</strong>
             <img class="my-3" src="{{asset('assets/images/Asset 2.png')}}" width="70%">
             <p style="font-size: 13px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil fugiat itaque minima quae, a ea repudiandae dolor cumque dolorem earum maxime laboriosam expedita accusantium officiis. Voluptate officiis alias, sequi ratione fuga similique a iure explicabo ab cum! Ex, adipisci optio.</p>
         </div>
@@ -32,25 +29,6 @@
         </div>
     </div>
 </footer>
-
-        <!-- <footer class="row row-cols-12 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-            <div class="col-md-9">
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                    <img class="imagelogobawah" src="assets/images/Asset 2.png" alt="">
-                </a>
-                <h1 class="fw-bold">Desa Buahan</h1>
-                <h5 id="animation"></h5>
-            </div>
-            <div class="col-4 col-md-3 text-start">
-                <h5>Section</h5>
-                    <ul class="nav flex-column ">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Beranda</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tentang Kami</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gallery</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kontak Kami</a></li>
-                    </ul><br>
-            </div>
-        </footer> -->
     </div>
         <div class="footer footer-wrap container-fluid text-white p-1 text-start">
             <div class="container d-flex flex-wrap justify-content-between align-items-center py-2 my-2">

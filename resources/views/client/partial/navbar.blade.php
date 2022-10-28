@@ -29,6 +29,9 @@
                             <a class="nav-link" href="#about">Tentang Kami</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#artikel">Blog</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#galery">Gallery</a>
                         </li>
                         <li class="nav-item">

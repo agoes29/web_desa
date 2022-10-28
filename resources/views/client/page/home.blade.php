@@ -7,6 +7,10 @@
                 <hr>
             </div>
             <div class="about-wrap container-fluid py-5" id="about">
+                <div class="section-header text-center wow  pb-5" data-wow-delay="0.1s">
+                    <p>Tentang Desa</p>
+                    <h2>Sejarah Desa Buahan</h2>
+                </div>
                 <div class="container">
                     <div class="row">
                         <div class=" col-lg-5 col-md-6 order-1 order-md-2">
@@ -16,7 +20,6 @@
                                     width="500" height="350" style="border: 0" allowfullscreen="" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
-                            <!-- <img src="assets/images/photo.jpg" alt="" /> -->
                         </div>
                         <div class="text-about col-lg-7 col-md-6 order-2 order-md-1">
                             <div class="text-about">
@@ -43,9 +46,12 @@
         </div>
         {{-- Blog --}}
         <section>
+        <div id="artikel">
+            <hr>
+        </div>
         <div class="blog" id="blog">
             <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <div class="section-header text-center wow zoomIn pb-5" data-wow-delay="0.1s">
                     <p>Blog Desa</p>
                     <h2>Artikel Terbaru</h2>
                 </div>
@@ -56,7 +62,7 @@
                             <img class="blog-img" src="{{ Storage::url($bl->image) }}" alt="Blog">
                             <div class="blog-text card-header">
                                 <a href="#">
-                                    <h4 style="font-weight: bold; text-align: center;">{{ $bl->title }}</h4>
+                                    <h5 style="font-weight: bold; text-align: center;">{{ $bl->title }}</h5>
                                 </a>
                                 <div class="blog-meta card-block">
                                     <p><i class="far fa-user"></i>Admin</p>
@@ -67,11 +73,14 @@
                             </div>
                             <div class="card-body py-0">
                                 <div class="container">
-                                    {!! Str::limit($bl->content, 50) !!}
+                                    <p>{!! Str::limit($bl->content, 50) !!}</p>
                                 </div>
                             </div>
                             <div class="card-footer d-md">
-                                <button class="btn-block btn-readmore btn-lg" href="">Read More</button>
+                                <button id="hover-blog" class="btn-block btn-lg" href="">
+                                    <span class="text">Selengkapnya</span>
+                                    <span>>>></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -85,6 +94,10 @@
         <div id="galery">
             <hr>
         </div>
+            <div class="section-header text-center wow zoomIn pb-1" data-wow-delay="0.1s">
+                <p>Galeri Desa</p>
+                <h2>Galeri Terbaru</h2>
+            </div>
             <div class="galeri-kecil-wrap container-fluid">
                 <div class="container">
                     <div class="row">
@@ -94,7 +107,7 @@
                         <div class="col-lg-7 col-md-7 p-3">
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-                                    <div class="gallery">
+                                    <div class="gallery galeri-home">
                                         <img class="w-100 shadow-1-strong rounded mb-4" src="assets/images/gallery/1.jpg"
                                             alt="" />
                                         <img class="w-100 shadow-1-strong rounded mb-4" src="assets/images/gallery/2.jpg"
@@ -102,7 +115,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 mb-4 mb-lg-0">
-                                    <div class="gallery">
+                                    <div class="gallery galeri-home">
                                         <img class="w-100 shadow-1-strong rounded mb-4" src="assets/images/gallery/3.jpg"
                                             alt="" />
                                         <img class="w-100 shadow-1-strong rounded mb-4" src="assets/images/gallery/4.jpg"
