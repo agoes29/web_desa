@@ -1109,7 +1109,7 @@ height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    box-shadow: 5px 5px 5px red;
+    box-shadow: 4px 4px 7px #007554;
     transition: ease-out 0.5s;
 }
 
@@ -1171,7 +1171,7 @@ height: 100%;
 }
 
 .team .team-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
+    box-shadow: inset 800px 0 0 0 #007554;
     transition: ease-out 0.5s;
 }
 

@@ -29,10 +29,10 @@
                             <a class="nav-link" href="#about">Tentang Kami</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#artikel">Blog</a>
+                            <a class="nav-link" href="/client/blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#galery">Gallery</a>
+                            <a class="nav-link" href="/client/umkm">Umkm</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#kontak">Kontak Kami</a>

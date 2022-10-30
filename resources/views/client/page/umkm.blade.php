@@ -2,6 +2,18 @@
 
 @section('umkm')
     <main id="main">
+        <div class="about">
+            <div class="green"></div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 foto-awag">
+                    <img src="{{ asset('assets/images/img.jpg') }}" width="100%">
+                    <div class="desa">
+                        <h1>Desa Buahan</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum perferendis consectetur nisi quod nihil dolorem enim tempora eveniet fugiat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="team" id="team">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
@@ -37,46 +49,6 @@
 
 
 {{--  --}}
-    <div class="benner">
-        <div class="container">
-            <div class="row align-items-center h-100">
-                <div class="col-sm-12 col-md-4 mb-3">
-                <h1 id="animation">Desa Buahan</h1>
-                   <div class="card card-default">
-                    <div class="card-body">
-                        <div class="village-img">
-                            <img class="img-fluid rounded" src="{{ asset('assets/images/img.jpg') }}" width="100%">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam.</p>
-                            <a href=""><button class="btn btn-success">Visit more</button></a>
-                        </div>
-                    </div>
-                   </div>
-                </div>
-                <div class="col-sm-12 col-md-4 mb-3">
-                   <div class="card card-default">
-                    <div class="card-body">
-                        <div class="village-img">
-                            <img class="img-fluid rounded" src="{{ asset('assets/images/img.jpg') }}" width="100%">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam.</p>
-                            <a href=""><button class="btn btn-success">Visit more</button></a>
-                        </div>
-                    </div>
-                   </div>
-                </div>
-                <div class="col-sm-12 col-md-4 mb-3">
-                   <div class="card card-default">
-                    <div class="card-body">
-                        <div class="village-img">
-                            <img class="img-fluid rounded" src="{{ asset('assets/images/img.jpg') }}" width="100%">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam.</p>
-                            <a href=""><button class="btn btn-success">Visit more</button></a>
-                        </div>
-                    </div>
-                   </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="about">
         <div class="green"></div>
         <div class="row">
