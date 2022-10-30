@@ -35,7 +35,7 @@
                             <a class="nav-link" href="#galery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#btn-kirim-bawah">Kontak Kami</a>
+                            <a class="nav-link" href="#kontak">Kontak Kami</a>
                         </li>
                     </ul>
                 </div>

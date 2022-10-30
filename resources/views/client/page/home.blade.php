@@ -7,21 +7,21 @@
                 <hr>
             </div>
             <div class="about-wrap container-fluid py-5" id="about">
-                <div class="section-header text-center wow  pb-5" data-wow-delay="0.1s">
+                <div class="section-header text-center wow  pb-5" data-aos="zoom-in">
                     <p>Tentang Desa</p>
                     <h2>Sejarah Desa Buahan</h2>
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class=" col-lg-5 col-md-6 order-1 order-md-2">
-                            <div class=" card gambar-about">
+                        <div class=" col-lg-5 col-md-6 order-1 order-md-2" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="card gambar-about">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15784.072586875232!2d115.13022005800802!3d-8.497615863724253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23b2bf99c0b95%3A0xc30e643bffae455e!2sBuahan%2C%20Kec.%20Tabanan%2C%20Kabupaten%20Tabanan%2C%20Bali!5e0!3m2!1sid!2sid!4v1664631528155!5m2!1sid!2sid"
                                     width="500" height="350" style="border: 0" allowfullscreen="" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
-                        <div class="text-about col-lg-7 col-md-6 order-2 order-md-1">
+                        <div class="text-about col-lg-7 col-md-6 order-2 order-md-1" data-aos="fade-in" data-aos-duration="1500" data-aos-offset="300">
                             <div class="text-about">
                                 <h1 class="fw-bold"> Desa Buahan</h1>
                                 <p>
@@ -51,14 +51,14 @@
         </div>
         <div class="blog" id="blog">
             <div class="container">
-                <div class="section-header text-center wow zoomIn pb-5" data-wow-delay="0.1s">
+                <div class="section-header text-center wow zoomIn pb-5" data-aos="zoom-in">
                     <p>Blog Desa</p>
                     <h2>Artikel Terbaru</h2>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
                     @foreach ($blog as $bl)
                     <div class="col-md-4 mb-5 mt-3">
-                        <div class="card box pt-0 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card box pt-0 wow">
                             <img class="blog-img" src="{{ Storage::url($bl->image) }}" alt="Blog">
                             <div class="blog-text card-header">
                                 <a href="#">
@@ -94,31 +94,31 @@
         <div id="galery">
             <hr>
         </div>
-            <div class="section-header text-center wow zoomIn pb-1" data-wow-delay="0.1s">
+            <div class="section-header text-center wow zoomIn pb-1" data-aos="zoom-in">
                 <p>Galeri Desa</p>
                 <h2>Galeri Terbaru</h2>
             </div>
             <div class="galeri-kecil-wrap container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="text-galeri-k col-lg-5 col-md-5 text-white p-5">
+                        <div class="text-galeri-k col-lg-5 col-md-5 text-white p-5" data-aos="fade-right" data-aos-duration="1000">
                             <h1>Nikmati Moment Anda Dengan Keluarga</h1>
                         </div>
                         <div class="col-lg-7 col-md-7 p-3">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                            <div class="row" id="galeri-beranda">
+                                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0"> 
                                     <div class="gallery galeri-home">
-                                        <img class="w-100 shadow-1-strong rounded mb-4" src="assets/images/gallery/1.jpg"
+                                        <img class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-up" data-aos-duration="1000" src="assets/images/gallery/1.jpg"
                                             alt="" />
-                                        <img class="w-100 shadow-1-strong rounded mb-4" src="assets/images/gallery/2.jpg"
+                                        <img class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" src="assets/images/gallery/2.jpg"
                                             alt="" />
                                     </div>
                                 </div>
                                 <div class="col-lg-6 mb-4 mb-lg-0">
                                     <div class="gallery galeri-home">
-                                        <img class="w-100 shadow-1-strong rounded mb-4" src="assets/images/gallery/3.jpg"
+                                        <img class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" src="assets/images/gallery/3.jpg"
                                             alt="" />
-                                        <img class="w-100 shadow-1-strong rounded mb-4" src="assets/images/gallery/4.jpg"
+                                        <img class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-up" data-aos-duration="1000" src="assets/images/gallery/4.jpg"
                                             alt="" />
                                     </div>
                                 </div>

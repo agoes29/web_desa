@@ -20,6 +20,9 @@
     <!--Owl Carousel-->
     <link rel="stylesheet" href="{{ asset('assets/vendor/owlcarousel2/dist/assets/owl.carousel.min.css')}}"/>
 
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -131,6 +134,8 @@ $('.slide-one-item').owlCarousel({
             }
         })()
     </script>
+
+    <!-- typed -->
     <script src="{{ url('js/front/typed.js') }}"></script>
     <script>
         var typed = new Typed('#animation', {
@@ -143,10 +148,11 @@ $('.slide-one-item').owlCarousel({
           loop: true
         });
     </script>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      window.onload = function(){
-        document.getElementById("outoplay").play();
-      }
+        AOS.init();
     </script>
 </body>
 

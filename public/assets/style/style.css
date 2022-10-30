@@ -95,11 +95,11 @@ nav {
   object-fit: cover;
   height: 315px;
 }
-.galeri-home img{  
-  box-shadow: 2px 8px 15px 2px rgb(27 50 43 / 50%);
+#galeri-beranda .galeri-home img{  
+  box-shadow: 10px 14px 10px 0px rgb(27 50 43 / 50%);
   transition: .5s;
 }
-.galeri-home img:hover {
+#galeri-beranda .galeri-home img:hover {
   transform: scale(1.05);
   transition: .5s;  
   box-shadow: 2px 8px 15px 2px rgba(157, 175, 169, 0.3);
@@ -133,6 +133,7 @@ nav {
 .footer-wrap {
   background-color: #646464;
 }
+
 /* Galeri Page */
 .galeri-wrap img {
   height: 100%;
@@ -140,6 +141,7 @@ nav {
   width: 100%;
   padding: 80px 0;
 }
+
 /* Contact Page */
 .saran {
   border-radius: 20px;
@@ -624,14 +626,14 @@ border: 1px solid rgba(255, 255, 255, 0.171);
   padding-top: 70px;
 }
 
-#kontak hr{
+/* #kontak hr{
   margin: 0%;
   height:0px;
   border-width: 0px;
   color: #f1f1f1;
-  background-color: #f1f1f1;
+  background-color: #646464;
   margin-top: 90px;
-}
+} */
 
 
 /*******************************/
@@ -797,7 +799,7 @@ a.btn i {
 }
 .blog .card{
     height: 100%;
-    box-shadow: 0 14px 17px 0 rgba(27, 50, 43, 0.3);
+    box-shadow: 16px 19px 12px 0 rgba(27, 50, 43, 0.3);
 }
 .blog .card:hover{
   box-shadow: 0 14px 17px 0 rgba(157, 175, 169, 0.3);
