@@ -23,6 +23,7 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'client'])->name('main');
 Route::get('/client/umkm', [App\Http\Controllers\HomeController::class, 'umkm'])->name('umkm');
 Route::get('/client/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog');
+Route::resource('blogshow', App\Http\Controllers\BlogShow::class);
 
 /* Auth Route */
 Route::get('login', [App\Http\Controllers\AuthController::class, 'login'])->name('login');

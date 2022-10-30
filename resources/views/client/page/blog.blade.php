@@ -61,17 +61,17 @@
                                     </a>
                                 </div>
                                 <div class="card-body py-0">
+                                    <div class="container">
+                                        {!! Str::limit($bls->content, 50) !!}
+                                    </div>
                                     <div class="blog-meta card-block">
                                         <p><i
                                             class="far fa-calendar-alt"></i>{{ date('d M Y', $bls->created_at->timestamp) }}
                                         </p>
                                     </div>
-                                    <div class="container">
-                                        {!! Str::limit($bls->content, 50) !!}
-                                    </div>
                                 </div>
                                 <div class="card-footer d-md">
-                                    <a href="{{ route('blog.update', $bls->id) }}">
+                                    <a href="{{ route('blogshow.show', $bls->id) }}">
                                         <button class="btn-block btn-readmore btn-lg">Read More</button>
                                     </a>
                                 </div>

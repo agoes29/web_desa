@@ -29,9 +29,6 @@
             <tbody>
                 @forelse ($blog as $bl)
                     <tr>
-                        {{-- @php
-                        dd($blog);
-                        @endphp --}}
                         <td>{{ $bl->id }}</td>
                         <td style="word-break:break-all;">{{ $bl->title }}</td>
                         <td style="word-break:break-all;">{!! Str::limit($bl->content, 100) !!}</td>
@@ -42,11 +39,6 @@
                             <a  class="edit btn btn-primary" href="{{ route('blog.update', $bl->id) }}">
                                 UPDATE
                             </a>
-                            <script type="text/javascript">
-                                $('a.edit').click(function() {
-                                    var id = $(this).attr()
-                                })
-                            </script>
                         </td>
                         <td>
                             <form onsubmit="return confirm('Yakin menghapus data ini ?');"

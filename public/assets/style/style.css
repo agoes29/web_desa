@@ -95,13 +95,13 @@ nav {
   object-fit: cover;
   height: 315px;
 }
-#galeri-beranda .galeri-home img{  
+#galeri-beranda .galeri-home img{
   box-shadow: 10px 14px 10px 0px rgb(27 50 43 / 50%);
   transition: .5s;
 }
 #galeri-beranda .galeri-home img:hover {
   transform: scale(1.05);
-  transition: .5s;  
+  transition: .5s;
   box-shadow: 2px 8px 15px 2px rgba(157, 175, 169, 0.3);
 }
 
