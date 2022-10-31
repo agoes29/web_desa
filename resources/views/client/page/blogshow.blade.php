@@ -2,11 +2,11 @@
 
 @section('blog')
     <main data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
-        <div class="section post-section pt-5">
+        <div class="section post-section pt-5 mt-5">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="heading text-center">{{ $blog->title }}</h2>
+                    <div class="col-md-8">
+                        <h2 class="heading text-center pb-2">{{ $blog->title }}</h2>
                         <div class="text-center">
                             <img src="{{ Storage::url($blog->image) }}" alt="Image" class="img-fluid rounded mb-4">
                             <span class="date d-block text-center small text-uppercase text-black-50 mb-5">{{ date('d M Y', $blog->created_at->timestamp) }}</span>

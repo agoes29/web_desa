@@ -3,13 +3,11 @@
 @section('umkm')
     <main id="main">
         <div class="about">
-            <div class="green"></div>
             <div class="row">
-                <div class="col-sm-12 col-md-12 foto-awag">
-                    <img src="{{ asset('assets/images/img.jpg') }}" width="100%">
+                <div class="col-sm-12">
+                    <img src="{{ asset('assets/images/UMKM.jpg') }}" width="100%">
                     <div class="desa">
-                        <h1>Desa Buahan</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum perferendis consectetur nisi quod nihil dolorem enim tempora eveniet fugiat.</p>
+                        <h1>UMKM DESA BUAHAN</h1>
                     </div>
                 </div>
             </div>
@@ -46,57 +44,5 @@
                 </div>
             </div>
         </div>
-
-
-{{--  --}}
-    <div class="about">
-        <div class="green"></div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12 foto-awag">
-                <img src="{{ asset('assets/images/img.jpg') }}" width="100%">
-                <div class="desa">
-                    <h1>Desa Buahan</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum perferendis consectetur nisi quod nihil dolorem enim tempora eveniet fugiat.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="umkm text-center my-4 p-5">
-        <h1>UMKM Desa Buahan</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <div class="d-grid gap-2 col-12 mx-auto">
-            <a href=""><button class="btn btn-success btn-lg " type="button"><i class="fa-solid fa-users me-2"></i> Stt. Jenggala Gora Yowana</button></a>
-            <a href=""><button class="btn btn-success btn-lg " type="button"><i class="fa-solid fa-users me-2"></i> Stt. Jenggala Gora Yowana</button></a>
-            <a href=""><button class="btn btn-success btn-lg " type="button"><i class="fa-solid fa-users me-2"></i> Stt. Jenggala Gora Yowana</button></a>
-            <a href=""><button class="btn btn-success btn-lg " type="button"><i class="fa-solid fa-users me-2"></i> Stt. Jenggala Gora Yowana</button></a>
-          </div>
-    </div>
-    <div class="service bg-success p-5 text-light">
-      <div class="container">
-        <div class="row align-items-center">
-            <div class="col-sm-12 col-md-6 mb-4">
-                <img src="{{ asset('assets/images/img.jpg') }}" width="100%">
-            </div>
-            <div class="col-sm-12 col-md-6 mb-4">
-                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, voluptatem? adipisicing elit. Error fuga iusto nemo dignissimos nihil tenetur, architecto id accusantium voluptate repellendus! Quibusdam, placeat nam? Placeat sapiente nostrum quis praesentium rem eum?</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi est mollitia sit ad odit fugiat porro nihil eligendi molestias dignissimos modi, velit explicabo iste repellendus laboriosam, corporis totam nam officiis!</p>
-            </div>
-            <div class="col-sm-12 col-md-6 mb-4">
-                <img src="{{ asset('assets/images/img.jpg') }}" width="100%">
-            </div>
-            <div class="col-sm-12 col-md-6 mb-4">
-                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, voluptatem? adipisicing elit. Error fuga iusto nemo dignissimos nihil tenetur, architecto id accusantium voluptate repellendus! Quibusdam, placeat nam? Placeat sapiente nostrum quis praesentium rem eum?</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi est mollitia sit ad odit fugiat porro nihil eligendi molestias dignissimos modi, velit explicabo iste repellendus laboriosam, corporis totam nam officiis!</p>
-            </div>
-            <div class="col-sm-12 col-md-6 mb-4">
-                <img src="{{ asset('assets/images/img.jpg') }}" width="100%">
-            </div>
-            <div class="col-sm-12 col-md-6 mb-4">
-                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, voluptatem? adipisicing elit. Error fuga iusto nemo dignissimos nihil tenetur, architecto id accusantium voluptate repellendus! Quibusdam, placeat nam? Placeat sapiente nostrum quis praesentium rem eum?</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi est mollitia sit ad odit fugiat porro nihil eligendi molestias dignissimos modi, velit explicabo iste repellendus laboriosam, corporis totam nam officiis!</p>
-            </div>
-        </div>
-      </div>
-    </div>
     </main>
 @endsection

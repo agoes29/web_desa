@@ -23,10 +23,10 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="#hero">Beranda</a>
+                            <a class="nav-link" href="/#hero">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">Tentang Kami</a>
+                            <a class="nav-link" href="/#galery">Profil Desa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/client/blog">Blog</a>

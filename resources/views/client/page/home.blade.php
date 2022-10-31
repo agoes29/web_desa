@@ -106,7 +106,7 @@
                         </div>
                         <div class="col-lg-7 col-md-7 p-3">
                             <div class="row" id="galeri-beranda">
-                                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0"> 
+                                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
                                     <div class="gallery galeri-home">
                                         <img class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-up" data-aos-duration="1000" src="assets/images/gallery/1.jpg"
                                             alt="" />
@@ -133,13 +133,40 @@
                 <div class="row">
                     <div class="langgan col-12">
                         <div class="langgan-text col-12">
-                            <h1 class="fw-bold">Berlanggan dengan Kami</h1>
+                            <h1 class="fw-bold">SURAT DESA</h1>
                             <p class="mt-2 mb-4">
-                                Dapatkan info dan berita terupdate dari kami
+                                Dapatkan Kebutuhan Surat Menyurat Tanpa Perlu Ke Kantor Desa
                             </p>
-                            <input type="text" placeholder="Masukkan Email..." class="mb-4" />
-                            <br />
-                            <button id="btn-kirim-bawah" >KIRIM</button>
+                            <input type="text" id="btn-kirim-bawah" placeholder="Masukkan NIK" class="mb-4" />
+                            <!-- Button trigger modal --> <br>
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Pilih Jenis Surat
+                            </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <a href="" type="button" class="btn btn-primary mb-1">Surat Kematian</a>
+                                            <a href="" type="button" class="btn btn-primary mb-1">Surat Kematian</a>
+                                            <a href="" type="button" class="btn btn-primary mb-1">Surat Kematian</a>
+                                            <a href="" type="button" class="btn btn-primary mb-1">Surat Kematian</a>
+                                            <a href="" type="button" class="btn btn-primary mb-1">Surat Kematian</a>
+                                            <a href="" type="button" class="btn btn-primary mb-1">Surat Kematian</a>
+                                            <a href="" type="button" class="btn btn-primary mb-1">Surat Kematian</a>
+                                            <a href="" type="button" class="btn btn-primary mb-1">Surat Kematian</a>
+                                            <a href="" type="button" class="btn btn-primary mb-1">Surat Kematian</a>
+                                            <a href="" type="button" class="btn btn-primary mb-1">Surat Kematian</a>
+                                            <a href="" type="button" class="btn btn-primary mb-1">Surat Kematian</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            <br/>
                         </div>
                     </div>
                 </div>
