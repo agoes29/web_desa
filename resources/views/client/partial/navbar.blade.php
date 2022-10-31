@@ -23,19 +23,19 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" href="/#hero">Beranda</a>
+                            <a class="nav-link" href="/">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/#galery">Profil Desa</a>
+                            <a class="nav-link" href="/">Profil Desa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/client/blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/client/umkm">Umkm</a>
+                            <a class="nav-link" href="/client/umkm">UMKM</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#kontak">Kontak Kami</a>
+                            <a class="nav-link" href="/#surat">Surat Menyurat</a>
                         </li>
                     </ul>
                 </div>

@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <img src="{{ asset('assets/images/UMKM.jpg') }}" width="100%">
-                    <div class="desa">
+                    <div class="desa p-5">
                         <h1>UMKM DESA BUAHAN</h1>
                     </div>
                 </div>

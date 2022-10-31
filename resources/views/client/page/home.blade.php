@@ -3,9 +3,6 @@
 @section('home')
     <main id="main">
         <section id="about" class="about">
-            <div>
-                <hr>
-            </div>
             <div class="about-wrap container-fluid py-5" id="about">
                 <div class="section-header text-center wow  pb-5" data-aos="zoom-in">
                     <p>Tentang Desa</p>
@@ -39,23 +36,16 @@
         <div class="bgimg">
             <div class="caption">
                 <span class="border">
-                    <h2>Ayo Kunjungi Sekarang</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, beatae.</p>
-                </span>
+                    <h1>Blog Desa</h1>
+                    <h4>Artikel Terbaru</h4>
+                </pan>
             </div>
         </div>
         {{-- Blog --}}
         <section>
-        <div id="artikel">
-            <hr>
-        </div>
         <div class="blog" id="blog">
             <div class="container">
-                <div class="section-header text-center wow zoomIn pb-5" data-aos="zoom-in">
-                    <p>Blog Desa</p>
-                    <h2>Artikel Terbaru</h2>
-                </div>
-                <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                <div class="row" data-aos="fade-up" data-aos-duration="1000">
                     @foreach ($blog as $bl)
                     <div class="col-md-4 mb-5 mt-3">
                         <div class="card box pt-0 wow">
@@ -94,7 +84,7 @@
         <div id="galery">
             <hr>
         </div>
-            <div class="section-header text-center wow zoomIn pb-1" data-aos="zoom-in">
+            <div id="tag-nav" class="section-header text-center wow zoomIn pb-1" data-aos="zoom-in">
                 <p>Galeri Desa</p>
                 <h2>Galeri Terbaru</h2>
             </div>
@@ -129,7 +119,7 @@
             </div>
         </section>
         <div class="langgan-wrap container-fluid text-center py-5">
-            <div class="container">
+            <div class="container" id="surat">
                 <div class="row">
                     <div class="langgan col-12">
                         <div class="langgan-text col-12">

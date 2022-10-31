@@ -9,21 +9,21 @@
             <img class="my-3" src="{{asset('assets/images/Asset 2.png')}}" width="70%">
         </div>
         <div id="footer-atas" class="col-sm-12 mb-3 col-md-4">
-            <strong style="font-size: 25px;">Service</strong>
+            <strong style="font-size: 25px;">Menu</strong>
             <ul class="mt-4">
-                <li><a href="#hero">Beranda</a></li>
+                <li><a href="/">Beranda</a></li>
                 <hr>
-                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="">Profil Desa</a></li>
                 <hr>
-                <li><a href="#artikel">Blog</a></li>
+                <li><a href="/client/blog">Blog</a></li>
                 <hr>
-                <li><a href="#galery">Galery</a></li>
+                <li><a href="/client/umkm">UMKM</a></li>
                 <hr>
-                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="/#surat">Surat Menyurat</a></li>
             </ul>
         </div>
         <div class="col-sm-12 mb-3 col-md-4 kanan">
-            <strong style="font-size: 25px;">About Us</strong>
+            <strong style="font-size: 25px;">Tentang Desa</strong>
             <span><a class="d-block my-3" href="">Desa Buahan, Kec.Tabanan, Kab.Tabanan</a></span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequatur aliquid atque veniam repellat. Sequi unde magni, labore et nisi saepe tempora, ipsa odio neque quae nemo. Quibusdam, temporibus et.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea ad veritatis libero voluptas molestiae ut quam deserunt obcaecati possimus suscipit commodi pariatur nostrum mollitia placeat, laudantium hic reprehenderit ullam perspiciatis adipisci numquam. Laudantium, accusamus officia. Itaque eaque eius ut?</p>

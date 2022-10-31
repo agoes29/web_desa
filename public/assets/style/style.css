@@ -602,39 +602,6 @@ border: 1px solid rgba(255, 255, 255, 0.171);
   visibility: visible;
 }
 
-/* content */
-#about hr{
-  height:0px;
-  border-width: 0px;
-  color: white;
-  background-color: white;
-  padding-top: 30px;
-}
-
-#artikel hr{
-  height:0px;
-  border-width: 0px;
-  color: white;
-  background-color: white;
-  padding-top: 40px;
-}
-#galery hr{
-  height:0px;
-  border-width: 0px;
-  color: white;
-  background-color: white;
-  padding-top: 70px;
-}
-
-/* #kontak hr{
-  margin: 0%;
-  height:0px;
-  border-width: 0px;
-  color: #f1f1f1;
-  background-color: #646464;
-  margin-top: 90px;
-} */
-
 
 /*******************************/
 /*********** Blog CSS **********/
@@ -768,7 +735,7 @@ a .btn-readmore{
     border-radius: 5px;
 }
 
-a.btn-readmore:hover{
+a .btn-readmore:hover{
     background: transparent;
     color: #00CF94;
     box-shadow:  5px 5px 1px #00CF94;
@@ -824,6 +791,12 @@ a.btn i {
 .blog .card .card-footer:hover{
     background-color: #fff;
     border: 0px;
+}
+
+#galery hr{
+  padding-top: 50px;
+  background-color: white;
+  opacity: 0;
 }
 
   /* footer */
@@ -1035,27 +1008,6 @@ height: 100%;
     transform: translate(-50%,-40%);
     width : 90%;
     margin:auto;
-}
-
-.foto-awag{
-    object-fit : cover;
-    height : 60vh;
-    position : relative;
-}
-
-.foto-awag img{
-    height : 100%;
-}
-
-.foto-awag::after{
-    top : 0;
-    left :0;
-    right : 0;
-    background-color : #198754;
-    display : block;
-    content : '';
-    padding: 20px;
-    position : absolute;
 }
 
 .desa h1{

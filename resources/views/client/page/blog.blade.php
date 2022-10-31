@@ -46,14 +46,14 @@
         <!-- START COBA COBA -->
         <div class="blog" id="blog">
             <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <div class="section-header text-center" data-aos="fade-in" data-aos-duration="1000">
                     <p>Blog Desa</p>
                     <h2>Artikel Terbaru</h2>
                 </div>
                 <div class="row">
                     @foreach ($blog as $bls)
-                        <div class="col-md-4 mb-3 mt-3 pt-3">
-                            <div class="card box pt-0 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="col-md-4 mb-3 mt-3 pt-3" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="card box pt-0 wow">
                                 <img class="blog-img" src="{{ Storage::url($bls->image) }}" alt="Blog">
                                 <div class="blog-text card-header mt-2">
                                     <a href="#">
