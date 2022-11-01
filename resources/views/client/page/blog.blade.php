@@ -12,9 +12,10 @@
                         <div class="d-md-flex testimony-29101 align-items-stretch">
                             <div class="image" style="background-image: url({{ Storage::url($first->image) }});"></div>
                             <div class="text">
-                                <h2><b>{{$first->title}}</b></h2>
+                                <a href="{{ route('blogshow.show', $first->id) }}"><h2><b>{{$first->title}}</b></h2></a>
                                 <blockquote>
-                                    &ldquo;{!! Str::limit($first->content, 100) !!}&rdquo;
+                                    {!! Str::limit($first->content, 100) !!}
+                                    <a href="{{ route('blogshow.show', $first->id) }}">Selengkapnya >></a>
                                     <div class="author"><p><i
                                         class="fa fa-calendar-alt p-3"></i>{{ date('d M Y', $first->created_at->timestamp) }}
                                 </p></div>
@@ -25,10 +26,12 @@
                             <div class="d-md-flex testimony-29101 align-items-stretch">
                                 <div class="image" style="background-image: url({{ Storage::url($hot->image) }});"></div>
                                 <div class="text">
+                                    <a href="{{ route('blogshow.show', $hot->id) }}">
                                     <h2><b>{{$hot->title}}</b></h2>
+                                    </a>
                                     <blockquote>
                                         {!! Str::limit($hot->content, 100) !!}
-                                        <a href="">Selengkapnya >></a>
+                                        <a href="{{ route('blogshow.show', $hot->id) }}">Selengkapnya >></a>
                                         <div class="author">
                                             <p><i
                                             class="fa fa-calendar-alt p-3"></i>{{ date('d M Y', $hot->created_at->timestamp) }}
@@ -61,7 +64,7 @@
                             <div class="card box pt-0 wow">
                                 <img class="blog-img" src="{{ Storage::url($bls->image) }}" alt="Blog">
                                 <div class="blog-text card-header mt-2">
-                                    <a href="#">
+                                    <a href="{{ route('blogshow.show', $bls->id) }}">
                                         <h4 style="font-weight: bold; text-align: center;">{{ $bls->title }}</h4>
                                     </a>
                                 </div>

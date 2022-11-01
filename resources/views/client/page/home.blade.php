@@ -52,7 +52,7 @@
                         <div class="card box pt-0 wow">
                             <img class="blog-img" src="{{ Storage::url($bl->image) }}" alt="Blog">
                             <div class="blog-text card-header">
-                                <a href="#">
+                                <a href="{{ route('blogshow.show', $bl->id) }}">
                                     <h5 style="font-weight: bold; text-align: center;">{{ $bl->title }}</h5>
                                 </a>
                                 <div class="blog-meta card-block">
@@ -68,10 +68,10 @@
                                 </div>
                             </div>
                             <div class="card-footer d-md">
-                                <button id="hover-blog" class="btn-block btn-lg" href="">
+                                <a id="hover-blog" class="btn btn-block btn-lg" href="{{ route('blogshow.show', $bl->id) }}">
                                     <span class="text">Selengkapnya</span>
                                     <span>>>></span>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
