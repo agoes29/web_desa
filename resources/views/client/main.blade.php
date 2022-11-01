@@ -17,6 +17,9 @@
 {{--UMKMPage--}}
 @yield('umkm')
 
+{{--ProfilDesaPage--}}
+@yield('profil')
+
 </main>
 @include('client.partial.footer')
 

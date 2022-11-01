@@ -27,4 +27,8 @@ class HomeController extends Controller
         $first = Blog::all()->sortByDesc("id")->first();
         return view('client.page.blog', ['blog' => $blog, 'hot' => $hot, 'first' => $first]);
     }
+    public function profil()
+    {
+        return view('client.page.profil');
+    }
 }

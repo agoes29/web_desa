@@ -26,7 +26,7 @@
                             <a class="nav-link" href="/">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Profil Desa</a>
+                            <a class="nav-link" href="/client/profil">Profil Desa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/client/blog">Blog</a>
