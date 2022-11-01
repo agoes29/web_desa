@@ -1,15 +1,20 @@
 @extends('client.main')
 
 @section('blog')
-    <main>
-        <div class="section post-section pt-5 mt-5">
+    <main id="blog-main">
+        <div class="section post-section pt-5">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <h2 class="heading text-center pb-2">{{ $blog->title }}</h2>
+                    <div class="col-md-8"  id="artikel-blog" >
+                        <h2 class="heading text-center pb-5">{{ $blog->title }}</h2>
                         <div class="text-center">
-                            <img src="{{ Storage::url($blog->image) }}" alt="Image" class="img-fluid rounded mb-4" data-aos="fade-in" data-aos-duration="1000">
-                            <span class="date d-block text-center small text-uppercase text-black-50 mb-5">{{ date('d M Y', $blog->created_at->timestamp) }}</span>
+                            <img src="{{ Storage::url($blog->image) }}" alt="Image" class="img-fluid mb-4 image-artikel-blog" data-aos="fade-in" data-aos-duration="1000">
+                            <span class="date d-block text-center small text-uppercase text-black-50 mt-3 mb-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3 m-1" viewBox="0 0 16 16">
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                                {{ date('d M Y', $blog->created_at->timestamp) }}</span>
                         </div>
                         <div>
                             {!! $blog->content !!}
@@ -63,23 +68,36 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="heading">Artikel Lainnya</h2>
+                        <h2 class="heading my-5"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-newspaper me-2" viewBox="0 0 16 16">
+                            <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                            <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+                          </svg>
+                          Artikel Lainnya</h2>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div  class="row justify-content-center">
                     @foreach ( $all as $all )
-                    <div class="col-lg-12">
+                    <div id="artikel-lain" class="col-lg-12">
                         <div class="post-entry d-md-flex small-horizontal mb-5" data-aos="fade-right" data-aos-duration="1000">
                             <div class="me-md-5 thumbnail mb-3 mb-md-0">
                                 <img src="{{ Storage::url($all->image) }}" alt="Image" class="img rounded" height="225px" width="325px">
                             </div>
                             <div class="content">
-                                <h3 class="heading"><a href="single.html">{{ $all->title }}</a></h3>
+                                <h3 class="heading"><a href="{{ route('blogshow.show', $all->id) }}">{{ $all->title }}</a></h3>
                                 <div>{!! Str::limit($all->content, 225) !!}</div>
                                 <div href="#" class="post-author d-flex align-items-center">
                                     <div class="text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle me-1" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                        </svg>
                                         <strong>Admin Desa Buahan</strong>
-                                        <span>{{ date('d M Y', $all->created_at->timestamp) }}</span>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3 me-1 ms-5" viewBox="0 0 16 16">
+                                                <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                                <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                            </svg>
+                                            {{ date('d M Y', $all->created_at->timestamp) }}</span>
                                     </div>
                                 </div>
                             </div>

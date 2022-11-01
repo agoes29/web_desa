@@ -3,10 +3,10 @@
 @section('home')
     <main id="main">
         <section id="about" class="about">
-            <div class="about-wrap container-fluid py-5" id="about">
+            <div class="about-wrap container-fluid py-5">
                 <div class="section-header text-center wow  pb-5" data-aos="zoom-in">
-                    <p>Tentang Desa</p>
-                    <h2>Sejarah Desa Buahan</h2>
+                    <h2><i class="bi bi-house-fill pe-2"></i>TENTANG DESA</h2>
+                    <h4>Sejarah Desa Buahan</h4>
                 </div>
                 <div class="container">
                     <div class="row">
@@ -18,7 +18,7 @@
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
-                        <div class="text-about col-lg-7 col-md-6 order-2 order-md-1" data-aos="fade-in" data-aos-duration="1500" data-aos-offset="300">
+                        <div class="text-about col-lg-7 col-md-6 order-2 order-md-1" data-aos="fade-in" data-aos-duration="1500">
                             <div class="text-about">
                                 <h1 class="fw-bold"> Desa Buahan</h1>
                                 <p>
@@ -36,13 +36,14 @@
         <div class="bgimg">
             <div class="caption">
                 <span class="border">
-                    <h1>Blog Desa</h1>
+                    <h1> <i class="bi bi-newspaper pe-3"></i>BLOG DESA</h1>
                     <h4>Artikel Terbaru</h4>
-                </pan>
+                </span>
             </div>
         </div>
         {{-- Blog --}}
         <section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f1f1f1" fill-opacity="1" d="M0,160L30,138.7C60,117,120,75,180,80C240,85,300,139,360,144C420,149,480,107,540,112C600,117,660,171,720,197.3C780,224,840,224,900,213.3C960,203,1020,181,1080,176C1140,171,1200,181,1260,186.7C1320,192,1380,192,1410,192L1440,192L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
         <div class="blog" id="blog">
             <div class="container">
                 <div class="row" data-aos="fade-up" data-aos-duration="1000">
@@ -85,8 +86,8 @@
             <hr>
         </div>
             <div id="tag-nav" class="section-header text-center wow zoomIn pb-1" data-aos="zoom-in">
-                <p>Galeri Desa</p>
-                <h2>Galeri Terbaru</h2>
+                <h2><i class="bi bi-images pe-2"></i>GALERI DESA</h2>
+                <p>Galeri Terbaru</p>
             </div>
             <div class="galeri-kecil-wrap container-fluid">
                 <div class="container">
@@ -118,6 +119,7 @@
                 </div>
             </div>
         </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f1f1f1" fill-opacity="1" d="M0,160L30,138.7C60,117,120,75,180,80C240,85,300,139,360,144C420,149,480,107,540,112C600,117,660,171,720,197.3C780,224,840,224,900,213.3C960,203,1020,181,1080,176C1140,171,1200,181,1260,186.7C1320,192,1380,192,1410,192L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
         <div class="langgan-wrap container-fluid text-center py-5">
             <div class="container" id="surat">
                 <div class="row">

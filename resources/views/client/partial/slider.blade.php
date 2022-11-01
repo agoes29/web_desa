@@ -1,4 +1,3 @@
-
 <section id="hero">
     <!-- Carousel wrapper -->
     <div id="carouselVideoExample"  data-bs-interval="10000" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -18,19 +17,16 @@
             <!-- Single item -->
             <div class="carousel-item active">
                 <!-- INI CONTOH CAROUSEL VIDEO DARI YOUTUBE-- oke kak-->
-                <iframe width="1366" height="768" srca="https://www.youtube.com/embed/DdEd3YxU4Qk?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-                <video class="img-fluid" autoplay loop muted>
-                    {{-- <source src="assets/vid/1.mp4" type="video/mp4" /> --}}
-                </video>
-                <div class="carousel-container d-md-block">
+                <iframe width="1366" height="768" srca="https://www.youtube.com/embed/DdEd3YxU4Qk?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>s
+            <div class="carousel-container d-md-block">
                     <div class="container">
                         <div class="card w-50 w-md-100 mx-auto px-2 py-3 rad-10">
-                            <h2 class="animate__animated animate__fadeInDown">First slide label</h2>
+                            <h2 class="animate__animated animate__fadeInDown">Desa Buahan</h2>
                             <p class="animate__animated animate__fadeInUp">
-                                Nulla vitae elit libero, a pharetra augue mollis interdum.
+                                Website Resmi Desa Buahan
                             </p>
                             <a href="#about"
-                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">lihat</a>
                         </div>
                     </div>
                 </div>

@@ -153,7 +153,7 @@ $('.slide-one-item').owlCarousel({
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            once: true, 
+            once: true,
         });
     </script>
 </body>
