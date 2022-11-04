@@ -38,7 +38,7 @@
                                 id="preview-image-before-upload" src="" alt="" class="img-fluid"
                                 style="width: 200px"></p>
                     <button type="submit" class="btn btn-md btn-primary px-4">Tambahkan Blog</button>
-                    <a href="/blog" class=" btn btn-md btn-secondary px-4">Batal</a>
+                    <a href="/admin/blog" class=" btn btn-md btn-secondary px-4">Batal</a>
                 </form>
             </div>
         </div>

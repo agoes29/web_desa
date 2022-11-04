@@ -26,7 +26,7 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class=" col-lg-5 col-md-6 order-1 order-md-2" data-aos="fade-left" data-aos-duration="1000">
+                        <div class=" col-lg-5 col-md-6 order-1 order-md-2" data-aos="fade-up" data-aos-duration="1000">
                             <div class="card gambar-about">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15784.072586875232!2d115.13022005800802!3d-8.497615863724253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23b2bf99c0b95%3A0xc30e643bffae455e!2sBuahan%2C%20Kec.%20Tabanan%2C%20Kabupaten%20Tabanan%2C%20Bali!5e0!3m2!1sid!2sid!4v1664631528155!5m2!1sid!2sid"
@@ -105,7 +105,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="text-galeri-k col-lg-5 col-md-5 text-white p-5" data-aos="fade-right" data-aos-duration="1000">
-                            <h1>Nikmati Moment Anda Dengan Keluarga</h1>
+                            <h1>GALERI DESA BUAHAN</h1>
                         </div>
                         <div class="col-lg-7 col-md-7 p-3">
                             <div class="row" id="galeri-beranda">

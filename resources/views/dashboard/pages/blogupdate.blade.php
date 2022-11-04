@@ -33,7 +33,7 @@
                 src="{{Storage::url($blog->image)}}" alt="" class="img-fluid" style="width: 200px"></p>
         </div>
         <button type="submit" class="btn btn-md btn-primary px-4">Update Blog</button>
-        <a href="/blog" class=" btn btn-md btn-secondary px-4">Batal</a>
+        <a href="/admin/blog" class=" btn btn-md btn-secondary px-4">Batal</a>
         </form>
     </div>
 </div>

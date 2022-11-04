@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Blog;
 use App\Models\Umkm;
+use App\Models\Home;
 use Illuminate\Support\Str;
 
 class HomeController extends Controller
@@ -13,7 +14,9 @@ class HomeController extends Controller
     public function client()
     {
         $blog = Blog::all()->sortByDesc("id")->take(3);
-        return view('client.page.home', ['home' => true, 'blog' => $blog]);
+        $slider = Home::all()->sortByDesc("id");
+        return view('client.page.home', ['home' => true, 'blog' => $blog, 'slider' => $slider]);
+
     }
     public function umkm()
     {

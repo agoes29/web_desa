@@ -14,6 +14,7 @@
         @yield('blog')
         @yield('umkm')
         @yield('surat')
+        @yield('homeslide')
 
     </section>
 

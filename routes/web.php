@@ -21,9 +21,9 @@ Auth::routes();
 
 /* Home Route */
 Route::get('/', [App\Http\Controllers\HomeController::class, 'client'])->name('main');
-Route::get('/client/umkm', [App\Http\Controllers\HomeController::class, 'umkm'])->name('umkm');
-Route::get('/client/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog');
-Route::get('/client/profil', [App\Http\Controllers\HomeController::class, 'profil'])->name('profil');
+Route::get('/umkm', [App\Http\Controllers\HomeController::class, 'umkm'])->name('umkm');
+Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog');
+Route::get('/profil', [App\Http\Controllers\HomeController::class, 'profil'])->name('profil');
 Route::resource('blogshow', App\Http\Controllers\BlogShow::class);
 
 /* Auth Route */
@@ -36,11 +36,15 @@ Route::get('tabel', [App\Http\Controllers\Administrator\DashboardController::cla
 
 //Blog Route
 Route::get('bloginput', [App\Http\Controllers\BlogController::class, 'bloginput'])->name('BlogInput');
-Route::resource('blog', App\Http\Controllers\BlogController::class);
+Route::resource('/admin/blog', App\Http\Controllers\BlogController::class);
+
+//Slider Route
+Route::get('homeinput', [App\Http\Controllers\HomepageController::class, 'homeinput'])->name('HomeInput');
+Route::resource('/admin/home', App\Http\Controllers\HomepageController::class);
 
 //Umkm Route
 Route::get('umkminput', [App\Http\Controllers\UmkmController::class, 'umkminput'])->name('UmkmInput');
-Route::resource('umkm', App\Http\Controllers\UmkmController::class);
+Route::resource('/admin/umkm', App\Http\Controllers\UmkmController::class);
 
 Route::get('surat', [App\Http\Controllers\SuratController::class, 'index'])->name('Surat');
 Route::get('download',[App\Http\Controllers\Surat::class, 'surat']);

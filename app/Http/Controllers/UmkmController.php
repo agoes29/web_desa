@@ -62,7 +62,7 @@ class UmkmController extends Controller
         $umkm->link= $request->link;
         $umkm->image = $image;
         $umkm->save();
-        return redirect('/umkm');
+        return redirect('/admin/umkm');
     }
 
     /**
@@ -117,7 +117,7 @@ class UmkmController extends Controller
         $umkm->link= $request->link;
         $umkm->image = $image;
         $umkm->save();
-        return redirect('/umkm');
+        return redirect('/admin/umkm');
     }
 
     /**

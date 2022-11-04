@@ -59,7 +59,7 @@ class BlogController extends Controller
         $blog->content = $request->content;
         $blog->image = $image;
         $blog->save();
-        return redirect('/blog');
+        return redirect('/admin/blog');
     }
 
     /**
@@ -111,7 +111,7 @@ class BlogController extends Controller
          $blog->content = $request->content;
         $blog->image = $image;
         $blog->save();
-        return redirect('/blog');
+        return redirect('/admin/blog');
     }
 
     /**

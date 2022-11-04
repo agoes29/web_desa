@@ -35,7 +35,15 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/blog" class="nav-link">
+                        <a href="/admin/home" class="nav-link">
+                            <i class="nav-icon fas fa-columns"></i>
+                            <p>
+                                Home Page
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/blog" class="nav-link">
                             <i class="nav-icon fas fa-th"></i>
                             <p>
                                 Blog
@@ -43,7 +51,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/umkm" class="nav-link">
+                        <a href="/admin/umkm" class="nav-link">
                         <i class="nav-icon fas fa-building"></i>
                             <p>
                                 UMKM

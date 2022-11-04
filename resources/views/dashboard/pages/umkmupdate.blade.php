@@ -44,7 +44,7 @@
                 src="{{Storage::url($umkm->image)}}" alt="" class="img-fluid" style="width: 200px"></p>
         </div>
         <button type="submit" class="btn btn-md btn-primary px-4">Update UMKM</button>
-        <a href="/umkm" class=" btn btn-md btn-secondary px-4">Batal</a>
+        <a href="/admin/umkm" class=" btn btn-md btn-secondary px-4">Batal</a>
         </form>
     </div>
 </div>

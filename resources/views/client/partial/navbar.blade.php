@@ -1,5 +1,5 @@
 <header id="header" class="fixed-top d-flex align-items-center">
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img class="imageLogo" src="{{asset('assets/images/Asset 2.png')}}" alt="" />
@@ -26,13 +26,13 @@
                             <a class="nav-link" href="/">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/client/profil">Profil Desa</a>
+                            <a class="nav-link" href="/profil">Profil Desa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/client/blog">Blog</a>
+                            <a class="nav-link" href="/blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/client/umkm">UMKM</a>
+                            <a class="nav-link" href="/umkm">UMKM</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/#surat">Surat Menyurat</a>
