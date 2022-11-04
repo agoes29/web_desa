@@ -43,6 +43,8 @@ button {
   font-weight: bold;
   font-size: 20px;
 }
+
+
 /* header */
 .header-wrap {
   top: 0px;
@@ -59,21 +61,15 @@ button {
 nav {
   height: 15px;
 }
-/* Banner */
-.banner-wrap {
-  background-image: url("../images/Group\ 2.jpg");
-  height: 100vh;
-  background-size: 100%;
-  object-fit: contain;
-  margin-top: -80px;
-}
-.banner {
-  height: 100vh;
-}
-.banner h1 {
-  font-size: 48px;
-}
+
+/*----------------------------------------------------------------
+# HOME BLADE
+ ----------------------------------------------------------------*/
+
 /* about */
+#about-profile{
+    margin-top: -750px;
+}
 .text-about h1 {
   font-size: 44px;
 }
@@ -163,27 +159,7 @@ nav {
   padding: 80px 0;
 }
 
-/* Contact Page */
-.saran {
-  border-radius: 20px;
-}
-.saran input {
-  padding: 10px 30px;
-  background-color: white;
-  border-radius: 100px;
-  border: 1px solid rgba(0, 0, 0, 0.6);
-  width: 40%;
-  margin-bottom: 30px;
-}
-.saran textarea {
-  padding: 10px 30px;
-  background-color: white;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.6);
-  width: 40%;
-  margin-bottom: 30px;
-}
-
+/* navbar */
 .navbar-color {
   color: #f1f1f1 !important;
   border: none !important;
@@ -193,6 +169,23 @@ nav {
   color: #198754 !important;
   border: none !important;
 }
+
+/* svg footer */
+#visual1{
+    margin-top: -500px;
+    z-index: 1;
+}
+
+/* #imgPadang{
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    src="{{ asset('assets/images/UMKM.jpg') }}";
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+} */
 
 /*----------------------------------------------------------------
 # Parallax Image
@@ -426,12 +419,12 @@ border: 1px solid rgba(255, 255, 255, 0.171);
   letter-spacing: 1px;
   display: inline-block;
   padding: 14px 32px;
-  /* border-radius: 4px; */
   transition: 0.5s;
   line-height: 1;
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
+
   /* btn */
   border-radius: 18px;
   background: linear-gradient(225deg, #007554, #007553);
@@ -495,7 +488,7 @@ border: 1px solid rgba(255, 255, 255, 0.171);
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
+/*
 * Desktop Navigation
 */
 #header .navbar {
@@ -643,19 +636,14 @@ border: 1px solid rgba(255, 255, 255, 0.171);
   width: 100%;
 }
 
-#blog{
-    margin-top: -165px;
-}
-
-#blog p{
-    font-size: 20px;
-}
-
 .blog .blog-img {
   position: relative;
   width: 100%;
   height: 320px;
   overflow: hidden;
+}
+#blog{
+    margin-top: 30px;
 }
 
 .blog .blog-img{
@@ -866,9 +854,6 @@ a.btn i {
 
 
 
-
-
-
   /* footer */
 *{
     margin: 0;
@@ -989,16 +974,12 @@ footer .kanan a{
   .mobile-nav-toggle {
     display: block;
   }
-
-  /* .navbar ul {
-    display: none;
-  } */
 }
  /*-------------------------------------------
     #Login Template
  ------------------------------------------- */
 
- .divider:after,
+.divider:after,
 .divider:before {
 content: "";
 flex: 1;
@@ -1019,6 +1000,8 @@ height: 100%;
 .colorlink:hover{
   color:#52b69a;
 }
+
+
 
 /* UMKM */
 

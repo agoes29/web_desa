@@ -69,14 +69,13 @@
         <!-- Inner -->
 
         <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideoExample"
-            data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <i class="fa-regular fa-chevrons-right"></i>
             <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselVideoExample"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-regular fa-chevrons-right"></i></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>

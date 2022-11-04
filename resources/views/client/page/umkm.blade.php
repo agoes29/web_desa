@@ -5,6 +5,10 @@
         <div class="about">
             <div>
                 <div class="col-sm-12">
+                    {{-- <div id="imgPadang">
+                        <i class="bi bi-shop me-2"></i></i>
+                            UMKM DESA BUAHAN</h1>
+                    </div> --}}
                     <img src="{{ asset('assets/images/UMKM.jpg') }}" width="100%">
                     <div class="desa p-5">
                         <h1>
@@ -14,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f1f1f1" fill-opacity="1" d="M0,160L30,138.7C60,117,120,75,180,80C240,85,300,139,360,144C420,149,480,107,540,112C600,117,660,171,720,197.3C780,224,840,224,900,213.3C960,203,1020,181,1080,176C1140,171,1200,181,1260,186.7C1320,192,1380,192,1410,192L1440,192L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+        <svg id="visual" viewBox="0 0 960 540" width="100%" height="100%"><path d="M0 152L160 66L320 103L480 95L640 65L800 129L960 65L960 0L800 0L640 0L480 0L320 0L160 0L0 0Z" fill="#d5dedc" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path><path d="M0 82L160 48L320 121L480 76L640 64L800 116L960 65L960 0L800 0L640 0L480 0L320 0L160 0L0 0Z" fill="#76aa9a" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path><path d="M0 63L160 45L320 58L480 52L640 55L800 62L960 30L960 0L800 0L640 0L480 0L320 0L160 0L0 0Z" fill="#007554" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path></svg>>
         <div class="umkm" id="umkm">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
@@ -49,5 +53,5 @@
             </div>
         </div>
     </main>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,160L30,138.7C60,117,120,75,180,80C240,85,300,139,360,144C420,149,480,107,540,112C600,117,660,171,720,197.3C780,224,840,224,900,213.3C960,203,1020,181,1080,176C1140,171,1200,181,1260,186.7C1320,192,1380,192,1410,192L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+    <svg id="visual1" viewBox="0 0 900 600" width="100%" height="100%"><rect x="0" y="0" width="100%" height="100%" fill="#ffffff"></rect><path d="M0 495L225 512L450 455L675 487L900 502L900 601L675 601L450 601L225 601L0 601Z" fill="#708f84" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path><path d="M0 537L225 476L450 489L675 536L900 499L900 601L675 601L450 601L225 601L0 601Z" fill="#42575a" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path><path d="M0 541L225 548L450 512L675 518L900 528L900 601L675 601L450 601L225 601L0 601Z" fill="#1f2529" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path></svg>
 @endsection
