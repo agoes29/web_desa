@@ -107,21 +107,21 @@
                         <div class="text-galeri-k col-lg-5 col-md-5 text-white p-5" data-aos="fade-right" data-aos-duration="1000">
                             <h1>GALERI DESA BUAHAN</h1>
                         </div>
-                        <div class="col-lg-7 col-md-7 p-3">
+                        <div class="col-lg-7 col-md-7 p-3 row-galeri">
                             <div class="row" id="galeri-beranda">
                                 <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
                                     <div class="gallery galeri-home">
-                                        <img class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-up" data-aos-duration="1000" src="assets/images/gallery/1.jpg"
+                                        <img class="w-100 shadow-1-strong rounded mb-4 img1" data-aos="fade-up" data-aos-duration="1000" src="assets/images/gallery/1.jpg"
                                             alt="Gambar Desa Buahan" />
-                                        <img class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" src="assets/images/gallery/2.jpg"
+                                        <img class="w-100 shadow-1-strong rounded mb-4 img2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" src="assets/images/gallery/2.jpg"
                                             alt="Gambar Desa Buahan" />
                                     </div>
                                 </div>
                                 <div class="col-lg-6 mb-4 mb-lg-0">
                                     <div class="gallery galeri-home">
-                                        <img class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" src="assets/images/gallery/3.jpg"
+                                        <img class="w-100 shadow-1-strong rounded mb-4 img3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" src="assets/images/gallery/3.jpg"
                                             alt="Gambar Desa Buahan" />
-                                        <img class="w-100 shadow-1-strong rounded mb-4" data-aos="fade-up" data-aos-duration="1000" src="assets/images/gallery/4.jpg"
+                                        <img class="w-100 shadow-1-strong rounded mb-4 img4" data-aos="fade-up" data-aos-duration="1000" src="assets/images/gallery/4.jpg"
                                             alt="Gambar Desa Buahan" />
                                     </div>
                                 </div>
