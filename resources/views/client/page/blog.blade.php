@@ -83,7 +83,10 @@
                                 </div>
                                 <div class="card-footer d-md">
                                     <a href="{{ route('blogshow.show', $bls->id) }}">
-                                        <button class="btn-block btn-readmore btn-lg">Read More</button>
+                                        <button class="btn-block btn-readmore btn-lg">
+                                            <span class="text">Selengkapnya</span>
+                                            <span>>>></span>
+                                        </button>
                                     </a>
                                 </div>
                             </div>

@@ -177,7 +177,7 @@
             </div>
         </div> --}}
     </main>
-    <svg style="margin:auto;background:#fff;display:block;z-index:1;position:relative" width="100%" height="100%" preserveAspectRatio="xMidYMid" viewBox="0 0 2000 200">
+    <svg id="svg-beranda"style="margin:auto;background:#fff;display:block;z-index:1;position:relative" width="100%" height="100%" preserveAspectRatio="xMidYMid" viewBox="0 0 2000 200">
         <g transform="translate(1000,100) scale(1,-1) translate(-1000,-100)"><linearGradient id="lg-0.03755831135470311" x1="0" x2="1" y1="0" y2="0">
           <stop stop-color="#979797" offset="0"></stop>
           <stop stop-color="#bdbdbd" offset="1"></stop>
@@ -192,5 +192,5 @@
         </path><path d="" fill="url(#lg-0.03755831135470311)" opacity="0.43000000000000005">
           <animate attributeName="d" dur="20s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="-16s" values="M0 0L 0 6.218407956081592Q 333.3333333333333 76.13177664501413  666.6666666666666 51.440696282314526T 1333.3333333333333 20.63018234061158T 2000 23.62107911783682L 2000 0 Z;M0 0L 0 20.137099637410554Q 333.3333333333333 54.96076892165205  666.6666666666666 17.11201314434912T 1333.3333333333333 32.19983866968237T 2000 58.42399250448801L 2000 0 Z;M0 0L 0 83.01260720578462Q 333.3333333333333 145.52217283342358  666.6666666666666 102.89155245410556T 1333.3333333333333 22.658011027950266T 2000 105.11596900403913L 2000 0 Z;M0 0L 0 6.218407956081592Q 333.3333333333333 76.13177664501413  666.6666666666666 51.440696282314526T 1333.3333333333333 20.63018234061158T 2000 23.62107911783682L 2000 0 Z"></animate>
         </path></g>
-        </svg>
+    </svg>
 @endsection
