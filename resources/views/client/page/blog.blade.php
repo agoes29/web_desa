@@ -4,10 +4,10 @@
     <main>
         <section id="carousel-blog">
             <div class="content">
-                <div class="container">
-                    <h2 class="my-4 pt-5 pb-5 text-center" style="color: #fff">
+                <div class="container tilte-carouselBlog">
+                    <h3 class="my-4 pt-5 pb-5 text-center" style="color: #fff">
                         <i class="bi bi-newspaper pe-2"></i>
-                        HALAMAN BLOG</h2>
+                        HALAMAN BLOG</h3>
                     <div class="owl-carousel slide-one-item">
                         <div class="d-md-flex testimony-29101 align-items-stretch">
                             <div class="image" style="background-image: url({{ Storage::url($first->image) }});"></div>

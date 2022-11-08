@@ -1099,6 +1099,79 @@ height: 100%;
     width : 80%;
    }
   }
+/***************************************/
+/*********** profile desa CSS **********/
+/***************************************/
+.coba22pi{
+    height: 75px;
+    width: 100%;
+    background-color: #007554;
+    margin-top: -75px;
+}
+#about-profil{
+    margin-top: -150px;
+}
+#about-profil .container-fluid{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.h4profile{
+    font-size: 20px;
+    font-weight: 400;
+}
+.text-profil{
+    text-align: justify;
+}
+.profilMap{
+    border: none!important;
+    padding-bottom: 20px;
+}
+.profilMap .container-about-profil .text-about-profil{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: justify;
+}
+
+.bgMap {
+  background-image: url("/assets/images/bgMap.png");
+  min-height: 250px;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.bgMap {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.captionMap {
+  position: absolute;
+  left: 0;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.captionMap .borderMap {
+  border: none !important;
+}
+.captionMap span.borderMap {
+  color: rgb(255, 255, 255);
+}
+
+.wilayah .container-about-wilayah .text-about-wilayah{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: justify;
+}
+.wilayah{
+    border: none!important;
+    margin-top: 30px;
+}
+
+
 
 /*******************************/
 /*********** umkm CSS **********/
@@ -1282,9 +1355,10 @@ height: 100%;
 /**************************************/
 /*********** Tampilan Mobile **********/
 /**************************************/
-
-/* home */
 @media(max-width:500px){
+
+
+    /* home */
     #about .section-header h2{
         font-size: 20px;
     }
@@ -1314,7 +1388,6 @@ height: 100%;
     }
 
 
-
     /* #blog{
         text-align: center;
         align-items:center;
@@ -1322,10 +1395,6 @@ height: 100%;
     #blog .container .card{
         height: 400px;
         width: 200px;
-    }
-    #blog .container .card .blog-text a h5{
-        font-size: 12px;
-        text-align: justify;
     }
     .card .blog-text{
         padding: 20px;
@@ -1340,6 +1409,14 @@ height: 100%;
         font-size: 12px;
         text-align: justify;
     } */
+    #blog .container .card .blog-text a h5{
+        font-size: 15px;
+        text-align: justify;
+    }
+    #blog .container .row{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
 
 
     #tag-nav h2{
@@ -1352,9 +1429,6 @@ height: 100%;
         font-weight: 400;
     }
 
-    /* .galeri-kecil-wrap{
-        height: ;
-    } */
 
     .row-galeri{
         height: 0px;
@@ -1385,4 +1459,99 @@ height: 100%;
         margin-top:  -1333px;
         margin-left: 160px;
     }
+
+
+    #footer-atas ul{
+        padding-bottom: 20px;
+    }
+    #footer-atas ul li{
+        padding: 0px;
+    }
+    #footer-atas ul hr{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    footer .kanan a{
+        padding: 5px 15px;
+    }
+    .kanan p{
+        text-align: justify;
+    }
+    .footer-wrap .container ul{
+        margin-top: 8px;
+        margin-left: -15px;
+    }
+
+
+    /* profile desa */
+    @media(max-width: 768px){
+        .coba22pi{
+            margin-top: -30px;
+        }
+        #about-profil{
+            margin-top: -25px;
+        }
+        .captionMap {
+          position: absolute;
+          left: 0;
+          top: 15%;
+          width: 100%;
+          text-align: center;
+          color: #000;
+        }
+        .captionMap .borderMap h1{
+          font-size: 20px;
+          margin-bottom: -2px;
+        }
+        .captionMap .borderMap h4{
+          font-size: 15px;
+          margin-top: -2px;
+        }
+
+        .bgMap {
+          background-image: url("/assets/images/bgMapRespon.jpg");
+          min-height: 100px;
+          padding-left: 0%;
+          padding-right: 0%;
+        }
+        .bgMap {
+          position: relative;
+          opacity: 0.65;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        #visualprofil{
+            margin-top: -190px;
+        }
+    }
+
+
+    /* blog */
+    .tilte-carouselBlog h3{
+        font-size: 20px;
+        margin-top: 50px!important;
+        margin-bottom: -20px!important;
+    }
+    #carousel-blog .content .container h2{
+        font-size: 20px;
+    }
+    .testimony-29101 .text{
+        text-align: justify;
+        padding: 3rem 2rem!important;
+    }
+
+    #blog-coba-coba .container h2{
+        font-size: 20px;
+    }
+    #blog-coba-coba .row{
+        margin-top: -35px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
 }
