@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img class="imageLogo" src="{{asset('assets/images/Asset 2.png')}}" alt="" />
-                <h4>Desa Buahan</h4>
+                <h4 style="text-shadow: 3px 3px 8px #000000;">Desa Buahan</h4>
             </a>
             <button class="navbar-toggler navbar-color" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"

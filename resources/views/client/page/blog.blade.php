@@ -85,7 +85,7 @@
                                     <a href="{{ route('blogshow.show', $bls->id) }}">
                                         <button class="btn-block btn-readmore btn-lg">
                                             <span class="text">Selengkapnya</span>
-                                            <span>>>></span>
+                                            <span>lihat<i class="bi bi-arrow-right"></i></span>
                                         </button>
                                     </a>
                                 </div>
@@ -97,7 +97,7 @@
         </div>
         <!-- END COBA COBA -->
     </main>
-    <svg id="visual1" viewBox="0 0 900 600" width="100%" height="100%">
+    <svg id="visual-blog" viewBox="0 0 900 600" width="100%" height="100%">
         <path d="M0 495L225 512L450 455L675 487L900 502L900 601L675 601L450 601L225 601L0 601Z" fill="#708f84" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path><path d="M0 537L225 476L450 489L675 536L900 499L900 601L675 601L450 601L225 601L0 601Z" fill="#42575a" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path><path d="M0 541L225 548L450 512L675 518L900 528L900 601L675 601L450 601L225 601L0 601Z" fill="#1f2529" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path>
     </svg>
 @endsection

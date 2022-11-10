@@ -82,7 +82,7 @@
                             <div class="card-footer d-md">
                                 <a id="hover-blog" class="btn btn-block btn-lg" href="{{ route('blogshow.show', $bl->id) }}">
                                     <span class="text">Selengkapnya</span>
-                                    <span>>>></span>
+                                    <span>lihat<i class="bi bi-arrow-right"></i></span>
                                 </a>
                             </div>
                         </div>

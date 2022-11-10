@@ -13,7 +13,7 @@
                 @foreach ($slider as $hot)
                     <div class="d-md-flex testimony-29101 align-items-stretch">
                         <div class="image" style="background-image: url({{ Storage::url($hot->image) }});"></div>
-                        <div class="text">
+                        {{-- <div class="text">
                             <a href="{{ route('blogshow.show', $hot->id) }}">
                             <h2><b>{{$hot->title}}</b></h2>
                             </a>
@@ -26,7 +26,7 @@
                                     </p>
                                 </div>
                             </blockquote>
-                        </div>
+                        </div> --}}
                     </div> <!-- .item -->
                 @endforeach
 

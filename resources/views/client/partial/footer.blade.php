@@ -2,7 +2,7 @@
 <div id="kontak">
 </div>
     <div class=" row-footer">
-    <footer class="bg-dark p-5 text-light">
+    <footer class="bg-dark p-5 text-light footer-atas">
     <div class="row">
         <div class="col-sm-12 mb-3 col-md-4">
             <strong style="font-size: 25px;" id="kontak">Desa Buahan 2022</strong>
@@ -35,8 +35,8 @@
     </div>
 </footer>
 
-<footer>
-    <div class="footer footer-wrap container-fluid text-white p-1 text-start">
+<footer id="footer-bawah">
+    <div class="footer  footer-wrap container-fluid text-white p-1 text-start footer-bawah">
         <div class="container d-flex flex-wrap justify-content-between align-items-center py-2 my-2">
             <p class="m-0">@copyright. <a href="https://www.buahandesaku.com/" class="wputih link-hover"> Buahan Desaku</a>  |  <a href="https://www.instagram.com/kkntbuahan_instiki2022" class="wputih link-hover">KKN INSTIKI 2022</a> </p>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex footer-icon">

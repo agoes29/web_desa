@@ -18,6 +18,8 @@
     }
     #mobile {
         display: block;
+        background: linear-gradient(218deg, #005727, #0034028c);
+        padding: 86px 15px 15px 15px
     }
   }
 
@@ -89,6 +91,9 @@ nav {
 /* about */
 #about-profile{
     margin-top: -750px;
+}
+#visualprofil{
+    margin-top: -500px;
 }
 .text-about h1 {
   font-size: 44px;
@@ -189,11 +194,24 @@ nav {
   color: #198754 !important;
   border: none !important;
 }
+.nav-link{
+    text-shadow: 3px 3px 8px #000000;
+}
+@media(max-width: 768px){
+    .nav-link{
+        text-shadow: 3px 3px 8px #ffffff;
+    }
+    }
 
 /* svg footer */
 #visual1{
     margin-top: -500px;
 }
+@media(max-width: 768px){
+    #visual1{
+        margin-top: -120px !important;
+    }
+    }
 #svg-beranda{
     margin-top: 5%!important;
 }
@@ -309,7 +327,7 @@ nav {
 
 #carousel-blog {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #007554;
     overflow: hidden;
     position: relative;
@@ -578,6 +596,9 @@ border: 1px solid rgba(255, 255, 255, 0.171);
     .navbar .navbar-brand:focus {
       color: #ebebeb;
     }
+    .navbar .navbar-brand h4{
+        text-shadow: 4px 4px 8px #000000;
+    }
 
 }
 .navbar a i,
@@ -777,7 +798,17 @@ border: 1px solid rgba(255, 255, 255, 0.171);
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
+#hover-blog span i{
+    animation: 1000ms;
+    transition: .5s;
+}
+#hover-blog span i:hover{
+    padding-left: 20px;
+    animation: 1000ms;
+    transition: .5s;
+}
 /* end style btn blog */
+
 
 a .btn-readmore {
 position: relative;
@@ -836,6 +867,16 @@ a .btn-readmore:hover span:last-child {
 transform: translateX(-50%) translateY(-50%);
 opacity: 1;
 transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+.btn-readmore span i{
+    animation: 1000ms;
+    transition: .5s;
+    padding-left: 5px;
+}
+.btn-readmore span i:hover{
+    padding-left: 20px;
+    animation: 1000ms;
+    transition: .5s;
 }
 /*
 a .btn-readmore{
@@ -905,6 +946,9 @@ a.btn i {
 .blog .card .card-footer:hover{
     background-color: #fff;
     border: 0px;
+}
+#visual-blog{
+    margin-top: -40%;
 }
 
 #galery hr{
@@ -1105,9 +1149,8 @@ height: 100%;
     padding: 0;
     font-family : var(--Roboto);
 }
-
 #umkm .umkmHead{
-    margin-top: -400px;
+    margin-top: 100px;
 }
 
 .benner{
@@ -1177,6 +1220,7 @@ height: 100%;
 
    .desa{
     width : 80%;
+    display: none;
    }
   }
 /***************************************/
@@ -1332,7 +1376,7 @@ height: 100%;
 
 .umkm .umkm-item:hover {
     box-shadow: inset 800px 0 0 0 #007554;
-    transition: ease-out 0.5s;
+    transition: ease-out .5s;
 }
 
 .umkm .umkm-item:hover .umkm-img img {
@@ -1358,8 +1402,13 @@ height: 100%;
 }
 
 @media(max-width: 575.98px) {
+    .umkm{
+        margin-top: -15% !important;
+        padding-top: 0px !important;
+    }
     .umkm .umkm-text {
         padding: 0 15px;
+        padding-top: 0px !important;
     }
 
     .umkm .umkm-text h2 {
@@ -1435,7 +1484,8 @@ height: 100%;
 /**************************************/
 /*********** Tampilan Mobile **********/
 /**************************************/
-@media(max-width:500px){
+@media(max-width:500px)
+{
 
 
     /* home */
@@ -1496,6 +1546,9 @@ height: 100%;
     #blog .container .row{
         padding-right: 10%;
         padding-left: 10%;
+    }
+    .blog .blog-img{
+      height:100%;
     }
 
 
@@ -1558,10 +1611,17 @@ height: 100%;
     }
     .kanan p{
         text-align: justify;
+        display: none;
     }
     .footer-wrap .container ul{
         margin-top: 8px;
         margin-left: -15px;
+    }
+    .row-footer footer .footer-atas{
+        padding: 2rem!important;
+    }
+    #svg-beranda {
+      margin-top: -11%!important;
     }
 
 
@@ -1633,5 +1693,24 @@ height: 100%;
         padding-left: 10%;
         padding-right: 10%;
     }
+    .blog .card .card-header{
+        padding-bottom: 0px;
+        min-height: 25%;
+    }
+    .blog .card .card-footer{
+        padding-top: 15%;
+    }
+    a .btn-readmore{
+        padding: 7px 35% 6px;
+    }
 
+    #visual-blog{
+        margin-top: -40%;
+    }
+
+
+    /* umkm */
+    #umkm{
+        margin-top: 20%;
+    }
 }
