@@ -6,7 +6,7 @@
     </div>
 </section>
 
-<section id="mobile" style="background-color: #008264">
+<section id="mobile" style="background-color: #007554;">
     <div class="content">
         <div class="container tilte-carouselBlog">
             <div class="owl-carousel slide-one-item">

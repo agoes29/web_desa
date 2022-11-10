@@ -2,10 +2,11 @@
 
 @section('blog')
     <main id="blog-main">
+        <div id="mobile" style="background-color: #007554;" ></div>
         <svg id="visual" viewBox="0 0 900 600" width="100%" height="100%">
             <path d="M0 70L150 161L300 80L450 69L600 122L750 84L900 175L900 0L750 0L600 0L450 0L300 0L150 0L0 0Z" fill="#d5dedc" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path><path d="M0 118L150 126L300 100L450 85L600 54L750 54L900 111L900 0L750 0L600 0L450 0L300 0L150 0L0 0Z" fill="#76aa9a" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path><path d="M0 31L150 77L300 38L450 71L600 70L750 49L900 68L900 0L750 0L600 0L450 0L300 0L150 0L0 0Z" fill="#007554" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path>
         </svg>
-        <div class="section post-section pt-5 blogMain-show">
+        <div class="section post-section pt-5 blogMain-show ">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8"  id="artikel-blog" >
