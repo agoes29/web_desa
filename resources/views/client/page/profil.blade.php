@@ -10,13 +10,13 @@
         <section id="about-profil" class="about">
             <div class="about-wrap-profil container-fluid">
                 <div class="section-header text-center wow  pb-5" data-aos="zoom-in">
-                    <h2 class="fw-bold">Profil Desa Buahan</h2>
+                    <h2 class="fw-bold mt-1">PROFIL</h2>
                     <h4 class="h4Profile">Penggambaran Umum Desa</h4>
                 </div>
                 <div class="card profilMap">
                     <div class="container-about-profil" data-aos="fade-in" data-aos-duration="1500">
                         <div class="text-about-profil">
-                            <h3 class="fw-bold"> Desa Buahan</h3>
+                            <h3 class="fw-bold">Sejarah Desa Buahan</h3>
                             <p>
                                 Mengenai sejarah Desa Buahan tidak ada informasi yg menceritakan mulai adanya penduduk yg menghuni wilayah Desa Buahan secara pasti, karena tidak adanya peninggalan2 tertulis. Informasi sejarah yg ada berasal dari sesepuh Desa yg saat ini masih hidup. Informasi lain terkait dgn sejarah tentang Kebo Iwa.
                             </p>
@@ -39,11 +39,28 @@
                         <div class="text-about-wilayah">
                             {{-- <h3 class="fw-bold"> Desa Buahan</h3> --}}
                             <p>
-                                Mengenai sejarah Desa Buahan tidak ada informasi yg menceritakan mulai adanya penduduk yg menghuni wilayah Desa Buahan secara pasti, karena tidak adanya peninggalan2 tertulis. Informasi sejarah yg ada berasal dari sesepuh Desa yg saat ini masih hidup. Informasi lain terkait dgn sejarah tentang Kebo Iwa.
+                                <b>Desa Buahan </b>adalah salah satu desa dari <b> 12 desa </b>yang ada di Kecamatan Tabanan, Kabupaten Tabanan yang merupakan daerah dengan ketinggian tanah <b> 500 meter </b>diatas Permukaan laut, dengan curah hujan <b> relative rendah </b>, dengan batas wilayah administrative sebagai berikut :
                             </p>
+                            <ol>
+                                    <li><b>Sebelah Utara berbatasan dengan </b>: Desa Tunjuk </li>
+                                    <li><b>Sebelah Timur berbatasan dengan </b>: Desa Tegal Jadi</li>
+                                    <li><b>Sebelah Selatan berbatasan dengan </b>: Desa Denbantas </li>
+                                    <li><b>Sebelah Barat berbatasan dengan </b>: Desa Denbantas</li>
+                            </ol>
                             <p>
-                                Di dalam Babad Arya Tabanan diceritakan bahwa setelah terjadi musibah gugurnya Ki Patih Kebo Iwa di Jawa karena tipu muslihat dari Patih Gajah Mada pada Kerajaan Majapahit maka Bali merupakan kekuasaan Jawa di bawah Kerajaan Majapahit. Para Arya Kenceng menjadi Senopati Bala Yudha di Kerajaan Majapahit diberi kekuasaan memerintah di Wilayah Tabanan, Sira Ratu Arya Waringin diberikan kekuasaan di Gelgel, Sira Arya Sentong diberikan kekuasaan di Pacung dan Sira Arya Tan Wikan diberikan di Wilayah Kaba-kaba.
+                                Desa Buahan, Kecamatan Tabanan, Kabupaten Tabanan mempunyai Luas Wilayah <b> 645,86 Ha</b>, dengan jumlah penduduk sebesar <b>2.553 orang</b> yang terbagi dalam<b> 3 (Tiga) </b>wilayah Banjar Dinas yaitu :
                             </p>
+                            <ol>
+                                <li> Banjar Buahan Utara</li>
+                                <li> Banjar Buahan Tengah</li>
+                                <li> Banjar Buahan Selatan</li>
+                            </ol>
+                            <div style="text-align: center">
+                                <h2>
+                                    Video Profile Desa Buahan
+                                </h2>
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DdEd3YxU4Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>

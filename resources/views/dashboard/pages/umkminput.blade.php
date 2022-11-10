@@ -29,11 +29,11 @@
             <input type="number" class="form-control" id="cp" name="cp" placeholder="Kontak" required>
         </div>
         <div class="mb-3">
-            <label for="sm" class="form-label">Social Media UMKM</label>
+            <label for="sm" class="form-label">Instagram UMKM</label>
             <input type="text" class="form-control" id="sm" name="sm" placeholder="Social Media" required>
         </div>
         <div class="mb-3">
-            <label for="link" class="form-label">Link Social Media</label>
+            <label for="link" class="form-label">Link Youtube UMKM</label>
             <input type="text" class="form-control" id="link" name="link" placeholder="Link Social Media" required>
         </div>
         <div class="mb-3">

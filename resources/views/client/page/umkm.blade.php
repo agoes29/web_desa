@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <svg id="visual" viewBox="0 0 960 200" width="100%" height="100%">
+        <svg id="visual" viewBox="0 0 960 250" width="100%" height="100%">
             <path d="M0 152L160 66L320 103L480 95L640 65L800 129L960 65L960 0L800 0L640 0L480 0L320 0L160 0L0 0Z" fill="#d5dedc" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path><path d="M0 82L160 48L320 121L480 76L640 64L800 116L960 65L960 0L800 0L640 0L480 0L320 0L160 0L0 0Z" fill="#76aa9a" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path><path d="M0 63L160 45L320 58L480 52L640 55L800 62L960 30L960 0L800 0L640 0L480 0L320 0L160 0L0 0Z" fill="#007554" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path>
         </svg>
         <div class="umkm" id="umkm">
@@ -42,9 +42,9 @@
                                     {!! Str::limit($umkm->content, 50) !!}
                                 </p>
                                 <div class="umkm-social">
-                                    <a class="btn" href="{{ $umkm->link }}"><i class="fab fa-instagram"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-youtube"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-whatsapp"></i></a>
+                                    <a class="btn" href="{{ $umkm->sm }}"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn" href="{{ $umkm->link }}"><i class="fab fa-youtube"></i></a>
+                                    <a class="btn" href="http://wa.me/{{ $umkm->cp }}"><i class="fab fa-whatsapp"></i></a>
                                 </div>
                             </div>
                         </div>
