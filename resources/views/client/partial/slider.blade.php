@@ -27,7 +27,7 @@
                                 </div>
                             </blockquote>
                         </div> --}}
-                    </div> <!-- .item -->
+                    </div>
                 @endforeach
 
 
