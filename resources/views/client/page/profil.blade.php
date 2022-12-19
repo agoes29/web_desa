@@ -15,54 +15,93 @@
                 </div>
                 <div class="card profilMap">
                     <div class="container-about-profil" data-aos="fade-in" data-aos-duration="1500">
-                        <div class="text-about-profil">
-                            <h3 class="fw-bold">Sejarah Desa Buahan</h3>
-                            <p>
-                                Mengenai sejarah Desa Buahan tidak ada informasi yg menceritakan mulai adanya penduduk yg menghuni wilayah Desa Buahan secara pasti, karena tidak adanya peninggalan2 tertulis. Informasi sejarah yg ada berasal dari sesepuh Desa yg saat ini masih hidup. Informasi lain terkait dgn sejarah tentang Kebo Iwa.
-                            </p>
-                            <p>
+                        <div class="container mb-5">
+                            <div class="row">
+                                <div class="col-lg-3 col-6">
+                                  <!-- small card -->
+                                  <div class="small-box demografi">
+                                    <div class="inner ps-3 pt-3">
+                                      <h3>645,86 Ha</h3>
+
+                                      <p>Demografi Desa</p>
+                                    </div>
+                                    <a href="#" class="small-box-footer">
+                                      Selengkapnya <i class="fas fa-arrow-circle-right"></i>
+                                    </a>
+                                  </div>
+                                </div>
+                                <!-- ./col -->
+                                <div class="col-lg-3 col-6">
+                                  <!-- small card -->
+                                  <div class="small-box penduduk">
+                                    <div class="inner ps-3 pt-3">
+                                      <h3>2.555</h3>
+
+                                      <p>Data Penduduk</p>
+                                    </div>
+                                    <a href="#" class="small-box-footer">
+                                        Selengkapnya <i class="fas fa-arrow-circle-right"></i>
+                                    </a>
+                                  </div>
+                                </div>
+                                <!-- ./col -->
+                                <div class="col-lg-3 col-6">
+                                  <!-- small card -->
+                                  <div class="small-box program">
+                                    <div class="inner ps-3 pt-3">
+                                      <h3>12</h3>
+
+                                      <p>Program Desa</p>
+                                    </div>
+                                    <a href="#" class="small-box-footer">
+                                        Selengkapnya <i class="fas fa-arrow-circle-right"></i>
+                                    </a>
+                                  </div>
+                                </div>
+                                <!-- ./col -->
+                                <div class="col-lg-3 col-6">
+                                  <!-- small card -->
+                                  <div class="small-box aset">
+                                    <div class="inner ps-3 pt-3">
+                                      <h3>1 M</h3>
+
+                                      <p>Aset Desa</p>
+                                    </div>
+                                    <a href="#" class="small-box-footer">
+                                        Selengkapnya <i class="fas fa-arrow-circle-right"></i>
+                                    </a>
+                                  </div>
+                                </div>
+                                <!-- ./col -->
+                              </div>
+                            </div>
+
+                        <div class="bgMap">
+                                <div class="captionMap">
+                                    <span class="borderMap">
+                                        <h1>SEJARAH</h1>
+                                        <h4>Desa Buahan</h4>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="text-about-profil mt-5" style="text-indent: 45px;">
+                            <p data-aos="fade-in" data-aos-duration="1500">
                                 Di dalam Babad Arya Tabanan diceritakan bahwa setelah terjadi musibah gugurnya Ki Patih Kebo Iwa di Jawa karena tipu muslihat dari Patih Gajah Mada pada Kerajaan Majapahit maka Bali merupakan kekuasaan Jawa di bawah Kerajaan Majapahit. Para Arya Kenceng menjadi Senopati Bala Yudha di Kerajaan Majapahit diberi kekuasaan memerintah di Wilayah Tabanan, Sira Ratu Arya Waringin diberikan kekuasaan di Gelgel, Sira Arya Sentong diberikan kekuasaan di Pacung dan Sira Arya Tan Wikan diberikan di Wilayah Kaba-kaba.
                             </p>
+                            <p data-aos="fade-in" data-aos-duration="1500">
+                                Pada saat pembagian Pemerintahan di Bali yang memegang kekuasaan adalah Sri Kresna Kepakisan yang berkedudukan di Srampangan. Mengenai Sejarah Desa Buahan dpat kami uraikan pada zaman itu dan sebelumnya tidak ada yang jelas tahu, dengan zaman itu diuraikan secara singkat yang diperintah oleh Sira Arya Kenceng yang merupakan murdaning Nayaka Jagat Tabanan yang Istana / Puri Beliau terletak di Desa Buahan (Pucangan) dengan jumlah rakyat pada saat memerintah sebanyak 10.000 orang dari berbagai warna (Catur kasta). Didalam Babad Tabanan diceritakan bahwa Puri Beliau bertempat di sebelah selatan Pura Bale Agung Desa Buahan (Kiduling Bale Agung) dan tamannya bertempat di sebelah tenggara Desa Buahan, wafatnya Beliau dibuatkan persemayaman untuk kebaktian dibuatkan  Batur yang sampai saat ini di buahan masih berupa Bangunan Pura Batur Pucangan. Selanjutnya dapat diceritakan bahwa Sira Sri Arya Kenceng sangat setia maka Sira Arya Kenceng diberikan kehormatan sebagai Mentri yang berkuasa memerintah Raja- Raja yang ada di Bali,dan diberikan anugrah apabila wafat diperkenankan dalam upacara Pengabenan ( Atiwa – tiwa) memakai bade Tumpang 11 ( sebelas). Pada saat Beliau Wafat dapat kami ceritakan lagi menurut isi dari Babad Tabanan dibuatkan pemujaan di sebelah Barat Pura Batur Pucangan, Yang juga sebagian besar penyungsungnya dari luar Daerah Desa Buahan yaitu seluruh Bali untuk mengingat  dan baktinya pada beliau dalam memangku sebagai Raja Tabanan yang memerintah Raja- Raja yang ada diseluruh Bali.
+                            </p>
+                            <p data-aos="fade-in" data-aos-duration="1500">
+                                Dari tanggal 27 Agustus 1998 sampai dengan sekarang Desa Buahan berkantor di Banjar Buahan Tengah Desa Buahan,yang menjabat sebagai Kepala Desa pertama setelah pemekaran adalah I Gusti Agung Gde Suardana dari tanggal 27 Agustus 1988  sampai dengan 21 Oktober 1998, selanjutnya  yang menjabat Kepala Desa adalah I Gede Sugiartha dari tanggal 21 Oktober 1998 s/d 21 Oktober 2006  selanjutnya PJS adalah I Gede Sugiarta selama kurang lebih 6(enam ) bulan  dan sebagai perbekel Desa Buahan yang ketiga adalah I Gede Ngurah Parmita dari tanggal 26  April  2007 s/d 26 April 2013 dan sebagai perbekel yang keempat Desa Buahan adalah I Ketut Sukanada dari tanggal 08 Mei 2013 sampai dengan 08 mei 2019 dari 09 mei  2019 sampai dengan 23 Desember 2019 adalah Pj Perbekel Desa Buahan I Ketut Suarnata,S.Sos dan dari tanggal, 24 Desember 2019 sampai dengan sekarang adalah Perbekel Desa Buahan I Gede Ari Wastika,S.Pd
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="bgMap">
-                    <div class="captionMap">
-                        <span class="borderMap">
-                            <h1>BATAS WILAYAH</h1>
-                            <h4>Desa Buahan</h4>
-                        </span>
-                    </div>
-                </div>
-                <div class="card wilayah">
-                    <div class="container-about-wilayah" data-aos="fade-in" data-aos-duration="1500">
-                        <div class="text-about-wilayah">
-                            {{-- <h3 class="fw-bold"> Desa Buahan</h3> --}}
-                            <p>
-                                <b>Desa Buahan </b>adalah salah satu desa dari <b> 12 desa </b>yang ada di Kecamatan Tabanan, Kabupaten Tabanan yang merupakan daerah dengan ketinggian tanah <b> 500 meter </b>diatas Permukaan laut, dengan curah hujan <b> relative rendah </b>, dengan batas wilayah administrative sebagai berikut :
-                            </p>
-                            <ol>
-                                    <li><b>Sebelah Utara berbatasan dengan </b>: Desa Tunjuk </li>
-                                    <li><b>Sebelah Timur berbatasan dengan </b>: Desa Tegal Jadi</li>
-                                    <li><b>Sebelah Selatan berbatasan dengan </b>: Desa Denbantas </li>
-                                    <li><b>Sebelah Barat berbatasan dengan </b>: Desa Denbantas</li>
-                            </ol>
-                            <p>
-                                Desa Buahan, Kecamatan Tabanan, Kabupaten Tabanan mempunyai Luas Wilayah <b> 645,86 Ha</b>, dengan jumlah penduduk sebesar <b>2.553 orang</b> yang terbagi dalam<b> 3 (Tiga) </b>wilayah Banjar Dinas yaitu :
-                            </p>
-                            <ol>
-                                <li> Banjar Buahan Utara</li>
-                                <li> Banjar Buahan Tengah</li>
-                                <li> Banjar Buahan Selatan</li>
-                            </ol>
-                            <div style="text-align: center">
-                                <h2>
-                                    Video Profile Desa Buahan
-                                </h2>
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DdEd3YxU4Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
+                <div style="text-align: center">
+                    <h2>
+                        Video Sejarah Desa Buahan
+                    </h2>
+                    <iframe width="100%" height="315px" src="https://www.youtube.com/embed/aD44Lbw0fY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </section>

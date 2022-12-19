@@ -931,8 +931,8 @@ a.btn i {
     border-bottom: 0px;
     padding-bottom: 3px;
     padding-top: 15px;
-    min-height: 30%;
-    max-height: 20%;
+    min-height: 20%;
+    max-height: 30%;
 }
 .blog .card .card-body{
     min-height: 10%;
@@ -1712,3 +1712,46 @@ height: 100%;
         margin-top: 20%;
     }
 }
+.small-box {
+    border-radius: 0.25rem;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 5px;
+    color: rgb(255, 255, 255) !important;
+}
+.small-box-footer {
+    background-color: rgba(0,0,0,.1);
+    color: rgba(255,255,255,.8);
+    display: block;
+    padding: 3px 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.demografi{
+    background-color: #12768d;
+}
+.penduduk{
+    background-color: #3A8891;
+}
+.program{
+    background-color: #189197;
+}
+.aset{
+    background-color: #3d9896;
+}
+.small-box a{
+    transition: .2s;
+    color: rgb(255, 255, 255);
+}
+.small-box a:hover{
+    color: #11c3cd;
+    transition: .2s;
+}
+
+
+
