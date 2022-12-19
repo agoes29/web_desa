@@ -49,4 +49,11 @@ Route::resource('/admin/umkm', App\Http\Controllers\UmkmController::class);
 Route::get('surat', [App\Http\Controllers\SuratController::class, 'index'])->name('Surat');
 Route::get('download',[App\Http\Controllers\Surat::class, 'surat']);
 
+Route::view('/penduduk', 'client/page/penduduk'); //perlu ubah dinamis
+Route::view('/penduduk1', 'client/page/penduduk1');
+Route::view('/penduduk2', 'client/page/penduduk2');
+Route::view('/penduduk3', 'client/page/penduduk3');
+Route::view('/wilayah', 'client/page/wilayah');
+Route::view('/asetdesa', 'client/page/asetdesa');
+
 

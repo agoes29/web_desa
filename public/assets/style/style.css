@@ -1754,3 +1754,9 @@ height: 100%;
     color: #11c3cd;
     transition: .2s;
 }
+.small-box .icon {
+    font-size:70px;
+    position:absolute;
+    right:15px;
+    top:15px;
+}

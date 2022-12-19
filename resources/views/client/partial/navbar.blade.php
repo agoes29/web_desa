@@ -26,27 +26,27 @@
                             <a class="nav-link" href="/">Beranda</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkRight" role="button"
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLinkRight" role="button"
                               data-mdb-toggle="dropdown" aria-expanded="false">
                               Profil Desa
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
                               <li><a class="dropdown-item" href="/profil">Searah Desa</a></li>
-                              <li><a class="dropdown-item" href="#">Wilayah Desa</a></li>
-                              <li><a class="dropdown-item" href="#">Aset Desa</a></li>
+                              <li><a class="dropdown-item" href="/wilayah">Wilayah Desa</a></li>
+                              <li><a class="dropdown-item" href="/asetdesa">Aset Desa</a></li>
                               <li class="dropdown">
                                 <a class="dropdown-item"> Kependudukan &raquo; </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
-                                  <li><a class="dropdown-item" href="#">Keseluruhan</a></li>
-                                  <li><a class="dropdown-item" href="#">Buahan Utara</a></li>
-                                  <li><a class="dropdown-item" href="#">Buahan Tengah</a></li>
-                                  <li><a class="dropdown-item" href="#">Buahan Selatan</a></li>
+                                  <li><a class="dropdown-item" href="/penduduk">Keseluruhan</a></li>
+                                  <li><a class="dropdown-item" href="/penduduk1">Buahan Utara</a></li>
+                                  <li><a class="dropdown-item" href="/penduduk2">Buahan Tengah</a></li>
+                                  <li><a class="dropdown-item" href="/penduduk3">Buahan Selatan</a></li>
                                 </ul>
                               </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkRight" role="button"
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLinkRight" role="button"
                               data-mdb-toggle="dropdown" aria-expanded="false">
                               Pemerintahan Desa
                             </a>
@@ -54,15 +54,15 @@
                               <li><a class="dropdown-item" href="#">Visi & Misi Desa</a></li>
                               <li><a class="dropdown-item" href="#">Struktur Pemerintahan Desa</a></li>
                               <li class="dropdown">
-                                <a class="dropdown-item" href=""> Produk Hukum &raquo; </a>
+                                <a class="dropdown-item" > Produk Hukum &raquo; </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
-                                    <li><a class="dropdown-item" href="#">PERDES (Peraturan Desa)</a></li>
-                                    <li><a class="dropdown-item" href="#">PERKEL (Peraturan Prebekel)</a></li>
+                                    <li><a class="dropdown-item" href="#">Peraturan Desa</a></li>
+                                    <li><a class="dropdown-item" href="#">Peraturan Prebekel</a></li>
                                     <li><a class="dropdown-item" href="#">Keputusan Prebekel</a></li>
                                 </ul>
                               </li>
                               <li class="dropdown">
-                                <a class="dropdown-item" href=""> Lembaga Desa &raquo; </a>
+                                <a class="dropdown-item" > Lembaga Desa &raquo; </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
                                   <li><a class="dropdown-item" href="#">BPD</a></li>
                                   <li><a class="dropdown-item" href="#">Bumdes</a></li>
@@ -77,7 +77,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkRight" role="button"
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLinkRight" role="button"
                               data-mdb-toggle="dropdown" aria-expanded="false">
                               Kegiatan Desa
                             </a>

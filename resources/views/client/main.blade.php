@@ -19,6 +19,12 @@
 
 {{--ProfilDesaPage--}}
 @yield('profil')
+@yield('penduduk')
+@yield('penduduk1')
+@yield('penduduk2')
+@yield('penduduk3')
+@yield('wilayah')
+@yield('aset')
 
 </main>
 @include('client.partial.footer')
