@@ -25,17 +25,71 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/">Beranda</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/profil">Profil Desa</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkRight" role="button"
+                              data-mdb-toggle="dropdown" aria-expanded="false">
+                              Profil Desa
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
+                              <li><a class="dropdown-item" href="/profil">Searah Desa</a></li>
+                              <li><a class="dropdown-item" href="#">Wilayah Desa</a></li>
+                              <li><a class="dropdown-item" href="#">Aset Desa</a></li>
+                              <li class="dropdown">
+                                <a class="dropdown-item"> Kependudukan &raquo; </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
+                                  <li><a class="dropdown-item" href="#">Keseluruhan</a></li>
+                                  <li><a class="dropdown-item" href="#">Buahan Utara</a></li>
+                                  <li><a class="dropdown-item" href="#">Buahan Tengah</a></li>
+                                  <li><a class="dropdown-item" href="#">Buahan Selatan</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkRight" role="button"
+                              data-mdb-toggle="dropdown" aria-expanded="false">
+                              Pemerintahan Desa
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
+                              <li><a class="dropdown-item" href="#">Visi & Misi Desa</a></li>
+                              <li><a class="dropdown-item" href="#">Struktur Pemerintahan Desa</a></li>
+                              <li class="dropdown">
+                                <a class="dropdown-item" href=""> Produk Hukum &raquo; </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
+                                    <li><a class="dropdown-item" href="#">PERDES (Peraturan Desa)</a></li>
+                                    <li><a class="dropdown-item" href="#">PERKEL (Peraturan Prebekel)</a></li>
+                                    <li><a class="dropdown-item" href="#">Keputusan Prebekel</a></li>
+                                </ul>
+                              </li>
+                              <li class="dropdown">
+                                <a class="dropdown-item" href=""> Lembaga Desa &raquo; </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
+                                  <li><a class="dropdown-item" href="#">BPD</a></li>
+                                  <li><a class="dropdown-item" href="#">Bumdes</a></li>
+                                  <li><a class="dropdown-item" href="#">Karang Taruna</a></li>
+                                  <li><a class="dropdown-item" href="#">Submenu</a></li>
+                                  <li><a class="dropdown-item" href="#">Submenu</a></li>
+                                  <li><a class="dropdown-item" href="#">Submenu</a></li>
+                                  <li><a class="dropdown-item" href="#">Submenu</a></li>
+                                  <li><a class="dropdown-item" href="#">Submenu</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkRight" role="button"
+                              data-mdb-toggle="dropdown" aria-expanded="false">
+                              Kegiatan Desa
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
+                              <li><a class="dropdown-item" href="/blog">Artikel Desa</a></li>
+                              <li><a class="dropdown-item" href="/umkm">UMKM</a></li>
+                              <li><a class="dropdown-item" href="#">Program Desa</a></li>
+                              <li><a class="dropdown-item" href="#">Bantuan Desa</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/umkm">UMKM</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#surat">Surat Menyurat</a>
+                            <a class="nav-link" href="https://debest.co.id/">Debest</a>
                         </li>
                     </ul>
                 </div>

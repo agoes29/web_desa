@@ -655,7 +655,7 @@ border: 1px solid rgba(255, 255, 255, 0.171);
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: rgb(255, 120, 58);
+  color: #2f7a4c;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -673,6 +673,7 @@ border: 1px solid rgba(255, 255, 255, 0.171);
   left: 100%;
   visibility: visible;
 }
+
 
 
 /*******************************/
@@ -1076,12 +1077,13 @@ footer .kanan a{
     color: #00CF94;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 768px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
   .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
+    left: -50%;
+    top: 125%;
   }
 }
 
@@ -1752,6 +1754,3 @@ height: 100%;
     color: #11c3cd;
     transition: .2s;
 }
-
-
-

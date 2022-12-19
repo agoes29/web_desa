@@ -19,17 +19,15 @@
                 <hr>
                 <li><a href="/umkm">UMKM</a></li>
                 <hr>
-                <li><a href="/#surat">Surat Menyurat</a></li>
+                <li><a href="https://debest.co.id/">Debest</a></li>
             </ul>
         </div>
         <div class="col-sm-12 mb-3 col-md-4 kanan">
             <strong style="font-size: 25px;">Tentang Desa</strong>
-            <span><a class="d-block my-3" href="">Desa Buahan, Kec.Tabanan, Kab.Tabanan</a></span>
-            <p>
-                Mengenai sejarah Desa Buahan tidak ada informasi yg menceritakan mulai adanya penduduk yg menghuni wilayah Desa Buahan secara pasti, karena tidak adanya peninggalan2 tertulis. Informasi sejarah yg ada berasal dari sesepuh Desa yg saat ini masih hidup. Informasi lain terkait dgn sejarah tentang Kebo Iwa.
-            </p>
+            <span><a class="d-block my-3" href="/">Desa Buahan, Kec.Tabanan, Kab.Tabanan</a></span>
             <p>
                 Di dalam Babad Arya Tabanan diceritakan bahwa setelah terjadi musibah gugurnya Ki Patih Kebo Iwa di Jawa karena tipu muslihat dari Patih Gajah Mada pada Kerajaan Majapahit maka Bali merupakan kekuasaan Jawa di bawah Kerajaan Majapahit. Para Arya Kenceng menjadi Senopati Bala Yudha di Kerajaan Majapahit diberi kekuasaan memerintah di Wilayah Tabanan, Sira Ratu Arya Waringin diberikan kekuasaan di Gelgel, Sira Arya Sentong diberikan kekuasaan di Pacung dan Sira Arya Tan Wikan diberikan di Wilayah Kaba-kaba.
+                Pada saat pembagian Pemerintahan di Bali yang memegang kekuasaan adalah Sri Kresna Kepakisan yang berkedudukan di Srampangan. Mengenai Sejarah Desa Buahan... <div><a class="none" href="/profil">Baca Selengkapnya >></a></div>
             </p>
         </div>
     </div>
