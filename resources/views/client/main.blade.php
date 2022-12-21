@@ -26,6 +26,9 @@
 @yield('wilayah')
 @yield('aset')
 
+{{-- SuratPage --}}
+@yield('surat')
+
 </main>
 @include('client.partial.footer')
 

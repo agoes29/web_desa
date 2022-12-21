@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Umkm;
+use Novay\WordTemplate\Facade as TemplateSurat;
 
 class UmkmController extends Controller
 {

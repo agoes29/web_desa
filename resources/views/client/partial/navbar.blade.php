@@ -65,13 +65,11 @@
                                 <a class="dropdown-item" > Lembaga Desa &raquo; </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
                                   <li><a class="dropdown-item" href="#">BPD</a></li>
-                                  <li><a class="dropdown-item" href="#">Bumdes</a></li>
+                                  <li><a class="dropdown-item" href="#">LPMD</a></li>
+                                  <li><a class="dropdown-item" href="#">Linmas</a></li>
+                                  <li><a class="dropdown-item" href="#">PKK</a></li>
                                   <li><a class="dropdown-item" href="#">Karang Taruna</a></li>
-                                  <li><a class="dropdown-item" href="#">Submenu</a></li>
-                                  <li><a class="dropdown-item" href="#">Submenu</a></li>
-                                  <li><a class="dropdown-item" href="#">Submenu</a></li>
-                                  <li><a class="dropdown-item" href="#">Submenu</a></li>
-                                  <li><a class="dropdown-item" href="#">Submenu</a></li>
+                                  <li><a class="dropdown-item" href="#">Bumdes</a></li>
                                 </ul>
                               </li>
                             </ul>
