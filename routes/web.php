@@ -47,7 +47,8 @@ Route::get('umkminput', [App\Http\Controllers\UmkmController::class, 'umkminput'
 Route::resource('/admin/umkm', App\Http\Controllers\UmkmController::class);
 
 // Route::get('surat', [App\Http\Controllers\SuratController::class, 'index'])->name('Surat');
-Route::resource('/surat', App\Http\Controllers\SuratController::class);
+Route::resource('suratcontroller', App\Http\Controllers\SuratController::class);
+Route::get('/admin/surat', [App\Http\Controllers\SuratController::class, 'suratadmin'])->name('SuratAdmin');
 Route::get('download',[App\Http\Controllers\SuratController::class, 'download']);
 Route::view('/suratkematian', 'client/sm/suratkematian');
 

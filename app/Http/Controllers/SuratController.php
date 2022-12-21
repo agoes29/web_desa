@@ -19,6 +19,11 @@ class SuratController extends Controller
     {
         return view('client.sm.suratkematian');
     }
+    public function suratadmin()
+    {
+        $smm = Surat::all();
+        return view('dashboard.pages.surat',['smm' => $smm]);
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -38,7 +43,22 @@ class SuratController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $smm = new Surat();
+        $smm->nama = $request->nama;
+        $smm->tempatl = $request->tempatl;
+        $smm->tanggall= $request->tanggall;
+        $smm->jk= $request->jk;
+        $smm->alamat= $request->alamat;
+        $smm->br = $request->br;
+        $smm->tglm= $request->tglm;
+        $smm->tempatm= $request->tempatm;
+        $smm->penyebabm= $request->penyebabm;
+        $smm->nosuratdesa = '';
+        $smm->nosuratbr = '';
+        $smm->tglsuratbr = '';
+        $smm->tglsuratdesa = '';
+        $smm->save();
+        return redirect('/');
     }
 
     /**
@@ -49,7 +69,28 @@ class SuratController extends Controller
      */
     public function show($id)
     {
-        //
+        $smm= Surat::find($id);
+        $file = public_path('/surat/test4.rtf');
+
+		$array = array(
+			'[nosuratdesa]' => $smm->nosuratdesa,
+			'[nama]' => $smm->nama,
+			'[tempatl]' => $smm->tempatl,
+			'[tanggall]' => $smm->tanggall,
+			'[jk]' => $smm->jk,
+			'[alamat]' => $smm->alamat,
+			'[br]' => $smm->br,
+			'[nosuratbr]' => $smm->nosuratbr,
+			'[tglsuratbr]' => $smm->tglsuratbr,
+            '[tglm]' => $smm->tglm,
+			'[tempatm]' => $smm->tempatm,
+			'[penyebabm]' => $smm->penyebabm,
+            '[tglsuratdesa]' => $smm->tglsuratdesa,
+		);
+
+		$nama_file = 'Suratkematian.doc';
+        $surat = TemplateSurat::export($file, $array, $nama_file);
+        return $surat;
     }
 
     /**
@@ -60,7 +101,7 @@ class SuratController extends Controller
      */
     public function edit($id)
     {
-        //
+
     }
 
     /**
@@ -88,25 +129,25 @@ class SuratController extends Controller
 
     public function download()
     {
-        $file = public_path('/surat/suratkematian.rtf');
+        $file = public_path('/surat/test4.rtf');
 
 		$array = array(
-			'[nosuratdesa]' => '34 / XII / 2022',
-			'[nama]' => 'Borneo Teknomedia',
-			'[tempatl]' => 'Buahan',
-			'[tanggall]' => '12-12-2022',
-			'[jk]' => 'Laki-Laki',
-			'[alamat]' => 'Br. Buahan Kangin',
-			'[br]' => 'buahan kangin',
-			'[nosuratbr]' => '234 / XII / 2022',
-			'[tglsuratbr]' => '13-12-2022',
-            '[tglm]' => '12-12-2022',
-			'[tempatm]' => 'Rumah Sehat',
-			'[penyebabm]' => 'Terlalu Sehat',
-            '[tglsuratdesa]' => '14-12-2022',
+			'[nosuratdesa]' => '34 / XII / 2023',
+			'[nama]' => 'Borneo Teknomedia3',
+			'[tempatl]' => 'Buahan3',
+			'[tanggall]' => '12-12-2023',
+			'[jk]' => 'Laki-Laki3',
+			'[alamat]' => 'Br. Buahan Kangin3',
+			'[br]' => 'buahan kangin3',
+			'[nosuratbr]' => '234 / XII / 2023',
+			'[tglsuratbr]' => '13-12-2023',
+            '[tglm]' => '12-12-2023',
+			'[tempatm]' => 'Rumah Sehat3',
+			'[penyebabm]' => 'Terlalu Sehat3',
+            '[tglsuratdesa]' => '14-12-2023',
 		);
 
-		$nama_file = 'SuratKematian.doc';
+		$nama_file = 'Suratkematian.doc';
         $surat = TemplateSurat::export($file, $array, $nama_file);
         return $surat;
     }

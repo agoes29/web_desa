@@ -59,7 +59,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/surat" class="nav-link">
+                        <a href="/admin/surat" class="nav-link">
                         <i class="nav-icon fa fa-mail-bulk"></i>
                             <p>
                                 Surat

@@ -14,7 +14,7 @@
                     <h4 class="h4Profile">SURAT KEMATIAN</h4>
                 </div>
                 <div class="card-body px-5">
-                    <form action="{{ route('surat') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('suratcontroller.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @if ($errors->any())
                             <div class="alert alert-danger">
@@ -26,39 +26,49 @@
                             </div>
                         @endif
                     <div class="mb-3">
-                        <label for="title" class="form-label">Nama UMKM</label>
-                        <input type="text" class="form-control" id="title" name="title" placeholder="Nama" required>
+                        <label for="nama" class="form-label">Nama Orang Meninggal</label>
+                        <input type="text" class="form-control" id="" name="nama" placeholder="" required>
                     </div>
                     <div class="mb-3">
-                        <label for="content" class="form-label">Deskripsi UMKM</label>
-                        <textarea class="form-control " id="content" name="content" placeholder="Deskripsi" required></textarea>
+                        <label for="tempatl" class="form-label">Tempat Lahir</label>
+                        <input type="text" class="form-control" id="tempatl" name="tempatl" placeholder="" required>
                     </div>
                     <div class="mb-3">
-                        <label for="cp" class="form-label">Kontak UMKM</label>
-                        <input type="number" class="form-control" id="cp" name="cp" placeholder="Kontak" required>
+                        <label for="tanggall" class="form-label">Tanggal Lahir</label>
+                        <input type="text" class="form-control" id="tanggall" name="tanggall" placeholder="" required>
                     </div>
                     <div class="mb-3">
-                        <label for="sm" class="form-label">Instagram UMKM</label>
-                        <input type="text" class="form-control" id="sm" name="sm" placeholder="Social Media" required>
+                        <label for="jk" class="form-label">Jenis Kelamin</label>
+                        <input type="text" class="form-control" id="jk" name="jk" placeholder="" required>
                     </div>
                     <div class="mb-3">
-                        <label for="link" class="form-label">Link Youtube UMKM</label>
-                        <input type="text" class="form-control" id="link" name="link" placeholder="Link Social Media" required>
+                        <label for="alamat" class="form-label">Alamat</label>
+                        <input type="text" class="form-control" id="alamat" name="alamat" placeholder="" required>
                     </div>
                     <div class="mb-3">
-                        <label for="image" class="form-label">Link Image</label>
-                        <input type="file" class="form-control" id="image" name="image" placeholder="Link Image" required>
-                        <p><label for="image" class="form-label"><small>Preview</small></label><br><img
-                            id="preview-image-before-upload" src="" alt="" class="img-fluid" style="width: 200px"></p>
+                        <label for="br" class="form-label">Banjar</label>
+                        <input type="text" class="form-control" id="br" name="br" placeholder="" required>
                     </div>
-                    <button type="submit" class="btn btn-md btn-primary px-4">Tambahkan UMKM</button>
-                    <a href="/admin/umkm" class=" btn btn-md btn-secondary px-4">Batal</a>
+                    <div class="mb-3">
+                        <label for="tglm" class="form-label">Tanggal Kematian</label>
+                        <input type="text" class="form-control" id="tglm" name="tglm" placeholder="" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tempatm" class="form-label">Tempat Kematian</label>
+                        <input type="text" class="form-control" id="tempatm" name="tempatm" placeholder="" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="penyebabm" class="form-label">Penyebab Kematian</label>
+                        <input type="text" class="form-control" id="penyebabm" name="penyebabm" placeholder="" required>
+                    </div>
+                    <button type="submit" class="btn btn-md btn-primary px-4">Kirim Data</button>
+                    <a href="/" class=" btn btn-md btn-secondary px-4">Batal</a>
                     </form>
                 </div>
             </div>
         </section>
-        <svg id="visualprofil" viewBox="0 0 900 600" width="100%" height="50%">
+        {{-- <svg id="visualprofil" viewBox="0 0 900 600" width="100%" height="50%">
             <path d="M0 495L225 512L450 455L675 487L900 502L900 601L675 601L450 601L225 601L0 601Z" fill="#708f84" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path><path d="M0 537L225 476L450 489L675 536L900 499L900 601L675 601L450 601L225 601L0 601Z" fill="#42575a" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path><path d="M0 541L225 548L450 512L675 518L900 528L900 601L675 601L450 601L225 601L0 601Z" fill="#1f2529" style="transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s;"></path>
-        </svg>
+        </svg> --}}
     </main>
 @endsection
