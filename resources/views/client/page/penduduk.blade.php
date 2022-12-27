@@ -58,7 +58,7 @@
                           <!-- small card -->
                           <div class="small-box aset">
                             <div class="inner ps-3 pt-3">
-                              <h3>----</h3>
+                              <h3>849</h3>
                               <p>KK Terdaftar</p>
                             </div>
                             <div class="icon">
@@ -73,7 +73,7 @@
                         <br><br><h2 class="fw-bold mt-1">Grafik Perkembangan Penduduk</h2>
                         <h4 class="h4Profile">Tahun 2022</h4>
                         <canvas id="myChart"></canvas>
-                        <div class="dropdown mt-3">
+                        {{-- <div class="dropdown mt-3">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                               Ganti Tahun
                             </button>
@@ -81,7 +81,7 @@
                               <li><a class="dropdown-item" href="#">2022</a></li>
                               <li><a class="dropdown-item" href="#">2021</a></li>
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
             </div>
         </section>
@@ -95,43 +95,35 @@
     <script>
         const ctx = document.getElementById('myChart');
         new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels: ['Januari', 'February', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
-            datasets: [{
-              label: 'Jumlah Penduduk',
-              data: [2242, 2244, 2245, 2246, 2247, 2247, 2246, 2246, 2247, 2249, 2249, 2250],
-              borderWidth: 3
-            }]
-          },
-          options: {
-            responsive: true,
-            plugins: {
-                tooltip: {
-                mode: 'index',
-                intersect: false
+            type: 'bar',
+            data: {
+                labels: ['Januari', 'February', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
+                datasets: [{
+                label: 'Total Penduduk',
+                data: [2230, 2235, 2240, 2235, 2230, 2245, 2235, 2240, 2250, 2240, 2245, 2250],
+                borderWidth: 3
                 },
+                {
+                label: 'Laki-Laki',
+                data: [1230, 1235, 1230, 1232, 1227, 1228, 1235, 1230, 1225, 1226, 1234, 1238],
+                borderWidth: 3
+                },
+                {
+                label: 'Perempuan',
+                data: [1311, 1312, 1310, 1312, 1307, 1309, 1310, 1306, 1301, 1302, 1310,  1312],
+                borderWidth: 3
+                },]
             },
-            hover: {
+            options: {
+                responsive: true,
+                plugins: {
+                legend: {
+                    position: 'top',
+                },
+                hover: {
                 mode: 'index',
                 intersec: false
-            },
-        scales: {
-            x: {
-                title: {
-                display: true,
-                text: 'Bulan'
-                }
-            },
-        y: {
-            min: 2251,
-            max: 2240,
-            ticks: {
-            // forces step size to be 50 units
-            stepSize: 5
-            }
-        }}}
-        });
+                }}
+            }});
       </script>
-
 @endsection

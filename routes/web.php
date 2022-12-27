@@ -52,12 +52,11 @@ Route::get('/admin/surat', [App\Http\Controllers\SuratController::class, 'surata
 Route::get('download',[App\Http\Controllers\SuratController::class, 'download']);
 Route::view('/suratkematian', 'client/sm/suratkematian');
 
-// Route::view('/penduduk', 'client/page/penduduk');
-// Route::view('/penduduk1', 'client/page/penduduk1');
-// Route::view('/penduduk2', 'client/page/penduduk2');
-// Route::view('/penduduk3', 'client/page/penduduk3');
-// Route::view('/wilayah', 'client/page/wilayah');
-// Route::view('/asetdesa', 'client/page/asetdesa');
-// Di Hide Jangan Lupa Uncomment
+Route::view('/penduduk', 'client/page/penduduk');
+Route::view('/penduduk1', 'client/page/penduduk1');
+Route::view('/penduduk2', 'client/page/penduduk2');
+Route::view('/penduduk3', 'client/page/penduduk3');
+Route::view('/wilayah', 'client/page/wilayah');
+Route::view('/asetdesa', 'client/page/asetdesa');
 
 

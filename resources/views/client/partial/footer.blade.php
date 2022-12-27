@@ -15,7 +15,7 @@
                 <hr>
                 <li><a href="/profil">Profil Desa</a></li>
                 <hr>
-                <li><a href="/blog">Blog</a></li>
+                <li><a href="/blog">Artikel</a></li>
                 <hr>
                 <li><a href="/umkm">UMKM</a></li>
                 <hr>

@@ -20,7 +20,7 @@
                           <!-- small card -->
                           <div class="small-box demografi">
                             <div class="inner ps-3 pt-3">
-                              <h3>751</h3>
+                              <h3>904</h3>
                               <p>Totoal Penduduk</p>
                             </div>
                             <div class="icon">
@@ -33,7 +33,7 @@
                           <!-- small card -->
                           <div class="small-box penduduk">
                             <div class="inner ps-3 pt-3">
-                              <h3>413</h3>
+                              <h3>453</h3>
                               <p>Laki-Laki</p>
                             </div>
                             <div class="icon">
@@ -46,7 +46,7 @@
                           <!-- small card -->
                           <div class="small-box program">
                             <div class="inner ps-3 pt-3">
-                              <h3>438</h3>
+                              <h3>453</h3>
                               <p>Perempuan</p>
                             </div>
                             <div class="icon">
@@ -59,7 +59,7 @@
                           <!-- small card -->
                           <div class="small-box aset">
                             <div class="inner ps-3 pt-3">
-                              <h3>----</h3>
+                              <h3>302</h3>
                               <p>KK Terdaftar</p>
                             </div>
                             <div class="icon">
@@ -75,7 +75,7 @@
                         <h4 class="h4Profile">Br. Buahan Tengah</h4>
                         <h4 class="h4Profile">Tahun 2022</h4>
                         <canvas id="myChart"></canvas>
-                        <div class="dropdown mt-3">
+                        {{-- <div class="dropdown mt-3">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                               Ganti Tahun
                             </button>
@@ -83,7 +83,7 @@
                               <li><a class="dropdown-item" href="#">2022</a></li>
                               <li><a class="dropdown-item" href="#">2021</a></li>
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
             </div>
         </section>
@@ -94,46 +94,39 @@
 
 {{-- Script Chart --}}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const ctx = document.getElementById('myChart');
-        new Chart(ctx, {
-          type: 'line',
-          data: {
+<script>
+    const ctx = document.getElementById('myChart');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
             labels: ['Januari', 'February', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
             datasets: [{
-              label: 'Jumlah Penduduk',
-              data: [2242, 2244, 2245, 2246, 2247, 2247, 2246, 2246, 2247, 2249, 2249, 2250],
-              borderWidth: 3
-            }]
-          },
-          options: {
+            label: 'Total Penduduk',
+            data: [904, 904, 904, 904, 904, 904, 904, 904, 904, 904, 904, 904],
+            borderWidth: 3
+            },
+            {
+            label: 'Laki-Laki',
+            data: [453, 453, 453, 453, 453, 453, 453, 453, 453, 453, 453, 453],
+            borderWidth: 3
+            },
+            {
+            label: 'Perempuan',
+            data: [453, 453, 453, 453, 453, 453, 453, 453, 453, 453, 453, 453],
+            borderWidth: 3
+            },]
+        },
+        options: {
             responsive: true,
             plugins: {
-                tooltip: {
-                mode: 'index',
-                intersect: false
-                },
+            legend: {
+                position: 'top',
             },
             hover: {
-                mode: 'index',
-                intersec: false
-            },
-        scales: {
-            x: {
-                title: {
-                display: true,
-                text: 'Bulan'
-                }
-            },
-        y: {
-            min: 2251,
-            max: 2240,
-            ticks: {
-            // forces step size to be 50 units
-            stepSize: 5
-            }
-        }}}
-        });
-      </script>
+            mode: 'index',
+            intersec: false
+            }}
+        }});
+  </script>
 
 @endsection
