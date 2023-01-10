@@ -15,6 +15,7 @@
         @yield('umkm')
         @yield('surat')
         @yield('homeslide')
+        @yield('aset')
 
     </section>
 

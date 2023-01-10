@@ -33,7 +33,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
                               <li><a class="dropdown-item" href="/profil">Searah Desa</a></li>
                               <li><a class="dropdown-item" href="/wilayah">Wilayah Desa</a></li>
-                              <li><a class="dropdown-item" href="/asetdesa">Aset Desa</a></li>
+                              <li><a class="dropdown-item" href="/aset">Aset Desa</a></li>
                               <li class="dropdown">
                                 <a class="dropdown-item"> Kependudukan &raquo; </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
@@ -52,11 +52,11 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
                               <li><a class="dropdown-item" href="/visimisi">Visi & Misi Desa</a></li>
-                              <li><a class="dropdown-item" href="#">Struktur Pemerintahan Desa</a></li>
+                              <li><a class="dropdown-item" href="/struktur">Struktur Pemerintahan Desa</a></li>
                               <li class="dropdown">
                                 <a class="dropdown-item" > Produk Hukum &raquo; </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
-                                    <li><a class="dropdown-item" href="#">Peraturan Desa</a></li>
+                                    <li><a class="dropdown-item" href="/perdesa">Peraturan Desa</a></li>
                                     <li><a class="dropdown-item" href="#">Peraturan Prebekel</a></li>
                                     <li><a class="dropdown-item" href="#">Keputusan Prebekel</a></li>
                                 </ul>
@@ -64,12 +64,12 @@
                               <li class="dropdown">
                                 <a class="dropdown-item" > Lembaga Desa &raquo; </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
-                                  <li><a class="dropdown-item" href="#">BPD</a></li>
-                                  <li><a class="dropdown-item" href="#">LPMD</a></li>
-                                  <li><a class="dropdown-item" href="#">Linmas</a></li>
-                                  <li><a class="dropdown-item" href="#">PKK</a></li>
-                                  <li><a class="dropdown-item" href="#">Karang Taruna</a></li>
-                                  <li><a class="dropdown-item" href="#">Bumdes</a></li>
+                                  <li><a class="dropdown-item" href="/bpd">BPD</a></li>
+                                  <li><a class="dropdown-item" href="/lpmd">LPMD</a></li>
+                                  <li><a class="dropdown-item" href="/linmas">Linmas</a></li>
+                                  <li><a class="dropdown-item" href="/pkk">PKK</a></li>
+                                  <li><a class="dropdown-item" href="/karangtaruna">Karang Taruna</a></li>
+                                  <li><a class="dropdown-item" href="/bumdes">Bumdes</a></li>
                                 </ul>
                               </li>
                             </ul>
@@ -83,7 +83,7 @@
                               <li><a class="dropdown-item" href="/blog">Artikel Desa</a></li>
                               <li><a class="dropdown-item" href="/umkm">UMKM</a></li>
                               <li><a class="dropdown-item" href="#">Program Desa</a></li>
-                              <li><a class="dropdown-item" href="#">Bantuan Desa</a></li>
+                              <li><a class="dropdown-item" href="/bantuan">Bantuan Desa</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">

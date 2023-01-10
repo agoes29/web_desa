@@ -36,7 +36,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
         <svg id="visualprofil" viewBox="0 0 900 600" width="100%" height="50%">

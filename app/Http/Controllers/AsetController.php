@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
-use App\Models\Umkm;
+use App\Models\Asetdesa;
 
-class UmkmController extends Controller
+class AsetController extends Controller
 {
     public function __construct()
     {
@@ -20,8 +20,8 @@ class UmkmController extends Controller
      */
     public function index()
     {
-        $umkm = Umkm::paginate(4);
-        return view('dashboard.pages.umkm', ['umkm' => $umkm]);
+        $aset = Asetdesa::all();
+        return view('dashboard.pages.aset',['aset' => $aset]);
     }
 
     /**
@@ -43,26 +43,26 @@ class UmkmController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'image' => 'required|image',
-            'cp' => 'required|numeric',
-
+            'fb' => 'required|image',
         ]);
-        $file = $request->file('image');
+        $file = $request->file('fb');
         $name = $file->getClientOriginalName();
         $name = str_replace(' ', '_', $name);
         $path = $file->storeAs('public/images', $name);
 
         $image = $path;
 
-        $umkm = new Umkm();
-        $umkm->title = $request->title;
-        $umkm->content = $request->content;
-        $umkm->cp= $request->cp;
-        $umkm->sm= $request->sm;
-        $umkm->link= $request->link;
-        $umkm->image = $image;
-        $umkm->save();
-        return redirect('/admin/umkm');
+        $aset = new Asetdesa();
+        $aset->no = $request->no;
+        $aset->jb = $request->jb;
+        $aset->kb = $request->kb;
+        $aset->ib = $request->ib;
+        $aset->ab = $request->ab;
+        $aset->tp = $request->tp;
+        $aset->kt = $request->kt;
+        $aset->fb = $image;
+        $aset->save();
+        return redirect('/admin/aset');
     }
 
     /**
@@ -73,8 +73,8 @@ class UmkmController extends Controller
      */
     public function show($id)
     {
-        $umkm = Umkm::find($id);
-        return view('dashboard.pages.umkmupdate', ['umkm' => $umkm]);
+        $aset = Asetdesa::find($id);
+        return view('dashboard.pages.asetupdate', ['aset' => $aset]);
     }
 
     /**
@@ -98,26 +98,26 @@ class UmkmController extends Controller
     public function update(Request $request, $id)
     {
         $validatedData = $request->validate([
-            'image' => 'required|image',
-            'cp' => 'required|numeric',
+            'fb' => 'required|image',
         ]);
-        $file = $request->file('image');
+        $file = $request->file('fb');
         $name = $file->getClientOriginalName();
         $name = str_replace(' ', '_', $name);
         $path = $file->storeAs('public/images', $name);
 
         $image = $path;
 
-        $umkm = Umkm::find($id);
-
-        $umkm->title = $request->title;
-        $umkm->content = $request->content;
-        $umkm->cp = $request->cp;
-        $umkm->sm= $request->sm;
-        $umkm->link= $request->link;
-        $umkm->image = $image;
-        $umkm->save();
-        return redirect('/admin/umkm');
+        $aset = Asetdesa::find($id);
+        $aset->no = $request->no;
+        $aset->jb = $request->jb;
+        $aset->kb = $request->kb;
+        $aset->ib = $request->ib;
+        $aset->ab = $request->ab;
+        $aset->tp = $request->tp;
+        $aset->kt = $request->kt;
+        $aset->fb = $image;
+        $aset->save();
+        return redirect('/admin/aset');
     }
 
     /**
@@ -128,8 +128,8 @@ class UmkmController extends Controller
      */
     public function destroy($id)
     {
-        $data = Umkm::find($id);
-        Storage::delete($data->image);
+        $data = Asetdesa::find($id);
+        Storage::delete($data->fb);
         $data->delete();
 
         if ($data) {
@@ -142,8 +142,8 @@ class UmkmController extends Controller
             ]);
         }
     }
-    public function umkminput()
+    public function asetinput()
     {
-        return view('dashboard.pages.umkminput');
+        return view('dashboard.pages.asetinput');
     }
 }

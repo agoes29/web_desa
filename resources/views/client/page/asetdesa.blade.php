@@ -13,23 +13,41 @@
                     <br><br><h2 class="fw-bold mt-1">ASET</h2>
                     <h4 class="h4Profile">Desa Buahan</h4>
                 </div>
-                <div class="m-4 text-left">
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                    </div>
-                    <h5>Aset 1</h5><br>
-                    <div class="progress">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                    </div>
-                    <h5>Aset 2</h5><br>
-                    <div class="progress">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                    </div>
-                    <h5>Aset 3</h5><br>
-                    <div class="progress">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-                    </div>
-                    <h5>Aset 4</h5><br>
+                <div class="card m-2">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                              <th scope="col">No</th>
+                              <th scope="col">Jenis Barang</th>
+                              <th scope="col">Kode Barang</th>
+                              <th scope="col">Identitas Barang</th>
+                              <th scope="col">Asal Usul Barang</th>
+                              <th scope="col">Tahun Perolehan</th>
+                              <th scope="col">Keterangan</th>
+                              <th scope="col">Foto Barang</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse ($aset as $as)
+                            <tr>
+                                <td>{{ $as->no }}</td>
+                                <td style="word-break:break-all;">{{ $as->jb }}</td>
+                                <td style="word-break:break-all;">{{ $as->kb }}</td>
+                                <td style="word-break:break-all;">{{ $as->ib }}</td>
+                                <td style="word-break:break-all;">{{ $as->ab }}</td>
+                                <td style="word-break:break-all;">{{ $as->tp }}</td>
+                                <td style="word-break:break-all;">{{ $as->kt }}</td>
+                                <td style="word-break:break-all;">
+                                    <img src="{{ Storage::url($as->fb) }}" alt="" class="img-fluid" style="width: 50px">
+                                </td>
+                            </tr>
+                            @empty
+                                <tr>
+                                    <td colspan="3">Tidak Ada Data</td>
+                                </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>

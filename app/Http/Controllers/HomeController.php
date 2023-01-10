@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Blog;
 use App\Models\Umkm;
 use App\Models\Home;
+use App\Models\Asetdesa;
 use Illuminate\Support\Str;
 
 class HomeController extends Controller
@@ -33,5 +34,10 @@ class HomeController extends Controller
     public function profil()
     {
         return view('client.page.profil');
+    }
+    public function aset()
+    {
+        $aset = Asetdesa::all();
+        return view('client.page.asetdesa', ['aset' => $aset] );
     }
 }

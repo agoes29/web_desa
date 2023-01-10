@@ -24,6 +24,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'client'])->name('m
 Route::get('/umkm', [App\Http\Controllers\HomeController::class, 'umkm'])->name('umkm');
 Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blog'])->name('blog');
 Route::get('/profil', [App\Http\Controllers\HomeController::class, 'profil'])->name('profil');
+Route::get('/aset', [App\Http\Controllers\HomeController::class, 'aset'])->name('aset');
 Route::resource('blogshow', App\Http\Controllers\BlogShow::class);
 
 /* Auth Route */
@@ -33,6 +34,10 @@ Route::get('register', [App\Http\Controllers\AuthController::class, 'register'])
 /* Dashboard Route */
 Route::get('admin', [App\Http\Controllers\Administrator\DashboardController::class, 'index'])->name('dashboard');
 Route::get('tabel', [App\Http\Controllers\Administrator\DashboardController::class, 'table'])->name('check');
+
+//Aset Route
+Route::get('asetinput', [App\Http\Controllers\AsetController::class, 'asetinput'])->name('AsetInput');
+Route::resource('/admin/aset', App\Http\Controllers\AsetController::class);
 
 //Blog Route
 Route::get('bloginput', [App\Http\Controllers\BlogController::class, 'bloginput'])->name('BlogInput');
@@ -58,6 +63,16 @@ Route::view('/penduduk2', 'client/page/penduduk2');
 Route::view('/penduduk3', 'client/page/penduduk3');
 Route::view('/wilayah', 'client/page/wilayah');
 Route::view('/visimisi', 'client/page/visimisi');
-Route::view('/asetdesa', 'client/page/asetdesa');
+Route::view('/struktur', 'client/page/struktur');
+Route::view('/perdesa', 'client/page/perdesa');
+Route::view('/bantuan', 'client/page/bantuan');
+
+// Lembaga Route
+Route::view('/bpd', 'client/page/lembaga/bpd');
+Route::view('/bumdes', 'client/page/lembaga/bumdes');
+Route::view('/karangtaruna', 'client/page/lembaga/karangtaruna');
+Route::view('/linmas', 'client/page/lembaga/linmas');
+Route::view('/lpmd', 'client/page/lembaga/lpmd');
+Route::view('/pkk', 'client/page/lembaga/pkk');
 
 

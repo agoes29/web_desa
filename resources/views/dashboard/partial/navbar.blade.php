@@ -43,6 +43,14 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a href="/admin/aset" class="nav-link">
+                        <i class="nav-icon fa fa-credit-card"></i>
+                            <p>
+                                Aset Desa
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a href="/admin/blog" class="nav-link">
                             <i class="nav-icon fas fa-th"></i>
                             <p>
