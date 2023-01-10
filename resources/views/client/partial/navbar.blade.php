@@ -51,7 +51,7 @@
                               Pemerintahan Desa
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
-                              <li><a class="dropdown-item" href="#">Visi & Misi Desa</a></li>
+                              <li><a class="dropdown-item" href="/visimisi">Visi & Misi Desa</a></li>
                               <li><a class="dropdown-item" href="#">Struktur Pemerintahan Desa</a></li>
                               <li class="dropdown">
                                 <a class="dropdown-item" > Produk Hukum &raquo; </a>

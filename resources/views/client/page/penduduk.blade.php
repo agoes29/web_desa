@@ -100,7 +100,7 @@
                 labels: ['Januari', 'February', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
                 datasets: [{
                 label: 'Total Penduduk',
-                data: [2230, 2235, 2240, 2235, 2230, 2245, 2235, 2240, 2250, 2240, 2245, 2250],
+                data: [2550, 2549, 2550, 2549, 2549, 2550, 2550, 2553, 2554, 2554, 2555, 2555],
                 borderWidth: 3
                 },
                 {

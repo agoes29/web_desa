@@ -57,6 +57,7 @@ Route::view('/penduduk1', 'client/page/penduduk1');
 Route::view('/penduduk2', 'client/page/penduduk2');
 Route::view('/penduduk3', 'client/page/penduduk3');
 Route::view('/wilayah', 'client/page/wilayah');
+Route::view('/visimisi', 'client/page/visimisi');
 Route::view('/asetdesa', 'client/page/asetdesa');
 
 
