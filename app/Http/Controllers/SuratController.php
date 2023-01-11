@@ -21,7 +21,7 @@ class SuratController extends Controller
     }
     public function suratadmin()
     {
-        $smm = Surat::all();
+        $smm = Surat::all()->sortByDesc("id");;
         return view('dashboard.pages.surat',['smm' => $smm]);
     }
 
@@ -53,10 +53,10 @@ class SuratController extends Controller
         $smm->tglm= $request->tglm;
         $smm->tempatm= $request->tempatm;
         $smm->penyebabm= $request->penyebabm;
-        $smm->nosuratdesa = '';
-        $smm->nosuratbr = '';
-        $smm->tglsuratbr = '';
-        $smm->tglsuratdesa = '';
+        $smm->nosuratdesa = '---/---/--/202-';
+        $smm->nosuratbr = '---/Kawil.--/--/202-';
+        $smm->tglsuratbr = 'tt-bb-TTTT';
+        $smm->tglsuratdesa = date('d-m-Y');
         $smm->save();
         return redirect('/');
     }
