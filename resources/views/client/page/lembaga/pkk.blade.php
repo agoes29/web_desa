@@ -16,7 +16,7 @@
                 <div class="card profilMap">
                     <div class="container-about-profil" data-aos="fade-in" data-aos-duration="1500">
                         <div style="text-align: center">
-                            <iframe src="/assets/pdf/BPD.pdf" width="95%" height="1200px"></iframe>
+                            <img src="/assets/images/PKK.jpg" alt="" width="100%">
                         </div>
                     </div>
                 </div>
