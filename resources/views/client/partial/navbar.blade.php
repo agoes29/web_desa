@@ -33,6 +33,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
                               <li><a class="dropdown-item" href="/profil">Searah Desa</a></li>
                               <li><a class="dropdown-item" href="/wilayah">Wilayah Desa</a></li>
+                              <li><a class="dropdown-item" href="/demografi">Demografi & Potensi</a></li>
                               <li><a class="dropdown-item" href="/aset">Aset Desa</a></li>
                               <li class="dropdown">
                                 <a class="dropdown-item"> Kependudukan &raquo; </a>
@@ -41,6 +42,17 @@
                                   <li><a class="dropdown-item" href="/penduduk1">Buahan Utara</a></li>
                                   <li><a class="dropdown-item" href="/penduduk2">Buahan Tengah</a></li>
                                   <li><a class="dropdown-item" href="/penduduk3">Buahan Selatan</a></li>
+                                </ul>
+                              </li>
+                              <li class="dropdown">
+                                <a class="dropdown-item"> Perangkat Desa &raquo; </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
+                                  <li><a class="dropdown-item" href="#">Kasi Pelayanan</a></li>
+                                  <li><a class="dropdown-item" href="#">Kasi Pemerintahan</a></li>
+                                  <li><a class="dropdown-item" href="#">Kasi Kesra</a></li>
+                                  <li><a class="dropdown-item" href="#">Kaur Umum</a></li>
+                                  <li><a class="dropdown-item" href="#">Kaur Keuangan</a></li>
+                                  <li><a class="dropdown-item" href="#">Kaur Perencanaan</a></li>
                                 </ul>
                               </li>
                             </ul>
@@ -84,6 +96,15 @@
                               <li><a class="dropdown-item" href="/umkm">UMKM</a></li>
                               <li><a class="dropdown-item" href="#">Program Desa</a></li>
                               <li><a class="dropdown-item" href="/bantuan">Bantuan Desa</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLinkRight" role="button"
+                              data-mdb-toggle="dropdown" aria-expanded="false">
+                              Surat Menyurat
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRight">
+                              <li><a class="dropdown-item" href="/suratkematian">Surat Kematian</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">

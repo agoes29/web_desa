@@ -66,6 +66,7 @@ Route::view('/visimisi', 'client/page/visimisi');
 Route::view('/struktur', 'client/page/struktur');
 Route::view('/perdesa', 'client/page/perdesa');
 Route::view('/bantuan', 'client/page/bantuan');
+Route::view('/demografi', 'client/page/demografi');
 
 // Lembaga Route
 Route::view('/bpd', 'client/page/lembaga/bpd');
